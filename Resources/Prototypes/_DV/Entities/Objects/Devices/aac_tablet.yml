@@ -39,10 +39,10 @@
       enum.AACTabletKey.Key:
         type: AACBoundUserInterface
   - type: Speech
-    speechSounds: Alto
-  - type: VoiceMask
+    speechSounds: AAC_tablet_SAS_collection # DEN
   - type: AACTablet
   - type: IntrinsicRadioTransmitter
-  - type: Grammar
+  - type: Grammar # starcup
     attributes:
       proper: True
+  - type: VoiceMask
