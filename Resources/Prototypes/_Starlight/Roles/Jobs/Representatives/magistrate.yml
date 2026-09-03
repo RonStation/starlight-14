@@ -10,13 +10,14 @@
     - !type:DepartmentTimeRequirement
       department: Security
       time: 36000 # 10h
-    - !type:RolesRequirement
-      proto: ExtRolesReq
+#    - !type:RolesRequirement Ronstation: switch extroles to in-game whitelist
+#      proto: ExtRolesReq
     - !type:TraitsRequirement
       traits:
         - Iterator
         #- Muted Ronstation: No, we don't hate our folks with disabilities.
       inverted: true
+  whitelisted: true # Ronstation: switch extroles to whitelist
   startingGear: MagistrateGear
   icon: "JobIconMagistrate"
   rules: job-rules-corporate-aligned
