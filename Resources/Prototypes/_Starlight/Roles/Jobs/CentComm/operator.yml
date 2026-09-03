@@ -4,6 +4,7 @@
   description: job-description-centcomoperator
   playTimeTracker: JobCentralCommandOperator
   setPreference: false
+  whitelisted: true # Ronstation: CC roles whitelisting
   startingGear: CentcomOperatorGear
   icon: JobIconCentralCommandOperator
   rules: job-rules-corporate-aligned

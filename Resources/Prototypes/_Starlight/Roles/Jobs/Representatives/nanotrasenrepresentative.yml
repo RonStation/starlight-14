@@ -12,7 +12,7 @@
     - !type:TraitsRequirement
       traits:
         - Iterator
-        - Muted
+        #- Muted Ronstation: No, we don't hate our folks with disabilities.
       inverted: true
   startingGear: NanoTrasenRepresentativeGear
   icon: JobIconNanoTrasenRepresentative
