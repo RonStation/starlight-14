@@ -199,7 +199,7 @@
     - id: KudzuGrowth
     - id: PowerGridCheck
     - id: VentClog
-    - id: IonStormPlus # I think it's funny to have the double chance to get this.
+    # - id: IonStormPlus # it really isn't that funny
 
 - type: entity
   parent: BaseGameRule
