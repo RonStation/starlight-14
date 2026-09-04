@@ -2,7 +2,7 @@
   id: SpawnPointCCofficial
   parent: SpawnPointJobBase
   name: CentComm Official
-  suffix: ROUND-START
+  suffix: DO NOT MAP (yet)
   components:
     - type: SpawnPoint
       job_id: CentralCommandOfficial
