@@ -6,7 +6,7 @@
   requirements:
   - !type:RolesRequirement
     proto: StaffAndMentorOnlyRolesReq
-  setPreference: false
+  setPreference: true # Ronstation: port phoenix station CCO loadout
   startingGear: CentcommGear
   icon: "JobIconCentralCommandOfficial" #Starlight
   supervisors: job-supervisors-hos
@@ -21,17 +21,27 @@
 - type: startingGear
   id: CentcommGear
   equipment:
-    jumpsuit: ClothingAltUniformJumpsuitCentcomOfficial # alt version
-    shoes: ClothingShoesBootsCombatFilled
-    head: ClothingHeadHatCentcom
-    eyes: ClothingEyesGlassesCentComm
-    gloves: ClothingHandsGlovesColorBlack
+    # Phoenix start - Loadouts for roundstart CC
+    #jumpsuit: ClothingAltUniformJumpsuitCentcomOfficial # alt version
+    #shoes: ClothingShoesBootsCombatFilled
+    #head: ClothingHeadHatCentcom
+    #eyes: ClothingEyesGlassesCentComm
+    gloves: ClothingHandsGlovesCombat
     outerClothing: ClothingOuterArmorCentcommCarapace
     id: CentcomPDA
     ears: ClothingHeadsetAltCentCom
-    belt: WeaponPistolN1984
+    #belt: WeaponPistolN1984 # Phoenix - Loadouts for roundstart CC
     pocket1: BoxFolderCentComClipboardThreePapers
     pocket2: PenCentcom
+    #back: ClothingBackpackSatchelLeather # Phoenix - Loadouts for roundstart CC
+  inhand:
+    - Centcommteleportdoohickey # Phoenix - For them to get to CC if they latejoin.
+  storage:
+    back:
+      - DoorRemoteCustom
+      - GreenPhone
+      - RubberStampCentcom
+  # Phoenix end - Loadouts for roundstart CC
 
 
 - type: chameleonOutfit
