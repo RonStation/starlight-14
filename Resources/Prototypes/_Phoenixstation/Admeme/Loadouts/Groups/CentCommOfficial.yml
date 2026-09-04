@@ -1,0 +1,408 @@
+- type: roleLoadout
+  id: JobCentralCommandOfficial
+  groups:
+    - CCOeyes
+    - CCOhead
+    - CCOsuit
+    - CCOlegs
+    - CCObackpack
+    - CCOextra
+    - CCONeck
+    - CCOTRINKETS
+    - Trinkets
+
+# Head
+
+- type: loadoutGroup
+  id: CCOhead
+  minLimit: 0
+  maxLimit: 1
+  name: CCO-Head-Group
+  loadouts:
+    - CCObrandhat
+    - CCOCCCap
+    - CCOCCBeret
+
+- type: loadout
+  id: CCObrandhat
+  equipment:
+    head: ClothingHeadHatCentcom
+
+- type: loadout
+  id: CCOCCCap # Holy name.
+  equipment:
+    head: ClothingHeadHatCentcomcap
+
+- type: loadout
+  id: CCOCCBeret
+  equipment:
+    head: ClothingHeadHatCCberet
+
+
+# Jumpsuit
+
+- type: loadoutGroup
+  id: CCOsuit
+  minLimit: 1
+  maxLimit: 1
+  name: CCO-Suit-Group
+  loadouts:
+    - CCOjumpsuit
+    - CCOjumpskirt
+    - CCOformalsuit
+    - CCOformaldress
+    - CCOformaldomestic
+    - CCOformalengineering
+    - CCOformalintelligence
+    - CCOformalcargo
+    - CCOformaladministrative
+    - CCOformalmedical
+    - CCOformalresearch
+    - CCOformalsecurity
+    - CCOformalspecops
+
+- type: loadout
+  id: CCOjumpsuit
+  equipment:
+    jumpsuit: ClothingAltUniformJumpsuitCentcomOfficial
+
+- type: loadout
+  id: CCOjumpskirt
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtCentcomOfficial
+
+- type: loadout
+  id: CCOformalsuit
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitCentcomFormal
+
+- type: loadout
+  id: CCOformaldress
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtCentcomFormalDress
+
+- type: loadout
+  id: CCOformaldomestic
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtCentcommDomesticFormalWear
+
+- type: loadout
+  id: CCOformalengineering
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtEngiCentcommFormalWear
+
+- type: loadout
+  id: CCOformalintelligence
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtCentcommIntelFormalWear
+
+- type: loadout
+  id: CCOformalcargo
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtCentcommCargoFormalWear
+
+- type: loadout
+  id: CCOformaladministrative
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtCentcommAdminFormalWear
+
+- type: loadout
+  id: CCOformalmedical
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtCentcommMedFormalWear
+
+- type: loadout
+  id: CCOformalresearch
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtCentcommResearchFormalWear
+
+- type: loadout
+  id: CCOformalsecurity
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtCentcommSecurityFormalWear
+
+- type: loadout
+  id: CCOformalspecops
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtCentcommSpecialOpsFormalWear
+
+# eyes
+
+- type: loadoutGroup
+  id: CCOeyes
+  minLimit: 0
+  maxLimit: 1
+  name: CCO-Eyes-Group
+  loadouts:
+    - CCOCCglasses
+    - CCOCCHud
+    - CCOCCJamJar
+
+- type: loadout
+  id: CCOCCglasses
+  equipment:
+    eyes: ClothingEyesGlassesCentComm
+
+- type: loadout
+  id: CCOCCHud
+  equipment:
+    eyes: ClothingEyesHudCentComm
+
+- type: loadout
+  id: CCOCCJamJar
+  equipment:
+    eyes: ClothingEyesGlassesJamjarCentComm
+
+# legs
+
+- type: loadoutGroup
+  id: CCOlegs
+  minLimit: 1
+  maxLimit: 1
+  name: CCO-Legs-Group
+  loadouts:
+    - CCOCCJacks
+    - CCOCCCombatboots
+    - CCOCCHighHeels
+    - CCOCCLaceup
+
+- type: loadout
+  id: CCOCCJacks
+  equipment:
+    shoes: ClothingShoesBootsJackFilled
+
+- type: loadout
+  id: CCOCCCombatboots
+  equipment:
+    shoes: ClothingShoesBootsCombatFilled
+
+- type: loadout
+  id: CCOCCHighHeels
+  equipment:
+    shoes: ClothingShoesHighheelShoes
+
+- type: loadout
+  id: CCOCCLaceup
+  equipment:
+    shoes: ClothingShoesBootsLaceup
+
+# Backpack
+
+- type: loadoutGroup
+  id: CCObackpack
+  minLimit: 1
+  maxLimit: 1
+  name: CCO-Backpack-Group
+  loadouts:
+    - CCOSatchelLeather
+    - CCOCCSatchel
+    - CCOSatchelHolding
+    - CCOBackpackHolding
+    - CCODuffelHolding
+
+- type: loadout
+  id: CCOSatchelLeather
+  equipment:
+    back: ClothingBackpackSatchelLeather
+
+- type: loadout
+  id: CCOCCSatchel
+  equipment:
+    back: ClothingBackpackSatchelCentcomm
+
+- type: loadout
+  id: CCOSatchelHolding
+  equipment:
+    back: ClothingBackpackSatchelHolding
+
+- type: loadout
+  id: CCOBackpackHolding
+  equipment:
+    back: ClothingBackpackHolding
+
+- type: loadout
+  id: CCODuffelHolding
+  equipment:
+    back: ClothingBackpackDuffelHolding
+
+# Sidearm/extra
+
+- type: loadoutGroup
+  id: CCOextra
+  minLimit: 0
+  maxLimit: 1
+  name: CCO-Sidearm-Group
+  loadouts:
+    - CCOMateba
+    - CCON1984
+    - CCOCetoolbelt
+    - CCOVibroblade
+
+- type: loadout
+  id: CCOMateba
+  equipment:
+    belt: ClothingBeltHolsterFilledMateba
+
+- type: loadout
+  id: CCON1984
+  equipment:
+    belt: ClothingBeltHolsterFilledN1984
+
+- type: loadout
+  id: CCOCetoolbelt
+  equipment:
+    belt: ClothingBeltChiefEngineer
+
+- type: loadout
+  id: CCOVibroblade
+  equipment:
+    belt: CentcommVibrobladeSheathFilled
+
+# Cloaks/neck
+
+- type: loadoutGroup
+  id: CCONeck
+  minLimit: 0
+  maxLimit: 1
+  name: CCO-Neck-Group
+  loadouts:
+    - CCOCCommandercloak
+    - CCOBoatCloak
+    - CCOCCPoncho
+    - CCOERTLeadMantle
+    - CCOCCAdmiralCloak
+    - CCOCEDMantle
+    - CCOCMDMantle
+    - CCOCRDMantle
+    - CCOSpecOffCloak
+
+- type: loadout
+  id: CCOCCommandercloak
+  equipment:
+    neck: ClothingNeckCloakCentcom
+
+- type: loadout
+  id: CCOBoatCloak
+  equipment:
+    neck: ClothingNeckCloakBoatCC
+
+- type: loadout
+  id: CCOCCPoncho
+  equipment:
+    neck: ClothingNeckCloakCCponcho
+
+- type: loadout
+  id: CCOERTLeadMantle
+  equipment:
+    neck: ClothingNeckMantleERTLeader
+
+- type: loadout
+  id: CCOCCAdmiralCloak
+  equipment:
+    neck: ClothingNeckCloakCentcomAdmiral
+
+- type: loadout
+  id: CCOCEDMantle
+  equipment:
+    neck: ClothingNeckCloakCEDMantle
+
+- type: loadout
+  id: CCOCMDMantle
+  equipment:
+    neck: ClothingNeckCloakCMDMantle
+
+- type: loadout
+  id: CCOCRDMantle
+  equipment:
+    neck: ClothingNeckCloakCRDMantle
+
+- type: loadout
+  id: CCOSpecOffCloak
+  equipment:
+    neck: ClothingNeckCloakCentcomBlack
+
+# stamps/trinkets (I LOVE GIVING TRINKETS TO MY CCOs AND COMMAND MEMBERS)
+
+- type: loadoutGroup
+  id: CCOTRINKETS
+  minLimit: 0
+  maxLimit: 2
+  name: CCO-Trinket-Group
+  loadouts:
+    - CCOTrinketAdminStampsBox
+    - CCOTrinketStampDomestic
+    - CCOTrinketStampEngineering
+    - CCOTrinketStampIntelligence
+    - CCOTrinketStampCargo
+    - CCOTrinketStampAdminstrative
+    - CCOTrinketStampMedical
+    - CCOTrinketStampResearch
+    - CCOTrinketStampSecurity
+    - CCOTrinketStampSpecOps
+    - CCOTrinketRenaultPlush
+
+- type: loadout
+  id: CCOTrinketAdminStampsBox
+  storage:
+    back:
+    - BoxStampsCCAdministrative
+
+- type: loadout
+  id: CCOTrinketStampDomestic
+  storage:
+    back:
+    - RubberStampCDD
+
+- type: loadout
+  id: CCOTrinketStampEngineering
+  storage:
+    back:
+    - RubberStampCED
+
+- type: loadout
+  id: CCOTrinketStampIntelligence
+  storage:
+    back:
+    - RubberStampCID
+
+- type: loadout
+  id: CCOTrinketStampCargo
+  storage:
+    back:
+    - RubberStampCCD
+
+- type: loadout
+  id: CCOTrinketStampAdminstrative
+  storage:
+    back:
+    - RubberStampCAD
+
+- type: loadout
+  id: CCOTrinketStampMedical
+  storage:
+    back:
+    - RubberStampCMD
+
+- type: loadout
+  id: CCOTrinketStampResearch
+  storage:
+    back:
+    - RubberStampCRD
+
+- type: loadout
+  id: CCOTrinketStampSecurity
+  storage:
+    back:
+    - RubberStampCSD
+
+- type: loadout
+  id: CCOTrinketStampSpecOps
+  storage:
+    back:
+    - RubberStampCSOD
+
+- type: loadout
+  id: CCOTrinketRenaultPlush
+  storage:
+    back:
+    - RenaultPlushie
