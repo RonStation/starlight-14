@@ -17,7 +17,7 @@
         tableId: ShitEventsTable
       - !type:NestedSelector
         tableId: DerelictBorgEventTable
-      - id: IonStormPlus
+      #- id: IonStormPlus #it REALLY isn't that funny man
 
 - type: entity
   id: DynamicRampingEventScheduler # Dynamic Survival!?

@@ -3,12 +3,14 @@
   name: job-name-nanotrasen-special-forces
   description: job-description-nanotrasen-special-forces
   playTimeTracker: JobNTSF
-  requirements:
-    - !type:DepartmentTimeRequirement
-      department: Security
-      time: 72000 # 20 hrs
-    - !type:RolesRequirement
-      proto: ExtRolesReq
+# Ronstation start: whitelist CC roles to prevent abuse, don't need role reqs when its whitelisted
+#  requirements:
+#    - !type:DepartmentTimeRequirement
+#      department: Security
+#      time: 72000 # 20 hrs
+#    - !type:RolesRequirement
+#      proto: ExtRolesReq
+  whitelisted: true #Ronstation end
   setPreference: false
   startingGear: NanoTrasenSpecialForcesGear
   icon: JobIconNanoTrasenSpecialForces

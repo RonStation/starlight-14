@@ -4,13 +4,14 @@
   description: job-description-nct
   playTimeTracker: JobNanotrasenCareerTrainer
   requirements:
-    - !type:RolesRequirement
-      proto: StaffAndMentorOnlyRolesReq
+  #  - !type:RolesRequirement Ronstation: Make job whitelisting done in-game
+  #    proto: StaffAndMentorOnlyRolesReq
     - !type:TraitsRequirement
       traits:
         - Iterator
-        - Muted
+        #- Muted Ronstation: No, we don't hate our folks with disabilities.
       inverted: true
+  whitelisted: true # Ronstation: This role is meant for mentors, and should only be available to them.
   startingGear: NanotrasenCareerTrainerGear
   icon: JobIconNanotrasenCareerTrainer
   rules: job-rules-corporate-aligned

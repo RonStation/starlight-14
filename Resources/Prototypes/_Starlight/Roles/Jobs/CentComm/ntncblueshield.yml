@@ -3,12 +3,14 @@
   name: job-name-ntncblueshield
   description: job-description-ntncblueshield
   playTimeTracker: JobConsortiumBlueShield
-  requirements:
-  - !type:OverallPlaytimeRequirement
-    time: 72000 # 20h
-  - !type:RoleTimeRequirement
-    role: JobSecurityOfficer
-    time: 18000 # 5h
+# Ronstation start: whitelist CC roles to prevent abuse, don't need role reqs when its whitelisted
+#  requirements:
+#  - !type:OverallPlaytimeRequirement
+#    time: 72000 # 20h
+#  - !type:RoleTimeRequirement
+#    role: JobSecurityOfficer
+#    time: 18000 # 5h
+  whitelisted: true #Ronstation end
   setPreference: false
   startingGear: NTNCHardsuitGear
   icon: JobIconNTNCBlueShield
