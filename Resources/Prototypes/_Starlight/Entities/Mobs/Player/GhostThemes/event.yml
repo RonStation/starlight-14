@@ -7,10 +7,10 @@
       sprite: _Starlight/Mobs/Customization/GhostThemes/ghosts.rsi
       state: ghost-king
     color: "#ffffff"
-  requirements:
-  - !type:DiscordRolesRequirement
-    requirement: GoldEventWinnerReq
-  category: Event
+#  requirements:
+#  - !type:DiscordRolesRequirement
+#    requirement: GoldEventWinnerReq
+  category: Public # Ronstation: Make (non-staff) ghost themes public
 
 - type: ghostTheme
   id: CarpGames
