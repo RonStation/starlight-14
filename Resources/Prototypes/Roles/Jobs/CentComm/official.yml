@@ -3,10 +3,12 @@
   name: job-name-centcommoff
   description: job-description-centcommoff
   playTimeTracker: JobCentralCommandOfficial
-  requirements:
-  - !type:RolesRequirement
-    proto: StaffAndMentorOnlyRolesReq
-  setPreference: true # Ronstation: port phoenix station CCO loadout
+  #Ronstation start: whitelist CC roles to prevent abuse, don't need role reqs when its whitelisted
+  #requirements:
+  #- !type:RolesRequirement
+  #  proto: StaffAndMentorOnlyRolesReq
+  whitelisted: true # Ronstation end
+  setPreference: false
   startingGear: CentcommGear
   icon: "JobIconCentralCommandOfficial" #Starlight
   supervisors: job-supervisors-hos
@@ -21,27 +23,17 @@
 - type: startingGear
   id: CentcommGear
   equipment:
-    # Phoenix start - Loadouts for roundstart CC
-    #jumpsuit: ClothingAltUniformJumpsuitCentcomOfficial # alt version
-    #shoes: ClothingShoesBootsCombatFilled
-    #head: ClothingHeadHatCentcom
-    #eyes: ClothingEyesGlassesCentComm
-    gloves: ClothingHandsGlovesCombat
+    jumpsuit: ClothingAltUniformJumpsuitCentcomOfficial # alt version
+    shoes: ClothingShoesBootsCombatFilled
+    head: ClothingHeadHatCentcom
+    eyes: ClothingEyesGlassesCentComm
+    gloves: ClothingHandsGlovesColorBlack
     outerClothing: ClothingOuterArmorCentcommCarapace
     id: CentcomPDA
     ears: ClothingHeadsetAltCentCom
-    #belt: WeaponPistolN1984 # Phoenix - Loadouts for roundstart CC
+    belt: WeaponPistolN1984
     pocket1: BoxFolderCentComClipboardThreePapers
     pocket2: PenCentcom
-    #back: ClothingBackpackSatchelLeather # Phoenix - Loadouts for roundstart CC
-  inhand:
-    - Centcommteleportdoohickey # Phoenix - For them to get to CC if they latejoin.
-  storage:
-    back:
-      - DoorRemoteCustom
-      - GreenPhone
-      - RubberStampCentcom
-  # Phoenix end - Loadouts for roundstart CC
 
 
 - type: chameleonOutfit
