@@ -29,7 +29,7 @@
     #head: ClothingHeadHatCentcom
     #eyes: ClothingEyesGlassesCentComm
     # gloves: ClothingHandsGlovesColorBlack Ronstation: Replaced by the selectable gloves category
-    outerClothing: ClothingOuterArmorCentcommCarapace
+    #outerClothing: ClothingOuterArmorCentcommCarapace
     id: CentCommDivisionPDA #Ronstation: Custom PDA/ID for CC Officials to change their information for in-character purposes
     ears: ClothingHeadsetAltCentComDivHead #Ronstation: Actually use the CC headset with admeme-safe components, keys you can't remove since there should only be so many master keys in a round for objectives.
     #belt: WeaponPistolN1984

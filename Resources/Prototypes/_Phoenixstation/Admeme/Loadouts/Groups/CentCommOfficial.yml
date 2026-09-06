@@ -4,6 +4,7 @@
     - CCOeyes
     - CCOhead
     - CCOsuit
+    - CCOOuterClothing
     - CCOlegs
     - InsulsCaptain # Ronstation: Because being able to choose your gloves is cool. :> Should totally make CC insuls later...
     - CCObackpack
@@ -153,6 +154,75 @@
   id: CCOCCJamJar
   equipment:
     eyes: ClothingEyesGlassesJamjarCentComm
+
+#Outer clothing, What probably should have been, now actually existing!
+
+- type: loadoutGroup
+  id: CCOOuterClothing
+  minLimit: 0
+  maxLimit: 1
+  name: CCO-Outer-Group
+  loadouts:
+    - CCOOuterWinterCoat
+    - CCOOuterArmoredCoat
+    - CCOOuterCarapace
+    - CCOOuterWebvest
+    - CCOOuterHardsuitLeader
+    - CCOOuterHardsuitEngineer
+    - CCOOuterHardsuitJanitor
+    - CCOOuterHardsuitChaplain
+    - CCOOuterHardsuitMedical
+    - CCOOuterHardsuitSecurity
+
+- type: loadout
+  id: CCOOuterWinterCoat
+  equipment:
+    outerClothing: ClothingOuterWinterCentcom
+
+- type: loadout
+  id: CCOOuterArmoredCoat
+  equipment:
+    outerClothing: ClothingOuterCoatWardenCentcomm
+
+- type: loadout
+  id: CCOOuterCarapace
+  equipment:
+    outerClothing: ClothingOuterArmorCentcommCarapace
+
+- type: loadout
+  id: CCOOuterWebvest
+  equipment:
+    outerClothing: ClothingOuterVestWebEliteCentcomm
+
+- type: loadout
+  id: CCOOuterHardsuitLeader
+  equipment:
+    outerClothing: ClothingOuterHardsuitERTLeader
+
+- type: loadout
+  id: CCOOuterHardsuitEngineer
+  equipment:
+    outerClothing: ClothingOuterHardsuitERTEngineer
+
+- type: loadout
+  id: CCOOuterHardsuitJanitor
+  equipment:
+    outerClothing: ClothingOuterHardsuitERTJanitor
+
+- type: loadout
+  id: CCOOuterHardsuitChaplain
+  equipment:
+    outerClothing: ClothingOuterHardsuitERTChaplain
+
+- type: loadout
+  id: CCOOuterHardsuitMedical
+  equipment:
+    outerClothing: ClothingOuterHardsuitERTMedical
+
+- type: loadout
+  id: CCOOuterHardsuitSecurity
+  equipment:
+    outerClothing: ClothingOuterHardsuitERTSecurity
 
 # legs
 
