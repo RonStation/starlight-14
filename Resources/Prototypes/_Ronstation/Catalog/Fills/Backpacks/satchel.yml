@@ -10,6 +10,7 @@
     tags: [] # Since it just reuses a sprite, not whitelisted for chameleon.
   - type: StorageFill
     contents:
+      - id: CommandTrackerImplanter
       - id: ToolDebug
       - id: WelderExperimental
       - id: RCDExperimental
@@ -47,6 +48,7 @@
       - id: RubberStampCentcom
       - id: RubberStampIWBYA
       - id: BoxStampsCCAdministrative
+      - id: CommandTrackerImplanter
       - id: ToolDebug
       - id: WelderExperimental
       - id: RCDExperimental
