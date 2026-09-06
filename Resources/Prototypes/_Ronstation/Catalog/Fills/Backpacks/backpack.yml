@@ -73,3 +73,59 @@
       - id: BodyBagCCFolded
       - id: BodyBagCCFolded
       - id: BodyBagCCFolded
+# Written by Semper based off of Atakku's original code, further modified from contribution to Ronstation
+# This explicitly now targets a role as CC Security division
+- type: entity
+  id: ClothingBackpackHoldingCentcomOfficerFilled
+  parent: [ ClothingBackpackHolding, BaseChameleon, BaseCentcommContraband ]
+  suffix: Filled, Centcom Officer, Admeme, Chameleon
+  components:
+  - type: ChameleonClothing
+    slot: [back]
+    default: ClothingBackpackHolding
+  - type: UserInterface
+    interfaces:
+      enum.StorageUiKey.Key:
+        type: StorageBoundUserInterface
+      enum.ChameleonUiKey.Key:
+        type: ChameleonBoundUserInterface
+  - type: Tag
+    tags: []
+  - type: StorageFill
+    contents:
+      - id: RubberStampCSD
+      - id: RubberStampCentcom
+      - id: RubberStampIWBYA
+      - id: BoxStampsCCAdministrative
+      - id: CommandTrackerImplanter
+      - id: ToolDebug
+      - id: WelderExperimental
+      - id: RCDExperimental
+      - id: RPDExperimental
+      - id: RPLDExperimental
+      - id: Multitool
+      - id: BoxSurvivalNonBreatherExtended
+      - id: DoubleEmergencyNitrogenTankFilled
+      - id: DoubleEmergencyOxygenTankFilled
+      - id: AgentIDCard
+      - id: BoxFolderCentComClipboardThreePapers
+      - id: WeaponDisablerSMG
+      - id: BoxHandcuff
+      - id: Flash
+      - id: FlashlightSeclite
+      - id: MagazineDMRIncendiary
+      - id: MagazineDMRIncendiary
+      - id: MagazineDMRIncendiary
+      - id: MagazineDMRIncendiary
+      - id: MagazinePistol40FMJ
+      - id: MagazinePistol40FMJ
+      - id: MagazinePistol40FMJ
+      - id: MagazinePistol40FMJ
+      - id: ClothingEyesHudCCDivHead
+      - id: BodyBagCCFolded
+      - id: BodyBagCCFolded
+      - id: BodyBagCCFolded
+      - id: WeaponLightMachineGunM492CC
+      - id: LightRifleHeavyMagazineIncendiary
+      - id: LightRifleHeavyMagazineIncendiary
+      - id: ClothingOuterHardsuitCCSDExperimental

@@ -8,7 +8,7 @@
   #- !type:RolesRequirement
   #  proto: StaffAndMentorOnlyRolesReq
   whitelisted: true # Ronstation end
-  setPreference: false
+  setPreference: true # Ronstation: port phoenix station CCO loadout
   startingGear: CentcommGear
   icon: "JobIconCentralCommandOfficial" #Starlight
   supervisors: job-supervisors-hos
@@ -18,23 +18,31 @@
   - CentralCommand
   special:
   - !type:AddImplantSpecial
-    implants: [ MindShieldImplant, DeathRattleImplantCentcomm ]
+    implants: [ MindShieldImplant, DeathRattleImplantCentcomm, CommandTrackingImplant ] # Ronstation: Less pain for the BSO.
 
 - type: startingGear
   id: CentcommGear
   equipment:
-    jumpsuit: ClothingAltUniformJumpsuitCentcomOfficial # alt version
-    shoes: ClothingShoesBootsCombatFilled
-    head: ClothingHeadHatCentcom
-    eyes: ClothingEyesGlassesCentComm
-    gloves: ClothingHandsGlovesColorBlack
-    outerClothing: ClothingOuterArmorCentcommCarapace
-    id: CentcomPDA
-    ears: ClothingHeadsetAltCentCom
-    belt: WeaponPistolN1984
+    #Ronstation start - porting Phoenix Station Loadouts + some extra additions/polish
+    #jumpsuit: ClothingAltUniformJumpsuitCentcomOfficial # alt version
+    #shoes: ClothingShoesBootsCombatFilled
+    #head: ClothingHeadHatCentcom
+    #eyes: ClothingEyesGlassesCentComm
+    # gloves: ClothingHandsGlovesColorBlack Ronstation: Replaced by the selectable gloves category
+    #outerClothing: ClothingOuterArmorCentcommCarapace
+    id: CentCommDivisionPDA #Ronstation: Custom PDA/ID for CC Officials to change their information for in-character purposes
+    ears: ClothingHeadsetAltCentComDivHead #Ronstation: Actually use the CC headset with admeme-safe components, keys you can't remove since there should only be so many master keys in a round for objectives.
+    #belt: WeaponPistolN1984
     pocket1: BoxFolderCentComClipboardThreePapers
-    pocket2: PenCentcom
-
+    #pocket2: PenCentcom
+    inhand:
+    - Centcommteleportdoohickey # Phoenix - For them to get to CC if they latejoin.
+    storage:
+     back:
+      - DoorRemoteCustom
+      - GreenPhone
+      - RubberStampCentcom
+    #Ronstation end - porting Phoenix Station Loadouts + some extra additions/polish
 
 - type: chameleonOutfit
   id: CentralCommandOfficialOutfit
