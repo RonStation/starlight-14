@@ -94,30 +94,30 @@
   parent: ChemDispenserEmpty
   components:
   - type: ReagentDispenser
-  - type: EntityTableContainerFill
-    containers:
-      storagebase: !type:AllSelector
-        children:
+#  - type: EntityTableContainerFill #Ronstation start: Casual chemistry, AL port
+#    containers:
+#      storagebase: !type:AllSelector
+#        children:
 #        - id: JugAluminium
-#        - id: JugCarbon
+##        - id: JugCarbon
 #        - id: JugChlorine
-#        - id: JugCopper
+##        - id: JugCopper
 #        - id: JugEthanol
 #        - id: JugFluorine
-#        - id: JugSugar
-#        - id: JugHydrogen
+##        - id: JugSugar
+##        - id: JugHydrogen
 #        - id: JugIodine
-#        - id: JugIron
+##        - id: JugIron
 #        - id: JugLithium
 #        - id: JugMercury
 #        - id: JugNitrogen
-#        - id: JugOxygen
-#        - id: JugPhosphorus
+##        - id: JugOxygen
+##        - id: JugPhosphorus
 #        - id: JugPotassium
 #        - id: JugRadium
-#        - id: JugSilicon
+##        - id: JugSilicon
 #        - id: JugSodium
-#        - id: JugSulfur
+#        - id: JugSulfur #Ronstation end: Casual chemistry, AL port
   # Starlight-start: Filled powercell slot
   - type: PowerCellSlot
     cellSlotId: cell_slot

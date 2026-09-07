@@ -69,7 +69,6 @@
   parent: SodaDispenserEmpty
   id: SodaDispenser
   suffix: Filled
-  components:
 #  components: #Start Ronstation: AL port
 #  - type: EntityTableContainerFill
 #    containers:
