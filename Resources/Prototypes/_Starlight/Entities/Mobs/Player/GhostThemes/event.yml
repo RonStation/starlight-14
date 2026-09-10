@@ -8,8 +8,8 @@
       state: ghost-king
     color: "#ffffff"
   requirements:
-  - !type:MentorFlagRequirement
-  category: Mentor
+  - !type:MentorFlagRequirement # Ronstation: Flags for mentors/staff
+  category: Mentor # Ronstation: Move upstream event-limited to Mentors
 
 - type: ghostTheme
   id: CarpGames
@@ -21,8 +21,8 @@
       state: ghost-carpman
     color: "#ffffff"
   requirements:
-  - !type:MentorFlagRequirement
-  category: Mentor
+  - !type:MentorFlagRequirement # Ronstation: Flags for mentors/staff
+  category: Mentor # Ronstation: Move upstream event-limited to Mentors
 
 - type: ghostTheme
   id: FirstWritingContest
@@ -34,5 +34,5 @@
       state: ghost-mage
     color: "#ffffff"
   requirements:
-  - !type:MentorFlagRequirement
-  category: Mentor
+  - !type:MentorFlagRequirement # Ronstation: Flags for mentors/staff
+  category: Mentor # Ronstation: Move upstream event-limited to Mentors
