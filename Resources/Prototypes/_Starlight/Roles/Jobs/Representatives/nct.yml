@@ -5,7 +5,6 @@
   playTimeTracker: JobNanotrasenCareerTrainer
   requirements:
 - !type:MentorFlagRequirement # Ronstation: Flags for mentors/staff
-  #    proto: StaffAndMentorOnlyRolesReq
     - !type:TraitsRequirement
       traits:
         - Iterator
