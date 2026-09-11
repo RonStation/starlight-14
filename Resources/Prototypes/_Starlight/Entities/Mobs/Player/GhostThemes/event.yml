@@ -10,7 +10,7 @@
   requirements:
   - !type:DiscordRolesRequirement
     requirement: GoldEventWinnerReq
-  category: Event
+  category: Mentor
 
 - type: ghostTheme
   id: CarpGames
@@ -24,7 +24,7 @@
   requirements:
   - !type:DiscordRolesRequirement
     requirement: CarpGamesReq
-  category: Event
+  category: Mentor
 
 - type: ghostTheme
   id: FirstWritingContest
@@ -38,4 +38,4 @@
   requirements:
   - !type:DiscordRolesRequirement
     requirement: FirstWritingContestReq
-  category: Event
+  category: Mentor
