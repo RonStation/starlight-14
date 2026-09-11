@@ -18,7 +18,7 @@
     - !type:TraitsRequirement # Starlight
       traits:
         - Iterator
-        - Muted
+        #- Muted Ronstation: No, we don't hate our folks with disabilities.
       inverted: true
   weight: 10
   startingGear: CMOGear
