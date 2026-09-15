@@ -1,5 +1,5 @@
 - type: guideEntry
-  id: RonstationRuleset
+  id: RonstationRules
   name: guide-entry-rules
   ruleEntry: true
   text: "/ServerInfo/Guidebook/_Ronstation/ServerRules/Rules.xml"
