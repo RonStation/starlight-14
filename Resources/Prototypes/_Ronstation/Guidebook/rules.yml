@@ -42,6 +42,7 @@
     - RuleRSR6
     - RuleRSR7
     - RuleRSR8
+    - RuleRSR9
 
 - type: guideEntry
   id: RonstationSpecificRules
@@ -134,56 +135,63 @@
   name: guide-entry-rs-rp-1
   ruleEntry: true
   priority: 1
-  text: "/ServerInfo/Guidebook/_Ronstation/ServerRules/RoleplayRules/RuleRSR1SelfAntag.xml"
+  text: "/ServerInfo/Guidebook/_Ronstation/ServerRules/RoleplayRules/RuleRSR1MRPStandards.xml"
 
 - type: guideEntry
   id: RuleRSR2
   name: guide-entry-rs-rp-2
   ruleEntry: true
   priority: 2
-  text: "/ServerInfo/Guidebook/_Ronstation/ServerRules/RoleplayRules/RuleRSR2Escalation.xml"
+  text: "/ServerInfo/Guidebook/_Ronstation/ServerRules/RoleplayRules/RuleRSR2SelfAntag.xml"
 
 - type: guideEntry
   id: RuleRSR3
   name: guide-entry-rs-rp-3
   ruleEntry: true
   priority: 3
-  text: "/ServerInfo/Guidebook/_Ronstation/ServerRules/RoleplayRules/RuleRSR3Players.xml"
+  text: "/ServerInfo/Guidebook/_Ronstation/ServerRules/RoleplayRules/RuleRSR3Escalation.xml"
 
 - type: guideEntry
   id: RuleRSR4
   name: guide-entry-rs-rp-4
   ruleEntry: true
   priority: 4
-  text: "/ServerInfo/Guidebook/_Ronstation/ServerRules/RoleplayRules/RuleRSR4Roleplay.xml"
+  text: "/ServerInfo/Guidebook/_Ronstation/ServerRules/RoleplayRules/RuleRSR4Players.xml"
 
 - type: guideEntry
   id: RuleRSR5
   name: guide-entry-rs-rp-5
   ruleEntry: true
   priority: 5
-  text: "/ServerInfo/Guidebook/_Ronstation/ServerRules/RoleplayRules/RuleRSR5Metacom.xml"
+  text: "/ServerInfo/Guidebook/_Ronstation/ServerRules/RoleplayRules/RuleRSR5Roleplay.xml"
 
 - type: guideEntry
   id: RuleRSR6
   name: guide-entry-rs-rp-6
   ruleEntry: true
   priority: 6
-  text: "/ServerInfo/Guidebook/_Ronstation/ServerRules/RoleplayRules/RuleRSR6Metagaming.xml"
+  text: "/ServerInfo/Guidebook/_Ronstation/ServerRules/RoleplayRules/RuleRSR6Metacom.xml"
 
 - type: guideEntry
   id: RuleRSR7
   name: guide-entry-rs-rp-7
   ruleEntry: true
   priority: 7
-  text: "/ServerInfo/Guidebook/_Ronstation/ServerRules/RoleplayRules/RuleRSR7Metagrudge.xml"
+  text: "/ServerInfo/Guidebook/_Ronstation/ServerRules/RoleplayRules/RuleRSR7Metagaming.xml"
 
 - type: guideEntry
   id: RuleRSR8
   name: guide-entry-rs-rp-8
   ruleEntry: true
   priority: 8
-  text: "/ServerInfo/Guidebook/_Ronstation/ServerRules/RoleplayRules/RuleRSR8RoleAbandon.xml"
+  text: "/ServerInfo/Guidebook/_Ronstation/ServerRules/RoleplayRules/RuleRSR8Metagrudge.xml"
+
+- type: guideEntry
+  id: RuleRSR9
+  name: guide-entry-rs-rp-9
+  ruleEntry: true
+  priority: 9
+  text: "/ServerInfo/Guidebook/_Ronstation/ServerRules/RoleplayRules/RuleRSR9RoleAbandon.xml"
 
 # Specific Rules
 
