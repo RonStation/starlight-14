@@ -30,7 +30,7 @@
       cell_slot: !type:ContainerSlot
   - type: EnergyDomeGenerator
     damageEnergyDraw: 8
-    domePrototype: EnergyDomeSmallRed
+    domePrototype: EnergyDomeSmallPink # Because this was a miss on my part originally, this is what the HoS' hardsuit actually uses
   - type: PowerCellDraw
     enabled: false
     drawRate: 2
