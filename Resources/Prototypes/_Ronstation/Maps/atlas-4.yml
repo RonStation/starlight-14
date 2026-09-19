@@ -32,6 +32,7 @@
           Janitor: [ 1, 1 ]
           Chaplain: [ 1, 1 ]
           ServiceWorker: [ 1, 1 ]
+          Performer: [ 1, 1 ]
           RadioHost: [ 1, 1 ]
           Clown: [ 1, 1 ]
           Mime: [ 1, 1 ]
@@ -40,11 +41,15 @@
           StationEngineer: [ 2, 2 ]
           TechnicalAssistant: [ 1, 1 ]
           # medical
-          Chemist: [ 1, 1 ]
+          Chemist: [ 2, 2 ]
+          Surgeon: [ 1, 1 ]
+          Paramedic: [ 1, 1 ]
+          Psychologist: [ 1, 1 ]
           MedicalDoctor: [ 2, 2 ]
           MedicalIntern: [ 1, 1 ]
           # science
           Scientist: [ 2, 2 ]
+          Roboticist: [ 2, 2 ]
           ResearchAssistant: [ 1, 1 ]
           # security
           Warden: [ 1, 1 ]
@@ -54,13 +59,17 @@
           SecurityCadet: [ 1, 1 ]
           Lawyer: [ 1, 1 ]
           # cargo
-          SalvageSpecialist: [ 2, 2 ]
+          SalvageLead: [ 1, 1 ]
+          SalvageSpecialist: [ 1, 1 ] # Only one. You know who you are. Give station materials, play mining instead!!
+          MiningSpecialist: [ 2, 4 ] # Mining is not Salvage. Interract with station. Stop being selfish.
           CargoTechnician: [ 3, 3 ]
+          MailTech: [ 1, 2 ]
           # civilian
-          Passenger: [ -1, -1 ]
+          AssistantManager: [1, 1]
+          Assistant: [ -1, -1 ]
           # silicon
           StationAi: [ 1, 1 ]
-          Borg: [ 1, 1 ]
+          Borg: [ 2, 2 ]
           # Law
           Magistrate: [ 1, 1 ]
           IAA: [ 2, 2 ]

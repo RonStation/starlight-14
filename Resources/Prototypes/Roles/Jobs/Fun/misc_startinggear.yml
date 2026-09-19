@@ -157,17 +157,17 @@
     - RubberStampStandby
     - RubberStampApproved
     - RubberStampDenied #starlight end
-    - WeaponTetherGunAdmin #Ronstation start - aghost QoL
+    - RubberStampIWBYA # Ronstation start - aghost QoL
+    - WeaponTetherGunAdmin
     - WeaponForceGunAdmin
     - AdminHypo
     - DoorRemoteAll
-    - SuperSynthesizerInstrumentAdmeme # Because why not?
+    - SuperSynthesizerInstrumentAdmeme
     - RCDExperimental
     - RPDExperimental
     - RPLDExperimental
     - SprayPainterRecharging
-    - RubberStampIWBYA # :)
-    - ParcelWrapAdmeme #Ronstation end - aghost QoL
+    - ParcelWrapAdmeme # Ronstation end - aghost QoL
 
 #Gladiator with spear
 - type: startingGear
