@@ -61,7 +61,7 @@
           # cargo
           SalvageLead: [ 1, 1 ]
           SalvageSpecialist: [ 1, 1 ] # Only one. You know who you are. Give station materials, play mining instead!!
-          MiningSpecialist: [ 2, 4 ] # Mining is not Salvage. Interract with station. Stop being selfish.
+          MiningSpecialist: [ 2, 4 ] # Mining is not Salvage. Actually play the station roles in the station game!
           CargoTechnician: [ 3, 3 ]
           MailTech: [ 1, 2 ]
           # civilian
