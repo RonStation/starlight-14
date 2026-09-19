@@ -133,11 +133,12 @@
   equipment:
     back: ClothingBackpackSatchelAdmin
     id: AdminPDA
+    eyes: ClothingEyesGlassesCentComm # Ronstation - aghost QoL
     belt: ClothingBeltChiefEngineerFilled #starlight start
   storage:
     back:
     - AccessConfiguratorUniversal
-    - AnomalyScanner
+    - AnomalyScannerAdmin # Ronstation - aghost QoL
     - RubberStampCentcom
     - RubberStampCAD
     - RubberStampCED
@@ -156,6 +157,17 @@
     - RubberStampStandby
     - RubberStampApproved
     - RubberStampDenied #starlight end
+    - WeaponTetherGunAdmin #Ronstation start - aghost QoL
+    - WeaponForceGunAdmin
+    - AdminHypo
+    - DoorRemoteAll
+    - SuperSynthesizerInstrumentAdmeme # Because why not?
+    - RCDExperimental
+    - RPDExperimental
+    - RPLDExperimental
+    - SprayPainterRecharging
+    - RubberStampIWBYA # :)
+    - ParcelWrapAdmeme #Ronstation end - aghost QoL
 
 #Gladiator with spear
 - type: startingGear
