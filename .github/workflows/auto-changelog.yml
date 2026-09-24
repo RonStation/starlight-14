@@ -99,7 +99,7 @@ jobs:
       - name: Display changelog after update
         if: steps.get_pr.outputs.result != ''
         run: |
-          cat "Resources/Changelog/ChangelogStarlight.yml"
+          cat "Resources/Changelog/ChangelogRonstation.yml"
 
       - name: Git status before commit
         if: steps.get_pr.outputs.result != ''
@@ -111,7 +111,7 @@ jobs:
         run: |
           git config --global user.name "${{ vars.CHANGELOG_USER }}"
           git config --global user.email "${{ vars.CHANGELOG_EMAIL }}"
-          git add "Resources/Changelog/ChangelogStarlight.yml"
+          git add "Resources/Changelog/ChangelogRonstation.yml"
           if git diff --cached --quiet; then
             echo "No changes to commit."
           else
