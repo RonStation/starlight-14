@@ -992,7 +992,7 @@
     uiKey: enum.PdaUiKey.Key
     preinstalled:
       - CrewManifestCartridge
-      - NotekeeperCartridge
+      #- NotekeeperCartridge  Ronstation: PDAs just refuse to have more than six apps. Nanochat is actually really useful so I feel like we can lose this one app...
       - NanoTaskCartridge
       - NewsReaderCartridge
       - MedTekCartridge
