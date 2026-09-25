@@ -65,7 +65,6 @@
     eyes: ClothingEyesGlassesCentComm
     id: CentCommDivisionPDA
     ears: ClothingHeadsetAltCentComDivHead
-    pocket1: WeaponDisabler
   inhand:
   - MindShieldImplanter
   - DeathRattleImplanterCentcomm
