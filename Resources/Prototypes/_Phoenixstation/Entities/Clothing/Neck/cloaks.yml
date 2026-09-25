@@ -3,7 +3,7 @@
   parent:  [ClothingNeckBase, BaseCentcommContraband]
   id: ClothingNeckCloakCCSDFireline
   name: CC fireline cloak
-  description: A heavily modified M-81 Fireline cloak, for the devoted sector CC Security Division Officer. Smells of pumpkin spice.
+  description: A custom cloak made by and for the Security division's Head, combining powerful tech and traditional Avali nanoweaving techniques. Smells like Pumpkin spice.
   suffix: Admeme, DO NOT MAP
   components:
   - type: Sprite
