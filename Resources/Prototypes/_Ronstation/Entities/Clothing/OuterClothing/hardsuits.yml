@@ -1,6 +1,6 @@
 #CC Sec Div Hardsuit
 - type: entity
-  parent: ClothingOuterHardsuitGreenshield # The experimental hardsuit was removed for a reason so I wanted to change this to something that is more reasonable for normal station gameplay
+  parent: ClothingOuterHardsuitGreenshield # The experimental hardsuit was removed for a reason so I wanted to change this to something that is more balanced for normal station gameplay, were Semper ever actually on station for a meaningful reason.
   categories: [ DoNotMap ]
   suffix: Admeme, DO NOT MAP
   id: ClothingOuterHardsuitCCSDH

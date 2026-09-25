@@ -14,5 +14,9 @@
         type: ChameleonBoundUserInterface
   - type: Tag
     tags: # Explicitly defined, to prevent duplicate entries in chameleon items.
-    - ScurretWearable # This is already admeme. Letting pets wear it is just for extra silly shenanigans
+    - ScurretWearable # Here because it allows for more admeme shenanigans. Remember to chameleon it so it doesn't look strange!
     - CorgiWearable
+- type: entity
+  id: ClothingBackpackDuffelHoldingRSChameleonCC
+  parent: [ClothingBackpackDuffelHoldingRSChameleon, BaseCentcommContraband]
+  suffix: CCO, Chameleon, DO NOT MAP

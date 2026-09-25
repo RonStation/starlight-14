@@ -35,7 +35,7 @@
 
 # CentCom Division Head cards, based off of the ERT Leader's ID card. Defined so that they can be chameleoned by the catchall card (or Agent IDs! Impersonation larp for MRP. Good luck faking heads though.)
 - type: entity
-  parent: IDCardStandard
+  parent: [ IDCardStandard, BaseCentcommContraband ]
   id: CCDAdminHeadIDCard
   name: CentComm Admin. Division Head ID
   description: An ID card for the prestigous Head of CC's Administration division.
@@ -62,7 +62,7 @@
     listNumber: false
 
 - type: entity
-  parent: IDCardStandard
+  parent: [ IDCardStandard, BaseCentcommContraband ]
   id: CCDSecHeadIDCard
   name: CentComm Sec. Division Head ID
   description: An ID card for the stalwart Head of CC's Security division.
@@ -89,7 +89,7 @@
     listNumber: false
 
 - type: entity
-  parent: IDCardStandard
+  parent: [ IDCardStandard, BaseCentcommContraband ]
   id: CCDMedHeadIDCard
   name: CentComm Med. Division Head ID
   description: An ID card for the stalwart Head of CC's Security division.
@@ -116,7 +116,7 @@
     listNumber: false
 
 - type: entity
-  parent: IDCardStandard
+  parent: [ IDCardStandard, BaseCentcommContraband ]
   id: CCDRnDHeadIDCard
   description: An ID card for the inquisiting Head of CC's Research division.
   name: CentComm Research Division Head ID
@@ -143,7 +143,7 @@
     listNumber: false
 
 - type: entity
-  parent: IDCardStandard
+  parent: [ IDCardStandard, BaseCentcommContraband ]
   id: CCDEngiHeadIDCard
   name: CentComm Engi. Division Head ID
   description: An ID card for the bright Head of CC's Engineering division.
@@ -170,7 +170,7 @@
     listNumber: false
 
 - type: entity
-  parent: IDCardStandard
+  parent: [ IDCardStandard, BaseCentcommContraband ]
   id: CCDCargoHeadIDCard
   name: CentComm Cargo Division Head ID
   description: An ID card for the productive Head of CC's Cargo division.
@@ -197,7 +197,7 @@
     listNumber: false
 
 - type: entity
-  parent: IDCardStandard
+  parent: [ IDCardStandard, BaseCentcommContraband ]
   id: CCDDomesticHeadIDCard
   name: CentComm Domestic Division Head ID
   description: An ID card for the caring Head of CC's Domestic division.
@@ -224,7 +224,7 @@
     listNumber: false
 
 - type: entity
-  parent: IDCardStandard
+  parent: [ IDCardStandard, BaseCentcommContraband ]
   id: CCDSpecOpsHeadIDCard
   name: CentComm Spec. Ops. Division Head ID
   description: An ID card for the mystical Head of CC's Special Operations division.
@@ -251,7 +251,7 @@
     listNumber: false
 
 - type: entity
-  parent: IDCardStandard
+  parent: [ IDCardStandard, BaseCentcommContraband ]
   id: CCDIntelHeadIDCard
   name: CentComm Intel. Division Head ID
   description: An ID card for the prepared Head of CC's Intelligence division.
@@ -280,7 +280,7 @@
 # General Division ID cards
 
 - type: entity
-  parent: IDCardStandard
+  parent: [ IDCardStandard, BaseCentcommContraband ]
   id: CCDAdminIDCard
   name: CentComm Admin. Division ID
   description: An ID card for a member of the CC Administration division.
@@ -307,7 +307,7 @@
     listNumber: false
 
 - type: entity
-  parent: IDCardStandard
+  parent: [ IDCardStandard, BaseCentcommContraband ]
   id: CCDSecIDCard
   name: CentComm Sec. Division ID
   description: An ID card for a member of the CC Security division.
@@ -334,7 +334,7 @@
     listNumber: false
 
 - type: entity
-  parent: IDCardStandard
+  parent: [ IDCardStandard, BaseCentcommContraband ]
   id: CCDMedIDCard
   name: CentComm Med. Division ID
   description: An ID card for a member of the CC Medical division.
@@ -361,7 +361,7 @@
     listNumber: false
 
 - type: entity
-  parent: IDCardStandard
+  parent: [ IDCardStandard, BaseCentcommContraband ]
   id: CCDRnDIDCard
   name: CentComm Research Division ID
   description: An ID card for a member of the CC Research division.
@@ -388,7 +388,7 @@
     listNumber: false
 
 - type: entity
-  parent: IDCardStandard
+  parent: [ IDCardStandard, BaseCentcommContraband ]
   id: CCDEngiIDCard
   name: CentComm Engi. Division ID
   description: An ID card for a member of the CC Engineering division.
@@ -415,7 +415,7 @@
     listNumber: false
 
 - type: entity
-  parent: IDCardStandard
+  parent: [ IDCardStandard, BaseCentcommContraband ]
   id: CCDCargoIDCard
   name: CentComm Cargo Division ID
   description: An ID card for a member of the CC Cargo division.
@@ -442,7 +442,7 @@
     listNumber: false
 
 - type: entity
-  parent: IDCardStandard
+  parent: [ IDCardStandard, BaseCentcommContraband ]
   id: CCDDomesticIDCard
   name: CentComm Domestic Division ID
   description: An ID card for a member of the CC Domestic division.
@@ -469,7 +469,7 @@
     listNumber: false
 
 - type: entity
-  parent: IDCardStandard
+  parent: [ IDCardStandard, BaseCentcommContraband ]
   id: CCDSpecOpsIDCard
   name: CentComm Spec. Ops. Division ID
   description: An ID card for a member of the CC Special Operations division.
@@ -496,7 +496,7 @@
     listNumber: false
 
 - type: entity
-  parent: IDCardStandard
+  parent: [ IDCardStandard, BaseCentcommContraband ]
   id: CCDIntelIDCard
   name: CentComm Intel. Division ID
   description: An ID card for a member of the CC Intelligence division.
