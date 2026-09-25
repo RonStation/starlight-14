@@ -5,7 +5,7 @@
   suffix: Admeme, DO NOT MAP
   id: ClothingOuterHardsuitCCSDExperimental
   name: CentComm Sec Division Officer Hardsuit
-  description: A high-tech hardsuit meant to eventually replace the standard security suit, it boasts an ID-Lock and Gun-Lock system. This one has been modified further to suit the needs of the sector's CC Sec Division Officer.
+  description: A high-tech hardsuit meant to eventually replace the standard security suit, it boasts an ID-Lock and Gun-Lock system. This one has been modified further to suit the needs of the sector's CC Head of the Security Division.
   components:
     - type: Contraband
       allowedDepartments: [ CentralCommand ]
