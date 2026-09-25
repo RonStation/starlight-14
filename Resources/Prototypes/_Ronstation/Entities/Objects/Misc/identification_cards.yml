@@ -4,7 +4,7 @@
   id: CentcomIDCardDivision
   name: CentComm Division ID card
   suffix: Centcomm, Divisions
-  description: An ID card restricted to members of Central Command's various divisions. If you have to ask if you're allowed, you likely aren't.
+  description: An ID card restricted to members of Central Command's various divisions, and trusted officials. If you have to ask if you're allowed to have this, you definitely aren't.
   components:
   - type: Sprite
     sprite: _Starlight/Objects/Misc/id_cards.rsi
