@@ -56,3 +56,16 @@
   inhand:
   - MindShieldImplanter
   - DeathRattleImplanterCentcomm
+
+- type: startingGear
+  id: CentcomBorgiGear
+  equipment:
+    back: ClothingBackpackSatchelHoldingCentcomFormalFilled
+    outerClothing: ClothingOuterHardsuitERTEngineer
+    eyes: ClothingEyesGlassesCentComm
+    id: CentCommDivisionPDA
+    ears: ClothingHeadsetAltCentComDivHead
+    pocket1: WeaponDisabler
+  inhand:
+  - MindShieldImplanter
+  - DeathRattleImplanterCentcomm

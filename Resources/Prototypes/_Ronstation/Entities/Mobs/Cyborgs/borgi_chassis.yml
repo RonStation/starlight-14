@@ -30,7 +30,7 @@
         - - CentralCommand
     - type: EmpImmune
     - type: Loadout
-      prototypes: [CentcomSmartBorgiGear]
+      prototypes: [CentcomBorgiGear]
     - type: SiliconLawProvider
       laws: CCObeyinglawset
     - type: BorgChassis
