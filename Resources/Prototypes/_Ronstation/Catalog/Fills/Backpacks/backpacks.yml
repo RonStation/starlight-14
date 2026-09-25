@@ -105,7 +105,7 @@
       - id: Handcuffs # I think its more fair to give three than four. This also de-clutters it slightly.
       - id: Handcuffs
       - id: Handcuffs
-      - id: LanternFlash Self-defense, AND a good light source. Good for emergencies.
+      - id: LanternFlash # Self-defense, AND a good light source. Good for emergencies.
       - id: MagazineDMRSP
       - id: MagazineDMRSP
       - id: MagazineDMRIncendiary # only one fire mag. Call it the Phoenix special.
@@ -115,8 +115,7 @@
       - id: GreenLightShield # Because of course the Head of the Security Division does Greenshield work.
       - id: BodyBagCCFolded
       - id: BodyBagCCFolded
-      - id: WeaponLightMachineGunM492CC
-      - id: LightRifleHeavyMagazineIncendiary # Reducing the amount of ammo that is available for this is better balance, since they can't be printed anymore (and thus require manual reloading)
+      - id: WeaponLightMachineGunM492CC # One box. No spares. Can't print 'em. Weapon was removed from sec armories up-stream, so limiting the usage is the best.
       - id: ClothingOuterHardsuitCCSDH # Has an equip delay, and unique sounds; it also actually takes up a 4x4 grid, like other bag-friendly hardsuits.
       - id: ClothingMaskGasCCSD # To go with the hardsuit. Explicitly doesn't block NV because gas masks with flash protection either always block NV, or stop blocking NV when you've flipped it up and down. (blame the ss14 spaghetti code)
       - id: CentCommCommunicationTablet
