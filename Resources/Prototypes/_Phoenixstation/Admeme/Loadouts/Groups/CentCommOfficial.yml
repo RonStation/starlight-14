@@ -3,10 +3,11 @@
   groups:
     - CCOeyes
     - CCOhead
+    - CCOmask
     - CCOsuit
+    - CCOgloves # Ronstation: Custom gloves, including actual CC gloves.
     - CCOOuterClothing
     - CCOlegs
-    - InsulsCaptain # Ronstation: Because being able to choose your gloves is cool. :> Should totally make CC insuls later...
     - CCObackpack
     - CCOextra
     - CCONeck
@@ -40,6 +41,26 @@
   equipment:
     head: ClothingHeadHatCCberet
 
+# Ronstation: Gloves. Now with the option for proper CC colors!
+
+- type: loadoutGroup
+  id: CCOgloves
+  minLimit: 0
+  maxLimit: 1
+  name: CCO-Gloves-Group
+  loadouts:
+    - CCOCCGloves
+    - InsulsCaptain # If you would rather still have the blue trim.
+    - InsulsRegular # Uses upstream glove defintions instead of remaking them.
+    - InsulsCombat
+    - InsulsMercenary
+    - InsulsMaid
+    - InsulsScrapper
+
+- type: loadout
+  id: CCOCCGloves
+  equipment:
+    gloves: ClothingHandsGlovesCentComm
 
 # Jumpsuit
 
@@ -155,6 +176,39 @@
   equipment:
     eyes: ClothingEyesGlassesJamjarCentComm
 
+#Ronstation: Mask. Multiple choices. Choose wisely.
+
+- type: loadoutGroup
+  id: CCOmask
+  minLimit: 1
+  maxLimit: 1
+  name: CCO-Mask-Group
+  loadouts:
+    - CCOCCmask
+    - CCOERTMask
+    - CCOSDMask
+    - CCOWeldingMask
+
+- type: loadout
+  id: CCOCCmask
+  equipment:
+    mask: ClothingMaskGasCentcom
+
+- type: loadout
+  id: CCOERTMask
+  equipment:
+    mask: ClothingMaskGasERT
+
+- type: loadout
+  id: CCOSDMask
+  equipment:
+    mask: ClothingMaskGasCCSD
+
+- type: loadout
+  id: CCOWeldingMask
+  equipment:
+    mask: ClothingMaskWeldingGas
+
 #Outer clothing, What probably should have been, now actually existing!
 
 - type: loadoutGroup
@@ -266,7 +320,7 @@
   name: CCO-Backpack-Group
   loadouts:
     - CCOSatchelLeather
-    - CCOCCSatchel
+    - CCOCCSatchel # These are outclassed by the chameleon varients of bags of holding, but are here for people who want to limit their character.
     - CCOSatchelHolding
     - CCOBackpackHolding
     - CCODuffelHolding
@@ -284,17 +338,17 @@
 - type: loadout
   id: CCOSatchelHolding
   equipment:
-    back: ClothingBackpackSatchelHolding
+    back: ClothingBackpackSatchelHoldingRSChameleonCC # Ronstation: Making use of reduced tech debt. Also makes it CentComm contra.
 
 - type: loadout
   id: CCOBackpackHolding
   equipment:
-    back: ClothingBackpackHolding
+    back: ClothingBackpackHoldingRSChameleonCC # Ronstation: Making use of reduced tech debt. Also makes it CentComm contra.
 
 - type: loadout
   id: CCODuffelHolding
   equipment:
-    back: ClothingBackpackDuffelHolding
+    back: ClothingBackpackDuffelHoldingRSChameleonCC # Ronstation: Making use of reduced tech debt. Also makes it CentComm contra.
 
 # Sidearm/extra
 

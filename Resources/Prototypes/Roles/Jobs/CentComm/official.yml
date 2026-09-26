@@ -40,6 +40,9 @@
     - DoorRemoteCustom
     - GreenPhone
     - RubberStampCentcom
+    - DoubleEmergencyNitrogenTankFilled # For some reason CCOs don't spawn with a survival box, but there's no box with double tanks anyways. Only the best for CentComm...
+    - DoubleEmergencyOxygenTankFilled
+    - BoxSurvivalNonBreatherExtended # Double rations for CCOs.
     #Ronstation end - porting Phoenix Station Loadouts + some extra additions/polish
 
 - type: chameleonOutfit

@@ -21,6 +21,7 @@
     - id: MagazineMagnumAP
     - id: ClothingEyesGlassesCentComm
     - id: ClothingEyesHudCentComm
+    - id: CentCommCommunicationTablet
 # Filled modsuit for ERT leader admeme, 12 gauge speedloaders
 - type: entity
   parent: ClothingBackpackERTLeader
@@ -47,6 +48,7 @@
       - id: BodyBagCCFolded
       - id: BodyBagCCFolded
       - id: BodyBagCCFolded
+      - id: CentCommCommunicationTablet
 # Filled modsuit for ERT leader admeme, XL8/Lecter mags
 - type: entity
   parent: ClothingBackpackERTLeader
@@ -73,59 +75,47 @@
       - id: BodyBagCCFolded
       - id: BodyBagCCFolded
       - id: BodyBagCCFolded
+      - id: CentCommCommunicationTablet
 # Written by Semper based off of Atakku's original code, further modified from contribution to Ronstation
 # This explicitly now targets a role as CC Security division
 - type: entity
   id: ClothingBackpackHoldingCentcomOfficerFilled
-  parent: [ ClothingBackpackHolding, BaseChameleon, BaseCentcommContraband ]
-  suffix: Filled, Centcom Officer, Admeme, Chameleon
+  parent: [ClothingBackpackHoldingRSChameleonCC] # Less redundant code.
+  suffix: Filled, Centcom Officer, Admeme
   components:
-  - type: ChameleonClothing
-    slot: [back]
-    default: ClothingBackpackHolding
-  - type: UserInterface
-    interfaces:
-      enum.StorageUiKey.Key:
-        type: StorageBoundUserInterface
-      enum.ChameleonUiKey.Key:
-        type: ChameleonBoundUserInterface
-  - type: Tag
-    tags: []
   - type: StorageFill
     contents:
       - id: RubberStampCSD
       - id: RubberStampCentcom
       - id: RubberStampIWBYA
       - id: BoxStampsCCAdministrative
-      - id: CommandTrackerImplanter
-      - id: ToolDebug
+      - id: SyndicateJawsOfLifeStealth # Replacing the debug tool with actual tools.
+      - id: PowerDrill
       - id: WelderExperimental
+      - id: Multitool
+      - id: HolofanProjectorBorg # you can take the bird out of atmos, but you can't take the atmos out of the bird
       - id: RCDExperimental
       - id: RPDExperimental
       - id: RPLDExperimental
-      - id: Multitool
       - id: BoxSurvivalNonBreatherExtended
-      - id: DoubleEmergencyNitrogenTankFilled
-      - id: DoubleEmergencyOxygenTankFilled
-      - id: AgentIDCard
+      - id: BorgHoloprojectorSecurity
+      - id: TSFBatonModel5 # Anti-Tider Baton.
       - id: BoxFolderCentComClipboardThreePapers
       - id: WeaponDisablerSMG
-      - id: BoxHandcuff
-      - id: Flash
-      - id: FlashlightSeclite
-      - id: MagazineDMRIncendiary
-      - id: MagazineDMRIncendiary
-      - id: MagazineDMRIncendiary
-      - id: MagazineDMRIncendiary
+      - id: Handcuffs # I think its more fair to give three than four. This also de-clutters it slightly.
+      - id: Handcuffs
+      - id: Handcuffs
+      - id: LanternFlash # Self-defense, AND a good light source. Good for emergencies.
+      - id: MagazineDMRSP
+      - id: MagazineDMRSP
+      - id: MagazineDMRIncendiary # only one fire mag. Call it the Phoenix special.
       - id: MagazinePistol40FMJ
       - id: MagazinePistol40FMJ
-      - id: MagazinePistol40FMJ
-      - id: MagazinePistol40FMJ
-      - id: ClothingEyesHudCCDivHead
+      - id: ClothingEyesGlassesCCDivHead # This still blocks NV and does not grant NV. So that there's some semblance of balance.
+      - id: GreenLightShield # Because of course the Head of the Security Division does Greenshield work.
       - id: BodyBagCCFolded
       - id: BodyBagCCFolded
-      - id: BodyBagCCFolded
-      - id: WeaponLightMachineGunM492CC
-      - id: LightRifleHeavyMagazineIncendiary
-      - id: LightRifleHeavyMagazineIncendiary
-      - id: ClothingOuterHardsuitCCSDExperimental
+      - id: WeaponLightMachineGunM492CC # One box. No spares. Can't print 'em. Weapon was removed from sec armories up-stream, so limiting the usage is the best.
+      - id: ClothingOuterHardsuitCCSDH # Has an equip delay, and unique sounds; it also actually takes up a 4x4 grid, like other bag-friendly hardsuits.
+      - id: ClothingMaskGasCCSD # To go with the hardsuit. Explicitly doesn't block NV because gas masks with flash protection either always block NV, or stop blocking NV when you've flipped it up and down. (blame the ss14 spaghetti code)
+      - id: CentCommCommunicationTablet
