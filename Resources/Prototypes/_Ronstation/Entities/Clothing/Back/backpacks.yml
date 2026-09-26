@@ -20,3 +20,22 @@
   id: ClothingBackpackHoldingRSChameleonCC
   parent: [ClothingBackpackHoldingRSChameleon, BaseCentcommContraband]
   suffix: CCO, Chameleon, DO NOT MAP
+  name: lavish backpack of holding
+  description: An expensive backpack that opens into a localized pocket of bluespace. Custom tailored to CentComm's signature branding. Fancy!
+  components:
+  - type: ChameleonClothing
+    slot: [back]
+    default: ClothingBackpackHolding
+  - type: Tag
+    tags: # Has to be seperately defined as the original is not whitelisted.
+    - ScurretWearable # Here because it allows for more admeme shenanigans. Remember to chameleon it so it doesn't look strange!
+    - CorgiWearable
+    - WhitelistChameleon # Because this has a unique sprite, and defaults to itself.
+  - type: Sprite
+    sprite: _Ronstation/Clothing/Back/Backpacks/ccholding.rsi
+    state: holding
+    layers:
+    - state: holding
+    - state: holding-unlit
+      shader: unshaded
+

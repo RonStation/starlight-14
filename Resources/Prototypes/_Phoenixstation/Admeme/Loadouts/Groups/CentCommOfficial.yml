@@ -338,17 +338,17 @@
 - type: loadout
   id: CCOSatchelHolding
   equipment:
-    back: ClothingBackpackSatchelHoldingRSChameleon # Ronstation: Making use of reduced tech debt.
+    back: ClothingBackpackSatchelHoldingRSChameleonCC # Ronstation: Making use of reduced tech debt. Also makes it CentComm contra.
 
 - type: loadout
   id: CCOBackpackHolding
   equipment:
-    back: ClothingBackpackHoldingRSChameleon # Ronstation: Making use of reduced tech debt.
+    back: ClothingBackpackHoldingRSChameleonCC # Ronstation: Making use of reduced tech debt. Also makes it CentComm contra.
 
 - type: loadout
   id: CCODuffelHolding
   equipment:
-    back: ClothingBackpackDuffelHoldingRSChameleon # Ronstation: Making use of reduced tech debt.
+    back: ClothingBackpackDuffelHoldingRSChameleonCC # Ronstation: Making use of reduced tech debt. Also makes it CentComm contra.
 
 # Sidearm/extra
 

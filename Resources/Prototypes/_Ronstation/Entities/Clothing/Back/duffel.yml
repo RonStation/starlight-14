@@ -20,3 +20,21 @@
   id: ClothingBackpackDuffelHoldingRSChameleonCC
   parent: [ClothingBackpackDuffelHoldingRSChameleon, BaseCentcommContraband]
   suffix: CCO, Chameleon, DO NOT MAP
+  name: lavish duffelbag of holding
+  description: An expensive duffelbag that opens into a localized pocket of bluespace. Custom tailored to CentComm's signature branding. Fancy!
+  components:
+  - type: ChameleonClothing
+    slot: [back]
+    default: ClothingBackpackDuffelHoldingRSChameleonCC
+  - type: Tag
+    tags: # Has to be seperately defined as the original is not whitelisted.
+    - ScurretWearable # Here because it allows for more admeme shenanigans. Remember to chameleon it so it doesn't look strange!
+    - CorgiWearable
+    - WhitelistChameleon # Because this has a unique sprite, and defaults to itself.
+  - type: Sprite
+    sprite: _Ronstation/Clothing/Back/Duffels/ccholding.rsi
+    state: icon
+    layers:
+    - state: icon
+    - state: icon-unlit
+      shader: unshaded
