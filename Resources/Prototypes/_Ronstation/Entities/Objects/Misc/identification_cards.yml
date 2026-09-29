@@ -1,0 +1,44 @@
+- type: entity
+  parent: [ IDCardStandard, BaseCentcommContraband ]
+  id: CentcomIDCardDivision
+  name: CentComm Division ID card
+  suffix: Centcomm, Divisions
+  description: An ID card restricted to members of Central Command's various divisions. If you have to ask if you're allowed, you likely aren't.
+  components:
+  - type: Sprite
+    sprite: _Starlight/Objects/Misc/id_cards.rsi
+    layers:
+    - state: centcom
+    - sprite: Objects/Misc/id_cards.rsi
+      state: stripe_top
+      color: "#999999"
+    - sprite: Objects/Misc/id_cards.rsi
+      state: stripe_bottom
+      color: "#6b6b6b"
+    - sprite: _Starlight/Interface/Misc/job_icons.rsi
+      offset:  -0.09375, 0.0625 #3 pixels left, 2 pixels up
+      state: CentComm
+  - type: Clothing
+    sprite: Objects/Misc/id_cards.rsi
+  - type: Item
+    sprite: Objects/Misc/id_cards.rsi
+    heldPrefix: green
+  - type: PresetIdCard
+    job: CentralCommandOperator
+  - type: Tag #  Ignore Chameleon tags
+    tags:
+    - DoorBumpOpener
+  - type: AgentIDCard
+  - type: UIRequiresLock
+  - type: ActivatableUI
+    key: enum.AgentIDCardUiKey.Key
+    inHandsOnly: true
+  - type: UserInterface
+    interfaces:
+      enum.AgentIDCardUiKey.Key:
+        type: AgentIDCardBoundUserInterface
+      enum.ChameleonUiKey.Key:
+        type: ChameleonBoundUserInterface
+
+  - type: NanoChatCard
+    listNumber: false
