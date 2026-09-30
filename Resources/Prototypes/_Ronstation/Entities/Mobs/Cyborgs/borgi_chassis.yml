@@ -42,8 +42,16 @@
         - BorgModuleService
         - BorgModuleCargo
         - BorgModuleMining
+        - BorgModuleSupply
         - BorgModuleMedical
+        - BorgModuleSecurity
         - BorgModuleSyndicate
         - BorgModuleSyndicateAssault
         - BorgModuleEngineering
         - BorgModuleCentcomm
+        - BorgModuleMedTak
+        - XenoborgModuleGeneric
+        - XenoborgModuleScout
+        - XenoborgModuleStealth
+        - XenoborgModuleHeavy
+        - XenoborgModuleEngi
