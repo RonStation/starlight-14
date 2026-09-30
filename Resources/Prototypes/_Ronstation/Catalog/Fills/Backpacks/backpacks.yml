@@ -23,6 +23,9 @@
     - id: ClothingEyesGlassesCentComm
     - id: ClothingEyesHudCentComm
     - id: CentCommCommunicationTablet
+    - id: HolofanProjectorRecharging
+    - id: HoloprojectorEngineeringRecharging
+    - id: MedkitCombatFilled
 # Filled modsuit for ERT leader admeme, 12 gauge speedloaders
 - type: entity
   parent: ClothingBackpackHoldingBaseCCFill
@@ -51,6 +54,7 @@
     - id: BodyBagCCFolded
     - id: BodyBagCCFolded
     - id: CentCommCommunicationTablet
+    - id: MedkitCombatFilled
 # Filled modsuit for ERT leader admeme, XL8/Lecter mags
 - type: entity
   parent: ClothingBackpackHoldingBaseCCFill
@@ -79,6 +83,7 @@
       - id: BodyBagCCFolded
       - id: BodyBagCCFolded
       - id: CentCommCommunicationTablet
+      - id: MedkitCombatFilled
 # Written by Semper based off of Atakku's original code, further modified from contribution to Ronstation
 # This explicitly now targets a role as CC Security division
 - type: entity
@@ -96,12 +101,12 @@
       - id: PowerDrill
       - id: WelderExperimental
       - id: Multitool
-      - id: HolofanProjectorBorg # you can take the bird out of atmos, but you can't take the atmos out of the bird
+      - id: HolofanProjectorRecharging # you can take the bird out of atmos, but you can't take the atmos out of the bird
       - id: RCDExperimental
       - id: RPDExperimental
       - id: RPLDExperimental
       - id: BoxSurvivalNonBreatherExtended
-      - id: BorgHoloprojectorSecurity
+      - id: HoloprojectorSecurityRecharging
       - id: TSFBatonModel5 # Anti-Tider Baton.
       - id: BoxFolderCentComClipboardThreePapers
       - id: WeaponDisablerSMG
@@ -122,3 +127,4 @@
       - id: ClothingOuterHardsuitCCSDH # Has an equip delay, and unique sounds; it also actually takes up a 4x4 grid, like other bag-friendly hardsuits.
       - id: ClothingMaskGasCCSD # To go with the hardsuit. Explicitly doesn't block NV because gas masks with flash protection either always block NV, or stop blocking NV when you've flipped it up and down. (blame the ss14 spaghetti code)
       - id: CentCommCommunicationTablet
+      - id: MedkitCombatFilled
