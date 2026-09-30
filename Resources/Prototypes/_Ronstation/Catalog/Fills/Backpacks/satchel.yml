@@ -3,20 +3,25 @@
 # General CC character, rather than head of a CC department
 - type: entity
   id: ClothingBackpackSatchelHoldingCentcomFormalFilled
-  parent: [ ClothingBackpackSatchelHolding, BaseCentcommContraband ]
+  parent: ClothingBackpackSatchelHoldingBaseCCFill
   suffix: Filled, Centcom Formal, Admeme
   components:
   - type: Tag
-    tags: [] # Since it just reuses a sprite, not whitelisted for chameleon.
+    tags:
+    - ScurretWearable
+    - CorgiWearable
   - type: StorageFill
     contents:
-      - id: CommandTrackerImplanter
+      - id: RubberStampCentcom
+      - id: BoxStampsCCDepartments # So this outfit is universally applicible to any division
+      - id: BoxStampsCCAdministrative
       - id: ToolDebug
       - id: WelderExperimental
       - id: RCDExperimental
       - id: RPDExperimental
       - id: RPLDExperimental
       - id: Multitool
+      - id: DoorRemoteCustom
       - id: BoxFolderCentComClipboardThreePapers
       - id: BoxSurvivalNonBreatherExtended
       - id: DoubleEmergencyNitrogenTankFilled
@@ -24,3 +29,5 @@
       - id: SpeedLoaderMagnumSP
       - id: SpeedLoaderMagnumSP
       - id: ClothingEyesHudCentComm
+      - id: CentCommCommunicationTablet
+      - id: MedkitCombatFilled
