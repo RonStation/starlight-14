@@ -1,7 +1,7 @@
 # Remastered CC Agent admeme; presenting, Corporate Watchdog
 - type: entity
   id: ClothingBackpackSatchelHoldingCentcomWatchdogFilled
-  parent: [ClothingBackpackSatchelHoldingRSChameleon]
+  parent: ClothingBackpackSatchelHoldingBaseCCFill
   suffix: Filled, Centcom Agent, Admeme, Chameleon
   components:
   - type: ChameleonClothing

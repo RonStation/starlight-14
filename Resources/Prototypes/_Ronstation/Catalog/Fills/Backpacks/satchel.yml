@@ -3,7 +3,7 @@
 # General CC character, rather than head of a CC department
 - type: entity
   id: ClothingBackpackSatchelHoldingCentcomFormalFilled
-  parent: [ClothingBackpackSatchelHoldingRSChameleonCC]
+  parent: ClothingBackpackSatchelHoldingBaseCCFill
   suffix: Filled, Centcom Formal, Admeme
   components:
   - type: Tag

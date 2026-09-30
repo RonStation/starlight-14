@@ -1,6 +1,6 @@
 #I should've made this a seperate prototype in the first place,
 - type: entity
-  id: ClothingBackpackSatchelHoldingRSChameleon
+  id: ClothingBackpackSatchelHoldingChameleon
   parent: [ClothingBackpackSatchelHolding, BaseChameleon]
   suffix: Admeme, Chameleon, DO NOT MAP
   components:
@@ -18,15 +18,15 @@
     - ScurretWearable # Here because it allows for more admeme shenanigans. Remember to chameleon it so it doesn't look strange!
     - CorgiWearable
 - type: entity
-  id: ClothingBackpackSatchelHoldingRSChameleonCC
-  parent: [ClothingBackpackSatchelHoldingRSChameleon, BaseCentcommContraband]
+  id: ClothingBackpackSatchelHoldingCC
+  parent: [ClothingBackpackSatchelHoldingChameleon, BaseCentcommContraband]
   suffix: CCO, Chameleon, DO NOT MAP
   name: lavish satchel of holding
   description: An expensive satchel that opens into a localized pocket of bluespace. Custom tailored to CentComm's signature branding. Fancy!
   components:
   - type: ChameleonClothing
     slot: [back]
-    default: ClothingBackpackSatchelHoldingRSChameleonCC
+    default: ClothingBackpackSatchelHoldingCC
   - type: Tag
     tags: # Has to be seperately defined as the original is not whitelisted.
     - ScurretWearable
@@ -39,3 +39,12 @@
     - state: icon
     - state: icon-unlit
       shader: unshaded
+#A generic entry used for fills in outfits or other purposes. An attempt to further reduce redundant code.
+- type: entity
+  id: ClothingBackpackSatchelHoldingBaseCCFill
+  parent: ClothingBackpackSatchelHoldingCC
+  components:
+  - type: Tag
+  tags:
+    - ScurretWearable
+    - CorgiWearable
