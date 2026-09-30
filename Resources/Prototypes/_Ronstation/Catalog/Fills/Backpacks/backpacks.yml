@@ -25,6 +25,7 @@
     - id: CentCommCommunicationTablet
     - id: HolofanProjectorRecharging
     - id: HoloprojectorEngineeringRecharging
+    - id: DoorRemoteCustom
     - id: MedkitCombatFilled
 # Filled modsuit for ERT leader admeme, 12 gauge speedloaders
 - type: entity
@@ -54,6 +55,7 @@
     - id: BodyBagCCFolded
     - id: BodyBagCCFolded
     - id: CentCommCommunicationTablet
+    - id: DoorRemoteCustom
     - id: MedkitCombatFilled
 # Filled modsuit for ERT leader admeme, XL8/Lecter mags
 - type: entity
@@ -83,6 +85,7 @@
       - id: BodyBagCCFolded
       - id: BodyBagCCFolded
       - id: CentCommCommunicationTablet
+      - id: DoorRemoteCustom
       - id: MedkitCombatFilled
 # Written by Semper based off of Atakku's original code, further modified from contribution to Ronstation
 # This explicitly now targets a role as CC Security division
@@ -105,6 +108,7 @@
       - id: RCDExperimental
       - id: RPDExperimental
       - id: RPLDExperimental
+      - id: DoorRemoteCustom
       - id: BoxSurvivalNonBreatherExtended
       - id: HoloprojectorSecurityRecharging
       - id: TSFBatonModel5 # Anti-Tider Baton.

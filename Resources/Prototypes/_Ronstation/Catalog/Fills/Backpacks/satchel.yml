@@ -21,6 +21,7 @@
       - id: RPDExperimental
       - id: RPLDExperimental
       - id: Multitool
+      - id: DoorRemoteCustom
       - id: BoxFolderCentComClipboardThreePapers
       - id: BoxSurvivalNonBreatherExtended
       - id: DoubleEmergencyNitrogenTankFilled
