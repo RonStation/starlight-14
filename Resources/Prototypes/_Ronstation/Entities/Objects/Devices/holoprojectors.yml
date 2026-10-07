@@ -1,0 +1,85 @@
+# Versions of the holofans with microreactors that cannot be removed, Cyborgs have them normally. This is just for fills.
+- type: entity
+  parent: HolofanProjector
+  suffix: Admeme, DO NOT MAP
+  id: HolofanProjectorRecharging
+  name: upgraded holofan
+  description: Stop suicidal assistants from killing everyone during atmos emergencies, utilizing a sealed microreactor
+  components:
+  - type: ItemSlots
+    slots:
+      cell_slot:
+        name: power-cell-slot-component-slot-name-default
+        startingItem: PowerCellMicroreactor
+        disableEject: true
+        swap: false
+- type: entity
+  parent: HoloprojectorSecurity
+  suffix: Admeme, DO NOT MAP
+  id: HoloprojectorSecurityRecharging
+  name: upgraded holobarrier projector
+  description: Creates a solid but fragile holographic barrier, utilizing a sealed microreactor
+  components:
+  - type: ItemSlots
+    slots:
+      cell_slot:
+        name: power-cell-slot-component-slot-name-default
+        startingItem: PowerCellMicroreactor
+        disableEject: true
+        swap: false
+- type: entity
+  parent: Holoprojector
+  suffix: Admeme, DO NOT MAP
+  id: HoloprojectorRecharging
+  name: upgraded holographic sign projector
+  description: A handy-dandy holographic projector that displays a janitoral sign, utilizing a sealed microreactor.
+  components:
+  - type: ItemSlots
+    slots:
+      cell_slot:
+        name: power-cell-slot-component-slot-name-default
+        startingItem: PowerCellMicroreactor
+        disableEject: true
+        swap: false
+- type: entity
+  parent: HoloprojectorField
+  suffix: Admeme, DO NOT MAP
+  id: HoloprojectorFieldRecharging
+  name: upgraded force field projector
+  description: Creates an impassable forcefield that won't let anything through, utilizing a sealed microreactor. Close proximity may cause more cancer than its unsealed counterpart.
+  components:
+  - type: ItemSlots
+    slots:
+      cell_slot:
+        name: power-cell-slot-component-slot-name-default
+        startingItem: PowerCellMicroreactor
+        disableEject: true
+        swap: false
+- type: entity
+  parent: HoloprojectorEngineering
+  suffix: Admeme, DO NOT MAP
+  id: HoloprojectorEngineeringRecharging
+  name: upgraded engineering caution holo-projector
+  description: Creates a non-solid warning projection utilizing a sealed microreactor, meant for marking hazards
+  components:
+  - type: ItemSlots
+    slots:
+      cell_slot:
+        name: power-cell-slot-component-slot-name-default
+        startingItem: PowerCellMicroreactor
+        disableEject: true
+        swap: false
+- type: entity
+  parent: FalseShutterProjector
+  suffix: Admeme, DO NOT MAP
+  id: FalseShutterProjectorRecharging
+  name: upgraded false shutter projector
+  description: Looks almost like the real thing. Seems like someone managed to cobble this together from a self-recharging holofan.
+  components:
+  - type: ItemSlots
+    slots:
+      cell_slot:
+        name: power-cell-slot-component-slot-name-default
+        startingItem: PowerCellMicroreactor
+        disableEject: true
+        swap: false
