@@ -1,0 +1,14 @@
+- type: entity
+  id: SpawnPointCCofficial
+  parent: SpawnPointJobBase
+  name: CentComm Official
+  suffix: DO NOT MAP (yet)
+  components:
+    - type: SpawnPoint
+      job_id: CentralCommandOfficial
+    - type: Sprite
+      sprite: _Starlight/Markers/jobs.rsi
+      layers:
+        - state: green
+        - state: ntrep
+        - state: jobicon

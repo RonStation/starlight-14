@@ -1,0 +1,28 @@
+Entries:
+- author: Semper
+  changes:
+  - message: This is a dummy change to allow the system to work correctly. You can
+      ignore this entry.
+    type: Add
+  id: 1
+  time: '2026-09-23T15:53:55.000000+00:00'
+  url: https://github.com/RonStation/starlight-14
+- author: Semper, Pcer (based on their contributions to another fork)
+  changes:
+  - message: Removed SecurityDrill and IonStormPlus from scheduler pool.
+    type: Remove
+  - message: NTRep, CCO/DS, Magistrate, and NTCT are now whitelisted.
+    type: Tweak
+  - message: BSO is no longer whitelisted, in-line with previous Ronstation forks.
+    type: Tweak
+  - message: You can now have one more language than before (not including foreigner
+      bonus).
+    type: Tweak
+  - message: Translators are significantly easier to maintain, but start with small
+      cells now.
+    type: Tweak
+  id: 701
+  time: '2026-09-05T18:07:11.000000+00:00'
+  url: https://github.com/RonStation/starlight-14/pull/7
+Order: -2
+

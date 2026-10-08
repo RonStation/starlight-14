@@ -3,12 +3,14 @@
   name: job-name-deathsquad
   description: job-description-deathsquad
   playTimeTracker: JobDeathSquad
-  requirements:
-  - !type:OverallPlaytimeRequirement
-    time: 20h
-  - !type:DepartmentTimeRequirement
-    department: Security
-    time: 10h
+  #Ronstation start: whitelist CC roles to prevent abuse, don't need role reqs when its whitelisted
+  #requirements:
+  #- !type:OverallPlaytimeRequirement
+  #  time: 20h
+  #- !type:DepartmentTimeRequirement
+  #  department: Security
+  #  time: 10h
+  whitelisted: true # Ronstation end: Did you really think we'd let you play DS without approval?
   setPreference: false
   startingGear: DeathSquadGear
   icon: "JobIconDeathSquad"
