@@ -2,7 +2,7 @@
   name: M492-CC Smart LMG
   id: WeaponLightMachineGunM492CC
   parent: [WeaponLightMachineGunM492, BaseCentcommContraband]
-  description: A greener varient of the smart LMG issued to stations. If this is in use, something is horribly wrong. Uses .30 ammo.
+  description: A greener varient of the smart LMG. If this is in use, something is horribly wrong. Uses .30 ammo.
   suffix: Admeme, DO NOT MAP
   components:
   - type: Contraband

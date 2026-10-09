@@ -80,9 +80,8 @@ public sealed partial class MentorSystem : SharedMentorSystem
         var adminData = _adminManager.GetAdminData(senderSession);
 
         var senderIsAdmin = adminData?.HasFlag(AdminFlags.Adminhelp) ?? false;
-        var senderIsMentorFlagged = adminData?.HasFlag(AdminFlags.RNSLMentor) ?? false;
         var senderIsMentor = _playerRoles.IsMentor(senderSession);
-        if (!senderIsAdmin && !(senderIsMentor || senderIsMentorFlagged)  && _rateLimit.CountAction(senderSession, RateLimitKey) != RateLimitStatus.Allowed)
+        if (!senderIsAdmin && !senderIsMentor && _rateLimit.CountAction(senderSession, RateLimitKey) != RateLimitStatus.Allowed)
             return;
 
         if (message.Ticket is not Guid ticketId)
@@ -111,13 +110,13 @@ public sealed partial class MentorSystem : SharedMentorSystem
         if (ticket is null && !_tickets.TryGetValue(ticketId, out ticket))
             return;
         if (ticket.Creator != senderSession.UserId
-        && ((ticket.Mentor is null && !(senderIsMentor || senderIsMentorFlagged)) || (ticket.Mentor != senderSession.UserId))
-        && !(senderIsAdmin || senderIsMentor || senderIsMentorFlagged))
+        && ((ticket.Mentor is null && !senderIsMentor) || (ticket.Mentor != senderSession.UserId))
+        && !(senderIsAdmin || senderIsMentor))
             return;
         var escapedText = FormattedMessage.EscapeText(message.Text);
 
         var text = senderIsAdmin ? $"{(message.PlaySound ? "" : "(S) ")}[color=#9B59B6][bold]\\[admin\\][/bold] {senderSession.Name}[/color]: {escapedText}"
-                : (senderIsMentor || senderIsMentorFlagged) ? $"{(message.PlaySound ? "" : "(S) ")}[color=#00ffff][bold]\\[mentor\\][/bold] {senderSession.Name}[/color]: {escapedText}"
+                : senderIsMentor ? $"{(message.PlaySound ? "" : "(S) ")}[color=#00ffff][bold]\\[mentor\\][/bold] {senderSession.Name}[/color]: {escapedText}"
                                  : $"{(message.PlaySound ? "" : "(S) ")}{senderSession.Name}: {escapedText}";
 
         var msg = new MHelpTextMessage
@@ -129,7 +128,7 @@ public sealed partial class MentorSystem : SharedMentorSystem
             PlaySound = true
         };
         _sawmill.Info($"mhelp message: {text}");
-        if (ticket.Mentor is null && ((senderIsMentor || senderIsMentorFlagged) || senderIsAdmin))
+        if (ticket.Mentor is null && (senderIsMentor || senderIsAdmin))
         {
             ticket.Mentor = senderSession.UserId;
             var @event = new MHelpTextMessage()
@@ -172,9 +171,8 @@ public sealed partial class MentorSystem : SharedMentorSystem
         var adminData = _adminManager.GetAdminData(senderSession);
 
         var senderIsAdmin = adminData?.HasFlag(AdminFlags.Adminhelp) ?? false;
-        var senderIsMentorFlagged = adminData?.HasFlag(AdminFlags.RNSLMentor) ?? false;
         var senderIsMentor = _playerRoles.IsMentor(senderSession);
-        if (!senderIsAdmin && !(senderIsMentor || senderIsMentorFlagged) && _rateLimit.CountAction(senderSession, RateLimitKey) != RateLimitStatus.Allowed)
+        if (!senderIsAdmin && !senderIsMentor && _rateLimit.CountAction(senderSession, RateLimitKey) != RateLimitStatus.Allowed)
             return;
         if (message.Ticket is not Guid ticketId)
             return;
@@ -184,7 +182,7 @@ public sealed partial class MentorSystem : SharedMentorSystem
             return;
         if (ticket.Creator != senderSession.UserId
             && (ticket.Mentor != senderSession.UserId)
-            && !(senderIsAdmin || (senderIsMentor || senderIsMentorFlagged)))
+            && !(senderIsAdmin || senderIsMentor))
             return;
         ticket.IsClosed = true;
         var msg = new MHelpTextMessage()
@@ -216,9 +214,8 @@ public sealed partial class MentorSystem : SharedMentorSystem
         var adminData = _adminManager.GetAdminData(senderSession);
 
         var senderIsAdmin = adminData?.HasFlag(AdminFlags.Adminhelp) ?? false;
-        var senderIsMentorFlagged = adminData?.HasFlag(AdminFlags.RNSLMentor) ?? false;
         var senderIsMentor = _playerRoles.IsMentor(senderSession);
-        if (!(senderIsAdmin || (senderIsMentor  || senderIsMentorFlagged))) //only admins/mentors can use mtpto
+        if (!(senderIsAdmin || senderIsMentor)) //only admins/mentors can use mtpto
             return;
         if (message.Ticket is not Guid ticketId)
             return;

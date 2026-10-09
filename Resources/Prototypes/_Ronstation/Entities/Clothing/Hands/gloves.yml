@@ -1,0 +1,15 @@
+- type: entity
+  parent: [ClothingHandsBase, BaseCentcommContraband]
+  id: ClothingHandsGlovesCentComm
+  name: centcomm gloves
+  description: Formal green gloves, with a nice gold trim. Expensive.
+  components:
+  - type: Sprite
+    sprite: _Ronstation/Clothing/Gloves/centcomm.rsi
+  - type: Clothing
+    sprite: _Ronstation/Clothing/Gloves/centcomm.rsi
+  - type: Insulated
+  - type: Fiber
+    fiberMaterial: fibers-durathread
+    fiberColor: fibers-formal-green
+  - type: FingerprintMask
