@@ -1,12 +1,9 @@
 using Content.Shared.Drunk;
-using Content.Shared.StatusEffectNew;
 using Robust.Client.Graphics;
 using Robust.Client.Player;
 using Robust.Shared.Enums;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Timing;
-using Content.Shared._Starlight.CCVar;
-using Robust.Shared.Configuration;
 
 namespace Content.Client.Drunk;
 
