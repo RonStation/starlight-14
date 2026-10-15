@@ -1,0 +1,90 @@
+Entries:
+- author: Semper
+  changes:
+  - message: This is a dummy change to allow the system to work correctly. You can
+      ignore this entry.
+    type: Add
+  id: 1
+  time: '2026-09-23T15:53:55.000000+00:00'
+  url: https://github.com/RonStation/starlight-14
+- author: Semper, Pcer (based on their contributions to another fork)
+  changes:
+  - message: Removed SecurityDrill and IonStormPlus from scheduler pool.
+    type: Remove
+  - message: NTRep, CCO/DS, Magistrate, and NTCT are now whitelisted.
+    type: Tweak
+  - message: BSO is no longer whitelisted, in-line with previous Ronstation forks.
+    type: Tweak
+  - message: You can now have one more language than before (not including foreigner
+      bonus).
+    type: Tweak
+  - message: Translators are significantly easier to maintain, but start with small
+      cells now.
+    type: Tweak
+  id: 701
+  time: '2026-09-05T18:07:11.000000+00:00'
+  url: https://github.com/RonStation/starlight-14/pull/7
+- author: Semper
+  changes:
+  - message: Atlas and the new dev map should both actually start with atmospherics
+      in areas that were previously vacuums.
+    type: Fix
+  id: 2701
+  time: '2026-10-07T01:02:54.000000+00:00'
+  url: https://github.com/RonStation/starlight-14/pull/27
+- author: Semper
+  changes:
+  - message: Added new IDs for ALL CentComm divisions and their respective heads.
+    type: Add
+  - message: Added new Job icons for all CentComm divisions that were missing one.
+    type: Add
+  - message: Added a new hardsuit for the CentComm Security Division that effectively
+      parents off of the ERT Leader's hardsuit.
+    type: Add
+  - message: Added chameleon versions of holding bags for CC characters and admeme
+      usage, as seperate prototypes from fills.
+    type: Add
+  - message: New sprites for CentComm bags of holding, to make them visually distinct
+      by default.
+    type: Add
+  - message: CentComm officials now get a choice of gas mask and gloves, including
+      a new pair of gloves in CentComm green.
+    type: Add
+  - message: Added a new CentComm Borgi chassis with the CentComm lawset; it is intended
+      for lowpop assistance and for helping with events.
+    type: Add
+  - message: CCO loadouts now use the CC holding bags.
+    type: Tweak
+  - message: Attempted to better balance the equipment of the CC security division
+      head bag fill for normal gameplay.
+    type: Tweak
+  - message: Chameleon bags of holding are now scurret and corgi wearable, for admeme
+      character flexibility.
+    type: Tweak
+  - message: All CC (debug) outfits now use the CC green gloves, as they have a "formal
+      green" fiber for forensics.
+    type: Tweak
+  - message: Fixed some fills and outfits not using the correct items.
+    type: Fix
+  - message: Manually added internals to the CentComm Official loadout.
+    type: Fix
+  id: 2601
+  time: '2026-10-07T01:14:10.000000+00:00'
+  url: https://github.com/RonStation/starlight-14/pull/26
+- author: Semper
+  changes:
+  - message: Null-link checks now have been replaced to just use flags. In theory
+      mentor content should work as intended.
+    type: Tweak
+  id: 3101
+  time: '2026-10-07T01:16:14.000000+00:00'
+  url: https://github.com/RonStation/starlight-14/pull/31
+- author: Semper
+  changes:
+  - message: Fixed lobby title, now defaulting to Ronstation.
+    type: Fix
+  id: 3501
+  time: '2026-10-14T08:08:18.000000+00:00'
+  url: https://github.com/RonStation/starlight-14/pull/35
+Order: -2
+

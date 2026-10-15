@@ -1,21 +1,20 @@
 - type: ghostTheme
   id: Abomination
-  name: Abomination
-  description: Cute man.
+  name: ghost-theme-abomination-name
+  description: ghost-theme-abomination-desc
   spriteSpecifier:
     sprite:
       sprite: Mobs/Demons/abomination.rsi
       state: abomination
     color: "#ffffff"
   requirements:
-  - !type:DiscordRolesRequirement
-    requirement: StaffRolesReq
+  - !type:StaffFlagRequirement # Ronstation: Flags for mentors/staff
   category: Staff
 
 - type: ghostTheme
   id: SpaceDragonStaffTheme
-  name: Space Dragon
-  description: Giant space fish.
+  name: ghost-theme-space-dragon-staff-theme-name
+  description: ghost-theme-space-dragon-staff-theme-desc
   colorizeable: true
   spriteSpecifier:
     sprite:
@@ -23,14 +22,13 @@
       state: alive
     color: "#ffffff"
   requirements:
-  - !type:DiscordRolesRequirement
-    requirement: StaffRolesReq
+  - !type:StaffFlagRequirement # Ronstation: Flags for mentors/staff
   category: Staff
 
 - type: ghostTheme
   id: BuffRatKingTheme
-  name: Buff Rat King
-  description: The Buff Rat King, ruler of all rats.
+  name: ghost-theme-buff-rat-king-theme-name
+  description: ghost-theme-buff-rat-king-theme-desc
   colorizeable: true
   spriteSpecifier:
     sprite:
@@ -38,14 +36,13 @@
       state: ghost-buff-rat-king
     color: "#ffffff"
   requirements:
-  - !type:DiscordRolesRequirement
-    requirement: TicketsAdministratorReq
+  - !type:StaffFlagRequirement # Ronstation: Flags for mentors/staff
   category: Staff
 
 - type: ghostTheme
   id: FoxTheme
-  name: Fox
-  description: A cute fox.
+  name: ghost-theme-fox-theme-name
+  description: ghost-theme-fox-theme-desc
   colorizeable: true
   spriteSpecifier:
     sprite:
@@ -53,14 +50,13 @@
       state: ghost-fox
     color: "#ffffff"
   requirements:
-  - !type:DiscordRolesRequirement
-    requirement: TicketsAdministratorReq
+  - !type:StaffFlagRequirement # Ronstation: Flags for mentors/staff
   category: Staff
 
 - type: ghostTheme
   id: LizardPlushie
-  name: Lizard Plushie
-  description: Weh!
+  name: ghost-theme-lizard-plushie-name
+  description: ghost-theme-lizard-plushie-desc
   colorizeable: true
   spriteSpecifier:
     sprite:
@@ -68,14 +64,13 @@
       state: ghost-lizard-plushie
     color: "#ffffff"
   requirements:
-  - !type:DiscordRolesRequirement
-    requirement: TicketsAdministratorReq
+  - !type:StaffFlagRequirement # Ronstation: Flags for mentors/staff
   category: Staff
 
 - type: ghostTheme
   id: MothroachTheme
-  name: Mothroach
-  description: A Mothroach, the most feared creature in space.
+  name: ghost-theme-mothroach-theme-name
+  description: ghost-theme-mothroach-theme-desc
   colorizeable: true
   spriteSpecifier:
     sprite:
@@ -83,14 +78,13 @@
       state: ghost-mothroach
     color: "#ffffff"
   requirements:
-  - !type:DiscordRolesRequirement
-    requirement: TicketsAdministratorReq
+  - !type:StaffFlagRequirement # Ronstation: Flags for mentors/staff
   category: Staff
 
 - type: ghostTheme
   id: ScurretTheme
-  name: Scurret
-  description: A Scurret, legally distinct!.
+  name: ghost-theme-scurret-theme-name
+  description: ghost-theme-scurret-theme-desc
   colorizeable: true
   spriteSpecifier:
     sprite:
@@ -98,14 +92,13 @@
       state: ghost-scurret
     color: "#ffffff"
   requirements:
-  - !type:DiscordRolesRequirement
-    requirement: TicketsAdministratorReq
+  - !type:StaffFlagRequirement # Ronstation: Flags for mentors/staff
   category: Staff
 
 - type: ghostTheme
   id: WispTheme
-  name: Wisp
-  description: A faint, curious wisp, its glow like a guiding hand of a senior mind behind the veil.
+  name: ghost-theme-wisp-theme-name
+  description: ghost-theme-wisp-theme-desc
   colorizeable: true
   spriteSpecifier:
     sprite:
@@ -113,20 +106,18 @@
       state: wisp
       shader: unshaded
   requirements:
-  - !type:DiscordRolesRequirement
-    requirement: SeniorDeveloperReq
+  - !type:StaffFlagRequirement # Ronstation: Flags for mentors/staff
   category: Staff
 
 - type: ghostTheme
   id: CustodianTheme
-  name: Custodian
-  description: A floating horror, steady with the confidence of a creator.
+  name: ghost-theme-custodian-theme-name
+  description: ghost-theme-custodian-theme-desc
   colorizeable: true
   spriteSpecifier:
     sprite:
       sprite: _Starlight/Mobs/Customization/GhostThemes/ghosts.rsi
       state: ghost-custodian
   requirements:
-  - !type:DiscordRolesRequirement
-    requirement: DeveloperReq
+  - !type:StaffFlagRequirement # Ronstation: Flags for mentors/staff
   category: Staff

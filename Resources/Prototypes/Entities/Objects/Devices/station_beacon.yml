@@ -867,7 +867,7 @@
 
 # CentComm Beacons
 - type: entity
-  parent: DefaultStationBeaconGhost
+  parent: DefaultStationBeacon # Phoenix - Making an item that is basically the teleportation scroll but oooh bluespace, this relies on the wiz not TPing to CC.
   id: DefaultStationBeaconCentComm
   suffix: CentComm
   components:
