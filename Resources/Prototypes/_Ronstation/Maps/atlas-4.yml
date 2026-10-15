@@ -1,7 +1,7 @@
 - type: gameMap
   id: RonstationAtlas4
   mapName: 'Atlas-IV'
-  mapPath: /Maps/_Ronstation/atlas-4.yml
+  mapPath: /Maps/_Ronstation/Stations/atlas-4-ronsl.yml
   minPlayers: 0
   maxPlayers: 35
   stations:
