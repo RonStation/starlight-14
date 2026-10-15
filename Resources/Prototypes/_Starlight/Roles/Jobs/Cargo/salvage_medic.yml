@@ -4,6 +4,7 @@
   description: job-description-salvagemedic
   rules: job-rules-itg-aligned
   playTimeTracker: JobSalvageMedic
+  whitelisted: true # Ronstation: Salvgone. Making it whitelisted because it is a good idea, but causes issues in lowpop.
   requirements:
     - !type:RoleTimeRequirement
       role: JobSalvageSpecialist

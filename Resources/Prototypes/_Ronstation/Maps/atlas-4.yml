@@ -1,7 +1,7 @@
 - type: gameMap
   id: RonstationAtlas4
   mapName: 'Atlas-IV'
-  mapPath: /Maps/_Ronstation/atlas-4.yml
+  mapPath: /Maps/_Ronstation/Stations/atlas-4.yml
   minPlayers: 0
   maxPlayers: 35
   stations:
@@ -59,8 +59,6 @@
           SecurityCadet: [ 1, 1 ]
           Lawyer: [ 1, 1 ]
           # cargo
-          SalvageLead: [ 1, 1 ]
-          SalvageSpecialist: [ 1, 1 ] # Only one. You know who you are. Give station materials, play mining instead!!
           MiningSpecialist: [ 2, 4 ] # Mining is not Salvage. Actually play the station roles in the station game!
           CargoTechnician: [ 3, 3 ]
           MailTech: [ 1, 2 ]
@@ -77,3 +75,7 @@
           BlueShield: [ 1, 1 ]
           NanoTrasenRepresentative: [ 1, 1 ]
           NanotrasenCareerTrainer: [ 1, 2 ]
+          # ITG
+          SalvageLead: [ 1, 1 ]
+          SalvageSpecialist: [ 1, 2 ]
+          SalvageMedic: [ 1, 1 ]

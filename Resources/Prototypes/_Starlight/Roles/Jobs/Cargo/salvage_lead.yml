@@ -4,6 +4,7 @@
   description: job-description-salvagelead
   rules: job-rules-itg-aligned
   playTimeTracker: JobSalvageLead
+  whitelisted: true # Ronstation: Salvgone. Making it whitelisted because it is a good idea, but causes issues in lowpop.
   supervisors: job-supervisors-guild
   requirements:
     - !type:DepartmentTimeRequirement

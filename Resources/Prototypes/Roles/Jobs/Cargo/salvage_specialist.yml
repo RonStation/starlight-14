@@ -4,6 +4,7 @@
   description: job-description-salvagespecSL
   rules: job-rules-itg-aligned #Starlight
   playTimeTracker: JobSalvageSpecialist
+  whitelisted: true # Ronstation: Salvgone. Making it whitelisted because it is a good idea, but causes issues in lowpop.
   requirements:
     - !type:DepartmentTimeRequirement
       department: Cargo
