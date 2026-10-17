@@ -11,6 +11,7 @@
       - EncryptionKeyCentcomUnremovable
       - EncryptionKeyNanoTrasenUnremovable
       - EncryptionKeyStationMasterUnremovable
+      - EncryptionKeyExpeditionUnremovable
   - type: Sprite
     sprite: Clothing/Ears/Headsets/centcom.rsi
   - type: Clothing

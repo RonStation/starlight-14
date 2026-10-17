@@ -14,6 +14,7 @@
   id: Cargo
   tags:
   - Quartermaster
+  - Salvage #Ronstation: Keeping Salvage slightly attached to the station.
   - Mining # Starlight
   - Mail # Starlight
   - Cargo

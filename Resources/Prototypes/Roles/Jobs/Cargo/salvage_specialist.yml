@@ -15,7 +15,9 @@
   supervisors: job-supervisors-itg #starlight
   displayWeight: 4 # Starlight
   access:
+  - Cargo
   - Salvage
+  - Mining #Ronstation: Keeping Salvage slightly attached to the station. Mining needed since Salvage is unmapped from all upstream maps, and this is the only area they'd reasonably bring shit to.
   - External
   - Maintenance
   - Shuttle # Starlight
@@ -30,7 +32,7 @@
   id: SalvageSpecialistGear
   equipment:
    # id: SalvagePDA #Starlight
-    ears: ClothingHeadsetSalvageLead #starlight
+    ears: ClothingHeadsetSalvageITG #Ronstation: Seperate headset for non-leaders.
   #storage:
     #back:
     #- Stuff

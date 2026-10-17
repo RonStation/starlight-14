@@ -22,6 +22,7 @@
   - type: ContainerFill
     containers:
       key_slots:
+      - EncryptionKeySalvage #Ronstation: Keeping Salvage slightly attached to the station.
       - EncryptionKeyCargo
       - EncryptionKeyCommand
       - EncryptionKeyCommon
