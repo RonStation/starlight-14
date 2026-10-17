@@ -8,7 +8,7 @@
   markingLimits: MobShadekinMarkingLimits
   dollPrototype: AppearanceShadekin
   skinColoration: Hues
-  eyeColoration: Shadekin
+#  eyeColoration: Shadekin     # Ronstation - Making original Shadekin lore optional
   maleFirstNames: names_shadekin
   femaleFirstNames: names_shadekin
   naming: First
