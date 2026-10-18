@@ -84,6 +84,8 @@
     - id: BookConfession
     - id: BookLifeOfAClown
     - id: BookUnnamedGod
+    #Ronstation edits
+    - id: BookShadekinLore
 
 - type: entityTable
   id: RandomGuidebookTable

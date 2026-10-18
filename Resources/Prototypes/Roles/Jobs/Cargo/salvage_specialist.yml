@@ -1,8 +1,10 @@
 - type: job
   id: SalvageSpecialist
   name: job-name-salvagespec
-  description: job-description-salvagespec
+  description: job-description-salvagespecSL
+  rules: job-rules-itg-aligned #Starlight
   playTimeTracker: JobSalvageSpecialist
+  whitelisted: true # Ronstation: Salvgone. Making it whitelisted because it is a good idea, but causes issues in lowpop.
   requirements:
     - !type:DepartmentTimeRequirement
       department: Cargo
@@ -11,26 +13,27 @@
       time: 8h
   icon: "JobIconSalvageSpecialist" # Starlight - New distinct icon, Starlight end
   startingGear: SalvageSpecialistGear
-  supervisors: job-supervisors-qm
+  supervisors: job-supervisors-itg #starlight
   displayWeight: 4 # Starlight
   access:
   - Cargo
   - Salvage
-  - Maintenance
+  - Mining #Ronstation: Keeping Salvage slightly attached to the station. Mining needed since Salvage is unmapped from all upstream maps, and this is the only area they'd reasonably bring shit to.
   - External
+  - Maintenance
   - Shuttle # Starlight
-  extendedAccess:
-  - Mining # Starlight
-  - Mail # Starlight
   special:
   - !type:AddImplantSpecial
     implants: [ MindShieldImplant ]
+  - !type:AddComponentSpecial
+    components:
+      - type: NoObjectiveTarget #starlight
 
 - type: startingGear
   id: SalvageSpecialistGear
   equipment:
    # id: SalvagePDA #Starlight
-    ears: ClothingHeadsetCargo
+    ears: ClothingHeadsetSalvageITG #Ronstation: Seperate headset for non-leaders.
   #storage:
     #back:
     #- Stuff

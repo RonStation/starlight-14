@@ -83,8 +83,8 @@
   - type: ContainerFill
     containers:
       key_slots:
-      - EncryptionKeySalvage # Starlight
-#      - EncryptionKeyCargo # Starlight
+      - EncryptionKeySalvage #Ronstation: Keeping Salvage slightly attached to the station.
+      - EncryptionKeyCargo
       - EncryptionKeyCommand
       - EncryptionKeyCommon
   - type: RadioChime

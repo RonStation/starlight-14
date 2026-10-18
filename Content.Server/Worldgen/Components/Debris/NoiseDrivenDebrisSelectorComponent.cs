@@ -39,7 +39,7 @@ public sealed partial class NoiseDrivenDebrisSelectorComponent : Component
     ///     The noise channel to use as a density controller.
     /// </summary>
     /// <remarks>This noise channel should be mapped to exactly the range [0, 1] unless you want a lot of warnings in the log.</remarks>
-    [DataField]
-    public ProtoId<NoiseChannelPrototype> NoiseChannel { get; private set; } = default!;
+    [DataField("noiseChannel", customTypeSerializer: typeof(ProtoId<NoiseChannelPrototype>))]
+    public string NoiseChannel { get; private set; } = default!;
 }
 

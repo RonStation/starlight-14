@@ -9,7 +9,7 @@
     outerClothing: ClothingOuterArmorCentcommChameleon
     neck: ClothingNeckChameleon
     eyes: ClothingEyesGlassesCCDivHead
-    gloves: ClothingAdmemeHandsChameleonInsulated
+    gloves: ClothingAdmemeHandsInsulatedChameleon # Ronstation: This exists in the codebase already, removed the phoenix station version.
     id: ChameleonAgentPDA
     ears: ClothingHeadsetChameleonWatchdog
     pocket1: WeaponDisabler

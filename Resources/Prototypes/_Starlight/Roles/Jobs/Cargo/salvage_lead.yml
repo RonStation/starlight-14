@@ -2,28 +2,36 @@
   id: SalvageLead
   name: job-name-salvagelead
   description: job-description-salvagelead
+  rules: job-rules-itg-aligned
   playTimeTracker: JobSalvageLead
+  whitelisted: true # Ronstation: Salvgone. Making it whitelisted because it is a good idea, but causes issues in lowpop.
+  supervisors: job-supervisors-guild
   requirements:
+    - !type:DepartmentTimeRequirement
+      department: Command
+      time: 5h # 5 hours
     - !type:RoleTimeRequirement
-      role: JobQuartermaster
+      role: JobSalvageSpecialist
       time: 18000 # 5 hours
   icon: "JobIconSalvageLead"
   startingGear: SalvageLeadGear
-  supervisors: job-supervisors-qm
   displayWeight: 5
   access:
-  - Cargo
   - Salvage
   - SalvageLead
-  - Maintenance
+  - Cargo #Ronstation: Keeping Salvage slightly attached to the station.
+  - Mining #Ronstation: Mining needed since Salvage is unmapped from all upstream maps, and this is the only area they'd reasonably bring/unload shit to/in.
+  - Command #Ronstation
+  - Debrief #Ronstation: In line with giving salvlead command comms, it makes sense they'd be a regular plus-one to debrief when in play.
   - External
+  - Maintenance
   - Shuttle
-  extendedAccess:
-  - Mining
-  - Mail
   special:
   - !type:AddImplantSpecial
     implants: [ MindShieldImplant ]
+  - !type:AddComponentSpecial
+    components:
+      - type: NoObjectiveTarget
 
 - type: startingGear
   id: SalvageLeadGear

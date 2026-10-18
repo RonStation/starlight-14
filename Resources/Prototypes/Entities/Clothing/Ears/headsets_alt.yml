@@ -22,7 +22,7 @@
   - type: ContainerFill
     containers:
       key_slots:
-      - EncryptionKeyExpedition # Starlight
+      - EncryptionKeySalvage #Ronstation: Keeping Salvage slightly attached to the station.
       - EncryptionKeyCargo
       - EncryptionKeyCommand
       - EncryptionKeyCommon
@@ -157,6 +157,7 @@
   - type: RadioChime
     sound:
       path: /Audio/_Starlight/Effects/Radio/marauder.ogg
+  - type: HeadsetLoudMode #Starlight
 
 - type: entity
   parent: ClothingHeadsetAlt

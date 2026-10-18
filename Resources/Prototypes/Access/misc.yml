@@ -18,8 +18,8 @@
   - Engineering
   - Medical
   - Quartermaster
-  - Salvage
   - Cargo
+  - Salvage
   - Research
   - Service
   - Maintenance
@@ -45,7 +45,6 @@
   - Surgery
   - Paramedic
   - Mining
-  - SalvageLead
   - Mail
   - Debrief
   - Shuttle
