@@ -1,0 +1,21 @@
+- type: entity
+  id: ClothingBeltHolsterFilledDeagle
+  parent: ClothingBeltHolster
+  name: firebird holster
+  description: A robust looking shoulder holster made to carry the Firebird Handcannon.
+  suffix: Filled, Deagle50
+  components:
+    - type: Storage
+      maxItemSize: Huge
+      grid:
+        - 0,0,3,3
+    - type: EntityTableContainerFill
+      containers:
+        storagebase: !type:AllSelector
+          children:
+            - id: WeaponPistolDeagle50
+            - id: MagazineMagnum50
+            - id: MagazineMagnum50
+            - id: MagazineBoxMagnum50SP
+    - type: Contraband
+      allowedDepartments: [ CentralCommand ]

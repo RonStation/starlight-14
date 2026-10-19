@@ -1,0 +1,57 @@
+- type: entity
+  parent: BaseBullet
+  id: BulletMagnum50
+  categories: [ HideSpawnMenu ]
+  name: bullet (.50 magnum)
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 40
+
+- type: entity
+  parent: BaseBulletPractice
+  id: BulletMagnum50Practice
+  categories: [ HideSpawnMenu ]
+  name: bullet (.50 magnum practice)
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Blunt: 3
+
+- type: entity
+  parent: BaseBulletIncendiary
+  id: BulletMagnum50Incendiary
+  categories: [ HideSpawnMenu ]
+  name: bullet (.50 magnum incendiary)
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 31
+        Heat: 14
+
+- type: entity
+  parent: BaseBulletAP
+  id: BulletMagnum50AP
+  categories: [ HideSpawnMenu ]
+  name: bullet (.50 magnum armor-piercing)
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 31 # 20% decrease
+    ignoreResistances: true
+
+- type: entity
+  parent: BaseBulletUranium
+  id: BulletMagnum50Uranium
+  categories: [ HideSpawnMenu ]
+  name: bullet (.50 magnum uranium)
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Radiation: 20
+        Piercing: 25

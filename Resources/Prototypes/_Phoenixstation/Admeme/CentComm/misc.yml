@@ -29,7 +29,7 @@
 - type: entity
   id: ClothingBeltHolsterFilledMateba
   parent: ClothingBeltHolster
-  name: Mateba Holster
+  name: mateba holster #Ronstation: fixing capitalization for consistency with wizden/upstream
   description: A robust looking shoulder holster made to carry the Mateba.
   suffix: Filled, Mateba
   components:
@@ -50,7 +50,7 @@
 
 - type: entity
   id: ClothingBeltHolsterFilledN1984
-  name: N1984 Holster
+  name: N1984 holster #Ronstation: fixing capitalization for consistency with wizden/upstream
   description: A robust looking shoulder holster made to carry the N1984.
   parent: ClothingBeltHolster
   suffix: Filled, N1984

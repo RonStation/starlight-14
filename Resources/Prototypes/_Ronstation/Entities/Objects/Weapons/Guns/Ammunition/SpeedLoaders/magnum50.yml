@@ -1,0 +1,141 @@
+- type: entity
+  abstract: true
+  parent: [ BaseItem, BaseSecurityContraband ]
+  id: BaseSpeedLoaderMagnum50
+  name: "speed loader (.50 magnum)"
+  components:
+  - type: Tag
+    tags:
+      - SpeedLoaderMagnum50
+  - type: SpeedLoader
+  - type: BallisticAmmoProvider
+    whitelist:
+      tags:
+        - CartridgeMagnum50
+    capacity: 6
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+        ents: []
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Ammunition/SpeedLoaders/Magnum/magnum_speed_loader.rsi
+    layers:
+      - state: base
+        map: [ "enum.GunVisualLayers.Base" ]
+      - state: base-6
+        map: [ "enum.GunVisualLayers.Mag" ]
+      - state: base-tip-6
+        map: [ "enum.GunVisualLayers.Tip" ]
+        color: "#C7B458"
+  - type: MagazineVisuals
+    magState: base
+    steps: 7
+    zeroVisible: false
+  - type: Appearance
+
+- type: entity
+  parent: BaseSpeedLoaderMagnum50
+  id: SpeedLoaderMagnum50Empty
+  name: "speed loader (.50 magnum any)"
+  suffix: empty
+  description: Designed to quickly load up to six rounds of .50 magnum into an empty revolver.
+  components:
+  - type: BallisticAmmoProvider
+    proto: null
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Ammunition/SpeedLoaders/Magnum/magnum_speed_loader.rsi
+    layers:
+      - state: base
+        map: [ "enum.GunVisualLayers.Base" ]
+      # TODO: This is actually a issue with all the speed loaders:
+      #       You can mix different ammo types, but it will always
+      #       use the one it was printed for.
+      - state: base-6
+        map: [ "enum.GunVisualLayers.Mag" ]
+- type: entity
+  id: SpeedLoaderMagnum50Incendiary
+  name: "speed loader (.50 magnum incendiary)"
+  parent: BaseSpeedLoaderMagnum50
+  components:
+  - type: BallisticAmmoProvider
+    proto: CartridgeMagnum50Incendiary
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Ammunition/SpeedLoaders/Magnum/magnum_speed_loader.rsi
+    layers:
+      - state: base
+        map: [ "enum.GunVisualLayers.Base" ]
+      - state: base-6
+        map: [ "enum.GunVisualLayers.Mag" ]
+      - state: base-tip-6
+        map: [ "enum.GunVisualLayers.Tip" ]
+        color: "#BFC8CA"
+
+- type: entity
+  parent: BaseSpeedLoaderMagnum50
+  id: SpeedLoaderMagnum50Practice
+  name: "speed loader (.50 magnum practice)"
+  description: Designed to quickly load up to six rounds of .50 magnum into an empty revolver. Intended to hold harmless practice ammunition.
+  components:
+  - type: BallisticAmmoProvider
+    proto: CartridgeMagnum50Practice
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Ammunition/SpeedLoaders/Magnum/magnum_speed_loader.rsi
+    layers:
+      - state: base
+        map: [ "enum.GunVisualLayers.Base" ]
+      - state: base-6
+        map: [ "enum.GunVisualLayers.Mag" ]
+      - state: base-tip-6
+        map: [ "enum.GunVisualLayers.Tip" ]
+        color: "#D86E2C"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left-mag
+      - state: inhand-left-ammo
+      - state: inhand-left-stripe
+        color: "#ea5800"
+      right:
+      - state: inhand-right-mag
+      - state: inhand-right-ammo
+      - state: inhand-right-stripe
+        color: "#ea5800"
+
+- type: entity
+  parent: BaseSpeedLoaderMagnum50
+  id: SpeedLoaderMagnum50AP
+  name: "speed loader (.50 magnum AP)"
+  description: Designed to quickly load up to six rounds of .50 magnum into an empty revolver. Intended to hold specialized armor-piercing ammunition.
+  components:
+  - type: BallisticAmmoProvider
+    proto: CartridgeMagnum50AP
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Ammunition/SpeedLoaders/Magnum/magnum_speed_loader.rsi
+    layers:
+      - state: base
+        map: [ "enum.GunVisualLayers.Base" ]
+      - state: base-6
+        map: [ "enum.GunVisualLayers.Mag" ]
+      - state: base-tip-6
+        map: [ "enum.GunVisualLayers.Tip" ]
+        color: "#1A8C1A"
+
+
+- type: entity
+  parent: BaseSpeedLoaderMagnum50
+  id: SpeedLoaderMagnum50Uranium
+  name: "speed loader (.50 magnum uranium)"
+  description: Designed to quickly load up to six rounds of .50 magnum into an empty revolver. Intended to hold exotic uranium-core ammunition.
+  components:
+  - type: BallisticAmmoProvider
+    proto: CartridgeMagnum50Uranium
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Ammunition/SpeedLoaders/Magnum/magnum_speed_loader.rsi
+    layers:
+      - state: base
+        map: [ "enum.GunVisualLayers.Base" ]
+      - state: base-6
+        map: [ "enum.GunVisualLayers.Mag" ]
+      - state: base-tip-6
+        map: [ "enum.GunVisualLayers.Tip" ]
+        color: "#65fe08"

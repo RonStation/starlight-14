@@ -38,12 +38,12 @@
   inhand:
     - MindShieldImplanter
     - DeathRattleImplanterCentcomm
-# Ready-to-go loadout for an ERT leader. Comes with the XL8.
+# Ready-to-go loadout for an ERT leader. Comes with the Annie.
 - type: startingGear
   id: ERTLeaderAdmemeRifleEVA
   equipment:
     jumpsuit: ClothingUniformJumpsuitERTLeader
-    back: ClothingBackpackERTLeaderXL8Filled
+    back: ClothingBackpackERTLeaderAnnieFilled
     shoes: ClothingShoesBootsMagAdv
     mask: ClothingMaskGasERT
     eyes: ClothingEyesGlassesCentComm
@@ -55,7 +55,7 @@
     belt: ClothingBeltNTNCRigFilled
     pocket1: WeaponRevolverMatebaAP
     pocket2: FlashlightSeclite
-    suitstorage: WeaponRifleLecterXL8
+    suitstorage: WeaponRifleAnnieCCSD
   inhand:
     - MindShieldImplanter
     - DeathRattleImplanterCentcomm

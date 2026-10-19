@@ -1,0 +1,24 @@
+- type: entity
+  name: firebird handcannon
+  parent: [BaseCentcommContraband, WeaponPistolDeagle]
+  id: WeaponPistolDeagle50
+  description: A high-caliber handgun designed for both insulting and putting down Syndicate bastards. Unlike the Syndicate's current varient, this one is chambered in the Phoenix's Calliber; .50 magnum.
+  components:
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazineMagnum50
+        insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+            - MagazineMagnum50
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: Chamber
+        priority: 1
+        whitelist:
+          tags:
+            - CartridgeMagnum50

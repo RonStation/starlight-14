@@ -4,7 +4,7 @@
   categories: [ DoNotMap ]
   suffix: Admeme, DO NOT MAP
   id: ClothingOuterHardsuitCCSDH
-  name: CentComm Sec Division Head Hardsuit
+  name: centcomm security division hardsuit
   description: A high-tech hardsuit with an ID-Lock system, custom tailored by the Head of Central Command's Security division herself.
   components:
     - type: Clothing
@@ -25,7 +25,4 @@
       zombificationResistanceCoefficient: 0.1
     - type: FootstepModifier # Just makes a different footstep sound. I think its cooler.
       footstepSoundCollection:
-        collection: FootstepHeavy
-        params:
-          volume: -6
-          variation: 0.09
+        collection: FootstepHeavySuit

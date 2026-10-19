@@ -16,10 +16,10 @@
     - id: DoubleEmergencyOxygenTankFilled
     - id: BoxFlare
     - id: PowerCellMicroreactor
-    - id: WeaponPistolN1984
-    - id: MagazineMagnumAP
-    - id: MagazineMagnumAP
-    - id: MagazineMagnumAP
+    - id: WeaponPistolDeagle50
+    - id: MagazineMagnum50AP
+    - id: MagazineMagnum50AP
+    - id: MagazineMagnum50AP
     - id: ClothingEyesGlassesCentComm
     - id: ClothingEyesHudCentComm
     - id: CentCommCommunicationTablet
@@ -60,8 +60,8 @@
 # Filled modsuit for ERT leader admeme, XL8/Lecter mags
 - type: entity
   parent: ClothingBackpackHoldingBaseCCFill
-  id: ClothingBackpackERTLeaderXL8Filled
-  suffix: Admeme, ERT Leader, XL8
+  id: ClothingBackpackERTLeaderAnnieFilled
+  suffix: Admeme, ERT Leader, Annie
   name: ERT Leader Backpack
   components:
     - type: ChameleonClothing
@@ -76,10 +76,10 @@
       - id: Flash
       - id: ClothingEyesHudCentComm
       - id: SpeedLoaderMagnumAP
-      - id: MagazineRifleSP
-      - id: MagazineRifleSP
-      - id: MagazineRifleSP
-      - id: MagazineRifleSP
+      - id: MagazineLightRifleSP
+      - id: MagazineLightRifleSP
+      - id: MagazineLightRifleSP
+      - id: MagazineLightRifleSP
       - id: JawsOfLife
       - id: BodyBagCCFolded
       - id: BodyBagCCFolded
@@ -118,11 +118,11 @@
       - id: Handcuffs
       - id: Handcuffs
       - id: LanternFlash # Self-defense, AND a good light source. Good for emergencies.
-      - id: MagazineDMRSP
-      - id: MagazineDMRSP
-      - id: MagazineDMRIncendiary # only one fire mag. Call it the Phoenix special.
-      - id: MagazinePistol40FMJ
-      - id: MagazinePistol40FMJ
+      - id: MagazineLightRifleSP
+      - id: MagazineLightRifleSP
+      - id: MagazineLightRifleIncendiary # only one fire mag. Call it the Phoenix special.
+      - id: MagazineMagnum50
+      - id: MagazineMagnum50
       - id: ClothingEyesGlassesCCDivHead # This still blocks NV and does not grant NV. So that there's some semblance of balance.
       - id: GreenLightShield # Because of course the Head of the Security Division does Greenshield work.
       - id: BodyBagCCFolded

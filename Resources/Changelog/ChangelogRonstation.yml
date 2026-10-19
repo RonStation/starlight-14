@@ -128,5 +128,30 @@ Entries:
   id: 4101
   time: '2026-10-18T17:14:18.000000+00:00'
   url: https://github.com/RonStation/starlight-14/pull/41
+- author: Semper
+  changes:
+  - message: Port Annie from Goob (including signature fire sound), 4 gauge ammo and
+      shotguns from Monolith.
+    type: Add
+  - message: Varient of Annie with recolored sprites meant for ERT Security forces.
+      Functions very similarly but with some slight extensions.
+    type: Add
+  - message: Port footstep sound collections from goob, due to removal (by upstream
+      or wizden?) of the collection that was used by some Ronstation  items.
+    type: Add
+  - message: A recolored pair of 'advanced' Jackboots, repurposed to be a middleground
+      between standard magboots, and jackboots.
+    type: Add
+  - message: A varient of the Jungle Hawk chambered in a new .50 magnum round, with
+      accompanying ammo variants.
+    type: Add
+  - message: Multiple debug/admeme outfits now use the new weapons (NOT 4-gauge).
+    type: Tweak
+  - message: Fixed multiple inconsistent item names, errors with outfits following
+      the mega-merge, alongside a plethora of other small bugs.
+    type: Fix
+  id: 4401
+  time: '2026-10-19T17:37:37.000000+00:00'
+  url: https://github.com/RonStation/starlight-14/pull/44
 Order: -2
 

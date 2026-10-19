@@ -33,6 +33,10 @@
   - type: Thirst
   - type: HumanoidAppearance
     species: Shadekin
+  - type: Speech
+    speechSounds: Shadowkin # Ronstation - port of a port, new shadekin sounds
+    speechVerb: Shadowkin # Ronstation - port of a port, new shadekin sounds
+    allowedEmotes: ["Marr", "Wurble", "Hisses", "Growl", "Purr"]
   - type: Icon
     sprite: _Starlight/Mobs/Species/Shadekin/parts.rsi
     state: full

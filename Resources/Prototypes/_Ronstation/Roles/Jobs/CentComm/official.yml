@@ -40,7 +40,7 @@
   equipment:
     jumpsuit: ClothingUniformJumpskirtCentcommSecurityFormalWear
     back: ClothingBackpackHoldingCentcomOfficerFilled
-    shoes: ClothingShoesBootsJackFilled
+    shoes: ClothingShoesBootsMagJack
     head: ClothingHeadHatCentcomcap
     mask: ClothingMaskGasCentcom
     neck: ClothingNeckCloakCCSDFireline
@@ -51,8 +51,8 @@
     ears: ClothingHeadsetAltCentComDivHead
     belt: CentcommVibrobladeSheathFilled
     pocket1: WeaponEnergyMagnumGunGreenshield
-    pocket2: WeaponPistolStechkin
-    suitstorage: WeaponRifleL10
+    pocket2: WeaponPistolDeagle50
+    suitstorage: WeaponRifleAnnieCCSD
   inhand:
   - MindShieldImplanter
   - DeathRattleImplanterCentcomm
