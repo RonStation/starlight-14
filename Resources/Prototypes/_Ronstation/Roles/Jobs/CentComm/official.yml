@@ -7,7 +7,7 @@
     mask: ClothingMaskGasCentcom
     outerClothing: ClothingOuterArmorCentcommCarapace
     eyes: ClothingEyesGlassesCentComm
-    gloves: ClothingHandsGlovesCombat
+    gloves: ClothingHandsGlovesCentComm
     id: CentCommDivisionPDA
     ears: ClothingHeadsetAltCentComDivHead
     belt: BoxFolderCentComClipboardThreePapers
@@ -25,7 +25,7 @@
     mask: ClothingMaskGasCentcom
     outerClothing: ClothingOuterArmorCentcommCarapace
     eyes: ClothingEyesGlassesCentComm
-    gloves: ClothingHandsGlovesCombat
+    gloves: ClothingHandsGlovesCentComm
     id: CentcomPDA
     ears: ClothingHeadsetAltCentComDivHead
     pocket1: WeaponDisabler
@@ -35,6 +35,7 @@
   - BriefcaseCentcomInspector
 - type: startingGear
 #This became very specific to Semper, so I'm just gona mark it as the relevant name
+#Yes, if you want a loadout for your CC character, I'll make it. (if it doesn't require custom fills, the CCO loadout is connected to "CentcommGear", and your character's loadout for CCO should apply when setting it via debug outfits. CentcomFormal has a custom fill that was made with admin cc characters in mind, and has the flexible ID.)
   id: CentcomSecDivHeadGear
   equipment:
     jumpsuit: ClothingUniformJumpskirtCentcommSecurityFormalWear
@@ -44,14 +45,26 @@
     mask: ClothingMaskGasCentcom
     neck: ClothingNeckCloakCCSDFireline
     outerClothing: ClothingOuterArmorCentcommCarapace
-    gloves: ClothingHandsGlovesCombat
-    eyes: ClothingEyesGlassesCentComm
+    gloves: ClothingHandsGlovesCentComm
+    eyes: ClothingEyesHudCCDivHead
     id: CentCommDivisionPDA
     ears: ClothingHeadsetAltCentComDivHead
     belt: CentcommVibrobladeSheathFilled
     pocket1: WeaponEnergyMagnumGunGreenshield
     pocket2: WeaponPistolStechkin
     suitstorage: WeaponRifleL10
+  inhand:
+  - MindShieldImplanter
+  - DeathRattleImplanterCentcomm
+
+- type: startingGear
+  id: CentcomBorgiGear
+  equipment:
+    back: ClothingBackpackSatchelHoldingCentcomFormalFilled
+    outerClothing: ClothingOuterHardsuitERTEngineer
+    eyes: ClothingEyesGlassesCentComm
+    id: CentCommDivisionPDA
+    ears: ClothingHeadsetAltCentComDivHead
   inhand:
   - MindShieldImplanter
   - DeathRattleImplanterCentcomm

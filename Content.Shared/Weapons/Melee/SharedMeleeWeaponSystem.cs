@@ -657,13 +657,13 @@ public abstract partial class SharedMeleeWeaponSystem : EntitySystem
         for (var i = entities.Count - 1; i >= 0; i--)
         {
             if (ArcRaySuccessful(entities[i],
-                    userPos,
-                    direction.ToWorldAngle(),
-                    component.Angle,
-                    distance,
-                    userXform.MapID,
-                    user,
-                    session))
+                userPos,
+                direction.ToWorldAngle(),
+                component.Angle,
+                distance,
+                userXform.MapID,
+                user,
+                session))
             {
                 continue;
             }

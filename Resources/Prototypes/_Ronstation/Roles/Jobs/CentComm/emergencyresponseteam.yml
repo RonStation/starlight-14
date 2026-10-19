@@ -7,7 +7,7 @@
     shoes: ClothingShoesBootsMagAdv
     mask: ClothingMaskGasERT
     eyes: ClothingEyesGlassesMeson
-    gloves: ClothingHandsGlovesCombat
+    gloves: ClothingHandsGlovesCentComm # The reason for this is so CC characters have a distinct glove fiber, to help not stress out detectives. Its functionally the same as combat gloves, of course.
     outerClothing: ClothingOuterHardsuitERTEngineer
     id: ERTEngineerPDA
     ears: ClothingHeadsetAltAdminCentCom
@@ -26,7 +26,7 @@
     shoes: ClothingShoesBootsMagAdv
     mask: ClothingMaskGasERT
     eyes: ClothingEyesGlassesCentComm
-    gloves: ClothingHandsGlovesCombat
+    gloves: ClothingHandsGlovesCentComm
     outerClothing: ClothingOuterHardsuitERTLeader
     neck: ClothingDogTags
     id: ERTLeaderPDA
@@ -34,7 +34,7 @@
     belt: ClothingBeltNTNCRigFilled
     pocket1: WeaponRevolverMatebaAP
     pocket2: FlashlightSeclite
-    suitstorage: WeaponShotgunCombat
+    suitstorage: WeaponShotgunCombat # Don't sleep on this. Fires quick and I believe has a tighter spread.
   inhand:
     - MindShieldImplanter
     - DeathRattleImplanterCentcomm
@@ -47,7 +47,7 @@
     shoes: ClothingShoesBootsMagAdv
     mask: ClothingMaskGasERT
     eyes: ClothingEyesGlassesCentComm
-    gloves: ClothingHandsGlovesCombat
+    gloves: ClothingHandsGlovesCentComm
     outerClothing: ClothingOuterHardsuitERTLeader
     neck: ClothingDogTags
     id: ERTLeaderPDA
