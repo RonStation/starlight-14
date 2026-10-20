@@ -28,9 +28,49 @@
         name: Magazine
         startingItem: MagazineLightRifleIncendiary
         priority: 2
+        whitelist:
+          tags:
+            - MagazineLightRifle
       gun_chamber:
         name: Chamber
         startingItem: CartridgeLightRifleIncendiary
+        priority: 1
+        whitelist:
+          tags:
+            - CartridgeLightRifle
+  - type: CanDualWield # this is just because its funny. abuse it you lose it though
+    dualWieldInaccuracyPenalty: 50
+  - type: SpeedModifiedOnWield
+    walkModifier: 0.9
+    sprintModifier: 0.9
+  - type: CursorOffsetRequiresWield
+  - type: EyeCursorOffset
+    maxOffset: 2.5
+    pvsIncrease: 0.3
+- type: entity
+  name: warped annie # bug to feature because its funny
+  parent: [BaseMagicalContraband, WeaponRifleAnnieCCSD]
+  id: WeaponRifleAnnieWTF
+  description: A beast designed to shoulder the- why the fuck is there an entire magazine in the chamber? Is this thing Bluespace?!
+  components:
+  - type: Sprite
+    sprite: _Ronstation/Objects/Weapons/Guns/Rifles/secannie.rsi #TODO: make it purple or blue or something else that would be really funny
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: _Ronstation/Objects/Weapons/Guns/Rifles/secannie.rsi
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazineLightRifleIncendiary
+        priority: 2
+      gun_chamber:
+        name: Chamber
+        startingItem: MagazineLightRifleIncendiary
         priority: 1
   - type: CanDualWield # this is just because its funny. abuse it you lose it though
     dualWieldInaccuracyPenalty: 50
