@@ -8,7 +8,7 @@ public sealed partial class StarlightCCVars
     /// Making everyone a pacifist at the end of a round.
     /// </summary>
     public static readonly CVarDef<bool> PeacefulRoundEnd =
-        CVarDef.Create("game.peaceful_end", true, CVar.SERVERONLY);
+        CVarDef.Create("game.peaceful_end", false, CVar.SERVERONLY); //Ronstation: We don't need EOR pacification hard enforced, but rules still apply at CC
 
     /// <summary>
     /// Sends afk players to cryo.
