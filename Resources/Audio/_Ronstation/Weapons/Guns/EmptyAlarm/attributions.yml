@@ -1,0 +1,4 @@
+﻿- files: ["nt_empty_alarm.ogg"]
+  license: "Apache 2.0"
+  copyright: "Original file Alarm_Buzzer.ogg Copyright (C) 2008 The Android Open Source Project (Modified by Semper for Ronstation)"
+  source: "https://android.googlesource.com/platform/frameworks/base/"

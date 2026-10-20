@@ -22,7 +22,7 @@
   - type: ChamberMagazineAmmoProvider
     autoEject: true
     soundAutoEject:
-      path: /Audio/Weapons/Guns/EmptyAlarm/smg_empty_alarm.ogg # TODO: Custom autoeject alarm sound, maybe for reuse with any NT armaments with the feature? My suggestion: A much harsher tone
+      path: Audio/_Ronstation/Weapons/Guns/EmptyAlarm/nt_empty_alarm.ogg
   - type: ItemSlots
     slots:
       gun_magazine:
@@ -64,6 +64,10 @@
         map: ["enum.GunVisualLayers.Mag"]
   - type: Clothing
     sprite: _Ronstation/Objects/Weapons/Guns/Rifles/secannie.rsi
+  - type: ChamberMagazineAmmoProvider
+    autoEject: true
+    soundAutoEject:
+      path: /Audio/Weapons/Guns/EmptyAlarm/smg_empty_alarm.ogg # TODO: Custom autoeject alarm sound (maybe), for now this is just using the original default so it doesn't confuse people with that version meant for NT guns
   - type: ItemSlots
     slots:
       gun_magazine:
@@ -74,12 +78,5 @@
         name: Chamber
         startingItem: MagazineLightRifleIncendiary
         priority: 1
-  - type: CanDualWield # this is just because its funny. abuse it you lose it though
-    dualWieldInaccuracyPenalty: 50
-  - type: SpeedModifiedOnWield
-    walkModifier: 0.9
-    sprintModifier: 0.9
-  - type: CursorOffsetRequiresWield
-  - type: EyeCursorOffset
-    maxOffset: 2.5
-    pvsIncrease: 0.3
+  - type: CanDualWield
+    dualWieldInaccuracyPenalty: 45 # for when someone has really pissed off some magical faction
