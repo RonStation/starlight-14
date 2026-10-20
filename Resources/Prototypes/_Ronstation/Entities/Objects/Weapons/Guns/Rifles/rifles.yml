@@ -1,5 +1,6 @@
 - type: entity
   name: CCSD annie # not limited to CCSD, its just made by them
+  suffix: ERT
   parent: [BaseCentcommContraband, WeaponRifleAnnie]
   id: WeaponRifleAnnieCCSD
   description: A beast designed to take on the worst the sector has to offer. This one has been modified by members of the Security Division; a scope, full range of firing modes, and even automated magazine ejection to keep up with the firepower of the Syndicate. Uses .30 rifle ammo.
@@ -49,6 +50,7 @@
     pvsIncrease: 0.3
 - type: entity
   name: warped annie # bug to feature because its funny
+  suffix: ADMEME, DO NOT MAP
   parent: [BaseMagicalContraband, WeaponRifleAnnieCCSD]
   id: WeaponRifleAnnieWTF
   description: A beast designed to shoulder the- why the fuck is there an entire magazine in the chamber? Is this thing Bluespace?!

@@ -14,19 +14,19 @@ public sealed partial class StarlightCCVars
     ///     Allows IC Secrets (flavor text only visible to the player possessing the character)
     /// </summary>
     public static readonly CVarDef<bool> ICSecrets =
-        CVarDef.Create("ic.secrets_text", false, CVar.SERVER | CVar.REPLICATED);
+        CVarDef.Create("ic.secrets_text", true, CVar.SERVER | CVar.REPLICATED); //Ronstation: Make having RP note functionality default to on.
 
     /// <summary>
     ///     Allows IC Exploitables (flavor text only visible to the player possessing the player and certain antags)
     /// </summary>
     public static readonly CVarDef<bool> ExploitableSecrets =
-        CVarDef.Create("ic.secrets_exploitable", false, CVar.SERVER | CVar.REPLICATED);
+        CVarDef.Create("ic.secrets_exploitable", true, CVar.SERVER | CVar.REPLICATED); //Ronstation: Make having RP note functionality default to on.
 
     /// <summary>
     /// Whether or not players can open character inspect windows on other players
     /// </summary>
     public static readonly CVarDef<bool> CharacterInspectWindowEnabled =
-        CVarDef.Create("ic.inspect_windows", false, CVar.SERVER | CVar.REPLICATED);
+        CVarDef.Create("ic.inspect_windows", true, CVar.SERVER | CVar.REPLICATED); //Ronstation: Make having RP note functionality default to on.
 
     /*
      * Traits
