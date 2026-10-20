@@ -22,7 +22,7 @@
   - type: ChamberMagazineAmmoProvider
     autoEject: true
     soundAutoEject:
-      path: Audio/_Ronstation/Weapons/Guns/EmptyAlarm/nt_empty_alarm.ogg
+      path: /Audio/_Ronstation/Weapons/Guns/EmptyAlarm/nt_empty_alarm.ogg
   - type: ItemSlots
     slots:
       gun_magazine:
