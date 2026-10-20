@@ -37,7 +37,7 @@
         priority: 2
         whitelist:
           tags:
-            - MagazineLightRifleSP # Ronstation: porting annie to SL
+            - MagazineLightRifle # Ronstation: porting annie to SL
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
