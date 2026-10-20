@@ -1,5 +1,6 @@
 - type: entity
   name: CCSD annie # not limited to CCSD, its just made by them
+  suffix: ERT
   parent: [BaseCentcommContraband, WeaponRifleAnnie]
   id: WeaponRifleAnnieCCSD
   description: A beast designed to take on the worst the sector has to offer. This one has been modified by members of the Security Division; a scope, full range of firing modes, and even automated magazine ejection to keep up with the firepower of the Syndicate. Uses .30 rifle ammo.
@@ -21,17 +22,23 @@
   - type: ChamberMagazineAmmoProvider
     autoEject: true
     soundAutoEject:
-      path: /Audio/Weapons/Guns/EmptyAlarm/smg_empty_alarm.ogg # TODO: Custom autoeject alarm sound, maybe for reuse with any NT armaments with the feature? My suggestion: A much harsher tone
+      path: /Audio/_Ronstation/Weapons/Guns/EmptyAlarm/nt_empty_alarm.ogg
   - type: ItemSlots
     slots:
       gun_magazine:
         name: Magazine
         startingItem: MagazineLightRifleIncendiary
         priority: 2
+        whitelist:
+          tags:
+            - MagazineLightRifle
       gun_chamber:
         name: Chamber
         startingItem: CartridgeLightRifleIncendiary
         priority: 1
+        whitelist:
+          tags:
+            - CartridgeLightRifle
   - type: CanDualWield # this is just because its funny. abuse it you lose it though
     dualWieldInaccuracyPenalty: 50
   - type: SpeedModifiedOnWield
@@ -41,3 +48,35 @@
   - type: EyeCursorOffset
     maxOffset: 2.5
     pvsIncrease: 0.3
+- type: entity
+  name: warped annie # bug to feature because its funny
+  suffix: ADMEME, DO NOT MAP
+  parent: [BaseMagicalContraband, WeaponRifleAnnieCCSD]
+  id: WeaponRifleAnnieWTF
+  description: A beast designed to shoulder the- why the fuck is there an entire magazine in the chamber? Is this thing Bluespace?!
+  components:
+  - type: Sprite
+    sprite: _Ronstation/Objects/Weapons/Guns/Rifles/secannie.rsi #TODO: make it purple or blue or something else that would be really funny
+    layers:
+      - state: base
+        map: ["enum.GunVisualLayers.Base"]
+      - state: mag-0
+        map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: _Ronstation/Objects/Weapons/Guns/Rifles/secannie.rsi
+  - type: ChamberMagazineAmmoProvider
+    autoEject: true
+    soundAutoEject:
+      path: /Audio/Weapons/Guns/EmptyAlarm/smg_empty_alarm.ogg # TODO: Custom autoeject alarm sound (maybe), for now this is just using the original default so it doesn't confuse people with that version meant for NT guns
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazineLightRifleIncendiary
+        priority: 2
+      gun_chamber:
+        name: Chamber
+        startingItem: MagazineLightRifleIncendiary
+        priority: 1
+  - type: CanDualWield
+    dualWieldInaccuracyPenalty: 45 # for when someone has really pissed off some magical faction
