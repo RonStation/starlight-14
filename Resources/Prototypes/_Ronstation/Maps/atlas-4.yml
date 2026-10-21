@@ -13,8 +13,8 @@
         nameGenerator:
           !type:NanotrasenNameGenerator
           prefixCreator: '-ACS'
-      - type: StationEmergencyShuttle
-        emergencyShuttlePath: /Maps/Ronstation/Shuttles/emergency_small.yml
+#      - type: StationEmergencyShuttle (this doesn't work right now and thats my fault for not fixing this in the first place)
+#        emergencyShuttlePath: /Maps/Ronstation/Shuttles/emergency_small.yml
       - type: StationJobs
         availableJobs:
           # command
