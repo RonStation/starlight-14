@@ -1,4 +1,0 @@
-- type: quickPhrase
-  id: SafetySoftCriticalPhrase
-  parent: BaseSafetyStatusPhrase
-  text: phrase-safety-softcritical
