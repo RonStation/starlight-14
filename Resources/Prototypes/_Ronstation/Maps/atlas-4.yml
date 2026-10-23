@@ -13,8 +13,8 @@
         nameGenerator:
           !type:NanotrasenNameGenerator
           prefixCreator: '-ACS'
-#      - type: StationEmergencyShuttle (this doesn't work right now and thats my fault for not fixing this in the first place)
-#        emergencyShuttlePath: /Maps/Ronstation/Shuttles/emergency_small.yml
+      - type: StationEmergencyShuttle
+        emergencyShuttlePath: /Maps/_Ronstation/Shuttles/emergency_small.yml
       - type: StationJobs
         availableJobs:
           # command
@@ -58,6 +58,7 @@
           Detective: [ 1, 1 ]
           SecurityCadet: [ 1, 1 ]
           Lawyer: [ 1, 1 ]
+          K9: [ 2, 1 ]
           # cargo
           MiningSpecialist: [ 2, 4 ] # Mining is not Salvage. Actually play the station roles in the station game!
           CargoTechnician: [ 3, 3 ]
