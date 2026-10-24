@@ -1,0 +1,83 @@
+- type: quickPhrase
+  parent: [ BaseLawPhrase, BaseJobPhrase ]
+  id: BaseLawJobPhrase
+  abstract: true
+- type: quickPhrase
+  parent: [ BaseLogisticsPhrase, BaseJobPhrase ]
+  id: BaseSalvageJobPhrase
+  abstract: true
+# Cargo
+- type: quickPhrase
+  parent: BaseSalvageJobPhrase
+  id: MiningSpecPhrase
+  text: job-name-miningspec
+
+# Command
+- type: quickPhrase
+  parent: BaseCommandJobPhrase
+  id: BSOPhrase
+  text: job-name-blueshield
+
+- type: quickPhrase
+  parent: BaseCommandJobPhrase
+  id: NTRepPhrase
+  text: job-name-ntrep
+
+- type: quickPhrase
+  parent: BaseCommandJobPhrase
+  id: NTCTPhrase
+  text: job-name-nct
+
+# Civilian
+- type: quickPhrase
+  parent: BaseServiceJobPhrase
+  id: RadioHostPhrase
+  text: job-name-radiohost
+
+- type: quickPhrase
+  parent: BaseServiceJobPhrase
+  id: PerformerPhrase
+  text: job-name-performer
+
+- type: quickPhrase
+  parent: BaseServiceJobPhrase
+  id: AssistantManagerPhrase
+  text: job-name-assistantmanager
+
+# Law
+- type: quickPhrase
+  parent: BaseLawJobPhrase
+  id: MagistratePhrase
+  text: job-name-magistrate
+
+- type: quickPhrase
+  parent: BaseLawJobPhrase
+  id: IAAPhrase
+  text: job-name-iaa
+
+- type: quickPhrase
+  parent: BaseLawJobPhrase
+  id: LawyerPhrase
+  text: job-name-lawyer
+
+#Salvage
+- type: quickPhrase
+  parent: BaseSalvageJobPhrase
+  id: SalvLeadPhrase
+  text: job-name-salvagelead
+
+- type: quickPhrase
+  parent: BaseSalvageJobPhrase
+  id: SalvMedPhrase
+  text: job-name-salvagemedic
+
+# Security
+- type: quickPhrase
+  parent: BaseSecurityJobPhrase
+  id: DutyOfficerPhrase
+  text: job-name-dutyofficer
+
+- type: quickPhrase
+  parent: BaseSecurityJobPhrase
+  id: K9Phrase
+  text: job-name-k9

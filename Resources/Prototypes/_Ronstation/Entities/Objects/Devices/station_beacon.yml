@@ -1,0 +1,15 @@
+- type: entity # DV has this defined but we don't; while I don't suggest requiring this be mapped, it can be useful for people who want it.
+  parent: DefaultStationBeaconCommand
+  id: DefaultStationBeaconConference
+  suffix: Conference
+  components:
+  - type: NavMapBeacon
+    defaultText: station-beacon-conference-room
+
+- type: entity # Same as above.
+  parent: DefaultStationBeacon
+  id: DefaultStationBeaconConference
+  suffix: Park
+  components:
+  - type: NavMapBeacon
+    defaultText: station-beacon-park

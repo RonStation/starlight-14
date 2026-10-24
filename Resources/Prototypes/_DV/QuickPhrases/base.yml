@@ -51,19 +51,19 @@
 
 - type: quickPhrase
   id: BaseEpistemicsPhrase
-  group: Epistemics
+  group: Science # Ronstation: We don't really have anything that makes this distinction make sense
   styleClass: EpistemicsButton
   abstract: true
 
-- type: quickPhrase
-  id: BaseJusticePhrase
-  group: Justice
-  styleClass: JusticeButton
-  abstract: true
+#- type: quickPhrase
+#  id: BaseJusticePhrase
+#  group: Justice
+#  styleClass: JusticeButton
+#  abstract: true
 
 - type: quickPhrase
   id: BaseLogisticsPhrase
-  group: Logistics
+  group: Cargo # Ronstation: More informal words since its what most people are used to.
   styleClass: LogisticsButton
   abstract: true
 

@@ -18,10 +18,10 @@
   id: BaseEpistemicsJobPhrase
   abstract: true
 
-- type: quickPhrase
-  parent: [ BaseJusticePhrase, BaseJobPhrase ]
-  id: BaseJusticeJobPhrase
-  abstract: true
+#- type: quickPhrase
+#  parent: [ BaseJusticePhrase, BaseJobPhrase ]
+#  id: BaseJusticeJobPhrase
+#  abstract: true
 
 - type: quickPhrase
   parent: [ BaseLogisticsPhrase, BaseJobPhrase ]
@@ -48,7 +48,7 @@
 - type: quickPhrase
   parent: BaseCivilianJobPhrase
   id: PassengerPhrase
-  text: job-name-passenger
+  text: job-name-assistant # Ronstation: Starlight has Assistants, not passengers
 
 - type: quickPhrase
   parent: BaseCivilianJobPhrase
@@ -67,10 +67,10 @@
   id: CentralCommandOfficialPhrase
   text: job-name-centcommoff
 
-- type: quickPhrase
-  parent: BaseCommandJobPhrase
-  id: CentralCommandInternPhrase
-  text: job-name-centcomintern
+#- type: quickPhrase
+#  parent: BaseCommandJobPhrase
+#  id: CentralCommandInternPhrase
+#  text: job-name-centcomintern
 
 - type: quickPhrase
   parent: BaseCommandJobPhrase
@@ -161,34 +161,34 @@
 - type: quickPhrase
   parent: BaseLogisticsJobPhrase
   id: CourierPhrase
-  text: job-name-courier
+  text: job-name-mailtech # Ronstation: Don't have couriors but we do have mail techs.
 
-- type: quickPhrase
-  parent: BaseLogisticsJobPhrase
-  id: CargoAssistantPhrase
-  text: job-name-cargo-assistant
+#- type: quickPhrase
+#  parent: BaseLogisticsJobPhrase
+#  id: CargoAssistantPhrase
+#  text: job-name-cargo-assistant
 
 # Justice
 
-- type: quickPhrase
-  parent: BaseJusticeJobPhrase
-  id: ChiefJusticePhrase
-  text: job-name-chief-justice
+#- type: quickPhrase
+#  parent: BaseJusticeJobPhrase
+#  id: ChiefJusticePhrase
+#  text: job-name-chief-justice
 
-- type: quickPhrase
-  parent: BaseJusticeJobPhrase
-  id: LawyerPhrase
-  text: job-name-lawyer
+#- type: quickPhrase
+#  parent: BaseJusticeJobPhrase
+#  id: LawyerPhrase
+#  text: job-name-lawyer
 
-- type: quickPhrase
-  parent: BaseJusticeJobPhrase
-  id: ProsecutorPhrase
-  text: job-name-prosecutor
+#- type: quickPhrase
+#  parent: BaseJusticeJobPhrase
+#  id: ProsecutorPhrase
+#  text: job-name-prosecutor
 
-- type: quickPhrase
-  parent: BaseJusticeJobPhrase
-  id: ClerkPhrase
-  text: job-name-clerk
+#- type: quickPhrase
+#  parent: BaseJusticeJobPhrase
+#  id: ClerkPhrase
+#  text: job-name-clerk
 
 # Medical
 
@@ -244,10 +244,10 @@
   id: SecurityCadetPhrase
   text: job-name-cadet
 
-- type: quickPhrase
-  parent: BaseSecurityJobPhrase
-  id: PrisonGuardPhrase
-  text: job-name-guard
+#- type: quickPhrase
+#  parent: BaseSecurityJobPhrase
+#  id: PrisonGuardPhrase
+#  text: job-name-guard
 
 - type: quickPhrase
   parent: BaseSecurityJobPhrase
@@ -328,20 +328,20 @@
   id: ZookeeperPhrase
   text: job-name-zookeeper
 
-- type: quickPhrase
-  parent: BaseCivilianJobPhrase
-  id: MartialArtistPhease
-  text: job-name-martialartist
+#- type: quickPhrase
+#  parent: BaseCivilianJobPhrase
+#  id: MartialArtistPhease
+#  text: job-name-martialartist
 
 - type: quickPhrase
   parent: BaseCivilianJobPhrase
   id: PrisonerPhrase
   text: job-name-prisoner
 
-- type: quickPhrase
-  parent: BaseCivilianJobPhrase
-  id: GladiatorPhrase
-  text: job-name-gladiator
+#- type: quickPhrase
+#  parent: BaseCivilianJobPhrase
+#  id: GladiatorPhrase
+#  text: job-name-gladiator
 
 - type: quickPhrase
   parent: BaseSecurityJobPhrase

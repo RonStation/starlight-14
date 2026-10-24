@@ -1,0 +1,13 @@
+# Xenobiology
+- type: quickPhrase
+  id: XenoBioConsolePhrase
+  parent: BaseEpistemicsSubjectPhrase
+  text: phrase-xenobio-console
+- type: quickPhrase
+  id: XenoBioExtractPhrase
+  parent: BaseEpistemicsSubjectPhrase
+  text: phrase-xenobio-extract
+- type: quickPhrase
+  id: XenoBioPotionPhrase
+  parent: BaseEpistemicsSubjectPhrase
+  text: phrase-xenobio-potion

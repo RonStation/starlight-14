@@ -1,0 +1,101 @@
+# Vaguely rganized based off of the _DV file of the same name
+# Command
+- type: quickPhrase
+  parent: BaseCommandLocationPhrase
+  id: LocationNTRepPhrase
+  text: station-beacon-nanotrasen-representative
+
+- type: quickPhrase
+  parent: BaseCommandLocationPhrase
+  id: LocationBSOPhrase
+  text: station-beacon-blueshield-officer
+
+- type: quickPhrase
+  parent: BaseCommandLocationPhrase
+  id: LocationNCTPhrase
+  text: station-beacon-nanotrasen-career-trainer
+
+- type: quickPhrase
+  parent: BaseCommandLocationPhrase
+  id: LocationCmdBreakroomPhrase
+  text: station-beacon-breakroom-command
+
+# Engineering
+- type: quickPhrase
+  parent: BaseEngineeringLocationPhrase
+  id: LocationNukeReactorPhrase
+  text: station-beacon-nuclear-reactor
+
+- type: quickPhrase
+  parent: BaseEngineeringLocationPhrase
+  id: LocationEngiBreakroomPhrase
+  text: station-beacon-breakroom-engineering
+
+# Science
+
+- type: quickPhrase
+  parent: BaseEpistemicsLocationPhrase
+  id: LocationSciBreakroomPhrase
+  text: station-beacon-breakroom-science
+
+- type: quickPhrase
+  parent: BaseEpistemicsLocationPhrase
+  id: LocationXenobioPhrase
+  text: station-beacon-xenobiology
+
+# Law
+- type: quickPhrase
+  parent: BaseJusticeLocationPhrase
+  id: LocationIAAPhrase
+  text: station-beacon-internal-affairs
+
+# Cargo
+- type: quickPhrase
+  parent: BaseLogisticsLocationPhrase
+  id: LocationMiningPhrase
+  text: station-beacon-mining
+
+- type: quickPhrase
+  parent: BaseLogisticsLocationPhrase
+  id: LocationCargoBreakroomPhrase
+  text: station-beacon-breakroom-cargo
+
+# Medical
+- type: quickPhrase
+  parent: BaseMedicalLocationPhrase
+  id: LocationMedBreakroomPhrase
+  text: station-beacon-breakroom-medical
+
+# Security
+- type: quickPhrase
+  parent: BaseSecurityLocationPhrase
+  id: LocationSecBreakroomPhrase
+  text: station-beacon-breakroom-security
+
+# Service
+- type: quickPhrase
+  parent: BaseServiceLocationPhrase
+  id: LocationChapelPhrase
+  text: station-beacon-chapel
+
+- type: quickPhrase
+  parent: BaseServiceLocationPhrase
+  id: LocationRadioStudioPhrase
+  text: station-beacon-radio-host
+
+- type: quickPhrase
+  parent: BaseServiceLocationPhrase
+  id: LocationLaundromatPhrase
+  text: station-beacon-laundromat
+
+- type: quickPhrase
+  parent: BaseServiceLocationPhrase
+  id: LocationWashroomsPhrase
+  text: station-beacon-washrooms
+
+- type: quickPhrase
+  parent: BaseServiceLocationPhrase
+  id: LocationServBreakroomPhrase
+  text: station-beacon-breakroom-service
+
+# Civilian
