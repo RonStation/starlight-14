@@ -8,7 +8,7 @@
 
 - type: entity # Same as above.
   parent: DefaultStationBeacon
-  id: DefaultStationBeaconConference
+  id: DefaultStationBeaconPark
   suffix: Park
   components:
   - type: NavMapBeacon
