@@ -39,20 +39,20 @@
   parent: BaseCrewSpeciesPhrase
   text: species-name-vulpkanin
 
-- type: quickPhrase
-  id: SpeciesFelinidPhrase
-  parent: BaseCrewSpeciesPhrase
-  text: species-name-felinid
+#- type: quickPhrase
+#  id: SpeciesFelinidPhrase
+#  parent: BaseCrewSpeciesPhrase
+#  text: species-name-felinid
 
-- type: quickPhrase
-  id: SpeciesHarpyPhrase
-  parent: BaseCrewSpeciesPhrase
-  text: species-name-harpy
+#- type: quickPhrase
+#  id: SpeciesHarpyPhrase
+#  parent: BaseCrewSpeciesPhrase
+#  text: species-name-harpy
 
-- type: quickPhrase
-  id: SpeciesOniPhrase
-  parent: BaseCrewSpeciesPhrase
-  text: species-name-oni
+#- type: quickPhrase
+#  id: SpeciesOniPhrase
+#  parent: BaseCrewSpeciesPhrase
+#  text: species-name-oni
 
 - type: quickPhrase
   id: SpeciesSkeletonPhrase
@@ -69,37 +69,37 @@
   parent: BaseCrewSpeciesPhrase
   text: species-name-rodentia
 
-- type: quickPhrase
-  id: SpeciesFeroxiPhrase
-  parent: BaseCrewSpeciesPhrase
-  text: species-name-feroxi
+#- type: quickPhrase
+#  id: SpeciesFeroxiPhrase
+#  parent: BaseCrewSpeciesPhrase
+#  text: species-name-feroxi
 
-- type: quickPhrase
-  id: SpeciesKitsunePhrase
-  parent: BaseCrewSpeciesPhrase
-  text: species-name-kitsune
+#- type: quickPhrase
+#  id: SpeciesKitsunePhrase
+#  parent: BaseCrewSpeciesPhrase
+#  text: species-name-kitsune
 
 - type: quickPhrase
   id: SpeciesKThavenPhrase
   parent: BaseCrewSpeciesPhrase
   text: species-name-thaven
 
-- type: quickPhrase
-  id: SpeciesChitnidePhrase
-  parent: BaseCrewSpeciesPhrase
-  text: species-name-chitinid
+#- type: quickPhrase
+#  id: SpeciesChitnidePhrase
+#  parent: BaseCrewSpeciesPhrase
+#  text: species-name-chitinid
 
 - type: quickPhrase
   id: SpeciesAvaliPhrase
   parent: BaseCrewSpeciesPhrase
   text: species-name-avali
 
-- type: quickPhrase
-  id: SpeciesOviniaPhrase
-  parent: BaseCrewSpeciesPhrase
-  text: species-name-ovinia
+#- type: quickPhrase
+#  id: SpeciesOviniaPhrase
+#  parent: BaseCrewSpeciesPhrase
+#  text: species-name-ovinia
 
-- type: quickPhrase
-  id: SpeciesAllulaloPhrase
-  parent: BaseCrewSpeciesPhrase
-  text: species-name-allulalo
+#- type: quickPhrase
+#  id: SpeciesAllulaloPhrase
+#  parent: BaseCrewSpeciesPhrase
+#  text: species-name-allulalo

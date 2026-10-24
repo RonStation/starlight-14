@@ -47,37 +47,37 @@
   id: ResearchConsolePhrase
   parent: BaseEpistemicsSubjectPhrase
   text: phrase-research-console
+# Begin Ronstation: Removing Phrases related to features we don't have
+#- type: quickPhrase
+#  id: OraclePhrase
+#  parent: BaseEpistemicsSubjectPhrase
+#  text: phrase-oracle
 
-- type: quickPhrase
-  id: OraclePhrase
-  parent: BaseEpistemicsSubjectPhrase
-  text: phrase-oracle
+#- type: quickPhrase
+#  id: SophiePhrase
+#  parent: BaseEpistemicsSubjectPhrase
+#  text: phrase-sophie
 
-- type: quickPhrase
-  id: SophiePhrase
-  parent: BaseEpistemicsSubjectPhrase
-  text: phrase-sophie
+#- type: quickPhrase
+#  id: GlimmerPhrase
+#  parent: BaseEpistemicsSubjectPhrase
+#  text: phrase-glimmer
 
-- type: quickPhrase
-  id: GlimmerPhrase
-  parent: BaseEpistemicsSubjectPhrase
-  text: phrase-glimmer
+#- type: quickPhrase
+#  id: PsionicsPhrase
+#  parent: BaseEpistemicsSubjectPhrase
+#  text: phrase-psionic
 
-- type: quickPhrase
-  id: PsionicsPhrase
-  parent: BaseEpistemicsSubjectPhrase
-  text: phrase-psionic
+#- type: quickPhrase
+#  id: LotophagolOilPhrase
+#  parent: BaseEpistemicsSubjectPhrase
+#  text: phrase-lotophagol-oil
 
-- type: quickPhrase
-  id: LotophagolOilPhrase
-  parent: BaseEpistemicsSubjectPhrase
-  text: phrase-lotophagol-oil
-
-- type: quickPhrase
-  id: MindbreakPhase
-  parent: BaseEpistemicsSubjectPhrase
-  text: phrase-mindbreak-phase
-
+#- type: quickPhrase
+#  id: MindbreakPhase
+#  parent: BaseEpistemicsSubjectPhrase
+#  text: phrase-mindbreak-phase
+# End Ronstation
 - type: quickPhrase
   id: CircuitImprinterPhrase
   parent: BaseEpistemicsSubjectPhrase

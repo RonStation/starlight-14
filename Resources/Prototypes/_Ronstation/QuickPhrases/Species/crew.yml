@@ -1,0 +1,39 @@
+- type: quickPhrase
+  id: SpeciesCycloritePhrase
+  parent: BaseCrewSpeciesPhrase
+  text: species-name-cyclorite
+
+- type: quickPhrase
+  id: SpeciesDollPhrase
+  parent: BaseCrewSpeciesPhrase
+  text: species-name-doll
+
+- type: quickPhrase
+  id: SpeciesSawianPhrase
+  parent: BaseCrewSpeciesPhrase
+  text: species-name-sawian
+
+- type: quickPhrase
+  id: SpeciesFelionoidPhrase
+  parent: BaseCrewSpeciesPhrase
+  text: species-name-felionoid
+
+- type: quickPhrase
+  id: SpeciesLagomorphPhrase
+  parent: BaseCrewSpeciesPhrase
+  text: species-name-lagomorph
+
+- type: quickPhrase
+  id: SpeciesResomiPhrase
+  parent: BaseCrewSpeciesPhrase
+  text: species-name-resomi
+
+- type: quickPhrase
+  id: SpeciesShadekinPhrase
+  parent: BaseCrewSpeciesPhrase
+  text: species-name-shadekin
+
+- type: quickPhrase
+  id: SpeciesIPCPhrase
+  parent: BaseCrewSpeciesPhrase
+  text: species-name-ipc

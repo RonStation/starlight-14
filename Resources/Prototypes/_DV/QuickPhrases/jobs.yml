@@ -106,10 +106,10 @@
   id: MystagoguePhrase
   text: job-name-rd
 
-- type: quickPhrase
-  parent: BaseEpistemicsJobPhrase
-  id: PsionicMantisPhrase
-  text: job-name-mantis
+#- type: quickPhrase
+#  parent: BaseEpistemicsJobPhrase
+#  id: PsionicMantisPhrase
+#  text: job-name-mantis
 
 - type: quickPhrase
   parent: BaseEpistemicsJobPhrase
@@ -126,15 +126,15 @@
   id: RoboticistPhrase
   text: job-name-roboticist
 
-- type: quickPhrase
-  parent: BaseEpistemicsJobPhrase
-  id: ChaplainPhrase
-  text: job-name-chaplain
+#- type: quickPhrase
+#  parent: BaseEpistemicsJobPhrase
+#  id: ChaplainPhrase
+#  text: job-name-chaplain
 
-- type: quickPhrase
-  parent: BaseEpistemicsJobPhrase
-  id: ArchivistPhrase
-  text: job-name-librarian
+#- type: quickPhrase
+#  parent: BaseEpistemicsJobPhrase
+#  id: ArchivistPhrase
+#  text: job-name-librarian
 
 - type: quickPhrase
   parent: BaseEpistemicsJobPhrase
