@@ -23,6 +23,7 @@ public sealed partial class TypingIndicatorSystem : SharedTypingIndicatorSystem
         base.Initialize();
 
         Subs.CVar(_cfg, CCVars.ChatShowTypingIndicator, OnShowTypingChanged);
+        InitializeAlternateTyping(); // DeltaV
     }
 
     public void ClientChangedChatText()

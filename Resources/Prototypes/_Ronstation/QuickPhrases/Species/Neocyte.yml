@@ -1,0 +1,90 @@
+- type: quickPhrase
+  id: BaseNeoSubspeciesPhrase
+  parent: BaseSpeciesPhrase
+  group: Neocyte
+  abstract: true
+
+- type: quickPhrase
+  id: SpeciesNeocytePhrase
+  parent: BaseNeoSubspeciesPhrase
+  text: species-name-neocyte
+
+- type: quickPhrase
+  id: SpeciesTrueNeocytePhrase
+  parent: BaseNeoSubspeciesPhrase
+  text: subspecies-name-trueneocyte
+
+- type: quickPhrase
+  id: SpeciesNeoVulpkaninPhrase
+  parent: BaseNeoSubspeciesPhrase
+  text: subspecies-name-neovulpkanin
+
+- type: quickPhrase
+  id: SpeciesNeoVoxPhrase
+  parent: BaseNeoSubspeciesPhrase
+  text: subspecies-name-neovox
+
+- type: quickPhrase
+  id: SpeciesNeoThavenPhrase
+  parent: BaseNeoSubspeciesPhrase
+  text: subspecies-name-neothaven
+
+- type: quickPhrase
+  id: SpeciesNeoSlimePersonPhrase
+  parent: BaseNeoSubspeciesPhrase
+  text: subspecies-name-neoslimeperson
+
+- type: quickPhrase
+  id: SpeciesNeoKinPhrase
+  parent: BaseNeoSubspeciesPhrase
+  text: subspecies-name-neokin
+
+- type: quickPhrase
+  id: SpeciesNeoResomiPhrase
+  parent: BaseNeoSubspeciesPhrase
+  text: subspecies-name-neoresomi
+
+- type: quickPhrase
+  id: SpeciesNeoReptilianPhrase
+  parent: BaseNeoSubspeciesPhrase
+  text: subspecies-name-neoreptilian
+
+- type: quickPhrase
+  id: SpeciesNeoMothPhrase
+  parent: BaseNeoSubspeciesPhrase
+  text: subspecies-name-neomoth
+
+- type: quickPhrase
+  id: SpeciesNeoHumanPhrase
+  parent: BaseNeoSubspeciesPhrase
+  text: subspecies-name-neohuman
+
+- type: quickPhrase
+  id: SpeciesNeoFelionoidPhrase
+  parent: BaseNeoSubspeciesPhrase
+  text: subspecies-name-neofelionoid
+
+- type: quickPhrase
+  id: SpeciesNeoDwarfPhrase
+  parent: BaseNeoSubspeciesPhrase
+  text: subspecies-name-neodwarf
+
+- type: quickPhrase
+  id: SpeciesNeoDionaPhrase
+  parent: BaseNeoSubspeciesPhrase
+  text: subspecies-name-neodiona
+
+- type: quickPhrase
+  id: SpeciesNeoCycloritePhrase
+  parent: BaseNeoSubspeciesPhrase
+  text: subspecies-name-neocyclorite
+
+- type: quickPhrase
+  id: SpeciesNeoAvaliPhrase
+  parent: BaseNeoSubspeciesPhrase
+  text: subspecies-name-neoavali
+
+- type: quickPhrase
+  id: SpeciesNeoArachnidPhrase
+  parent: BaseNeoSubspeciesPhrase
+  text: subspecies-name-neoarachnid

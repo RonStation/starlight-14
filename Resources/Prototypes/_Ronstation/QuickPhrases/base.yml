@@ -1,0 +1,5 @@
+- type: quickPhrase
+  id: BaseLawPhrase
+  group: Law
+  styleClass: JusticeButton
+  abstract: true
