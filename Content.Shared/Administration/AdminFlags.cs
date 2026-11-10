@@ -142,19 +142,21 @@
         Explosion = 1 << 24,
 
         /// <summary>
-        ///     Flag that grants everything normally locked behind a staff discord role.
-        /// </summary>
-        RNSLStaff = 1 << 22,
-
-        /// <summary>
-        ///     Flag that grants everything normally locked behind the mentor discord role, primarily mhelp.
-        /// </summary>
-        RNSLMentor = 1 << 23,
-
-        /// <summary>
         ///     Dangerous permissions like loading prototypes.
         /// </summary>
         Danger = 1u << 30,
+        #endregion
+
+        #region Ronstation
+        /// <summary>
+        ///     Intended to grant everything normally locked behind a staff discord role.
+        /// </summary>
+        RNSLStaff = 1 << 25,
+
+        /// <summary>
+        ///     Intended to grant everything normally locked behind the mentor discord role, primarily mhelp.
+        /// </summary>
+        RNSLMentor = 1 << 26,
         #endregion
 
         /// <summary>
