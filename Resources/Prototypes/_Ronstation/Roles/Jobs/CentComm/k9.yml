@@ -1,0 +1,9 @@
+- type: startingGear
+  id: CentcomK9Gear
+  equipment:
+    mask: ClothingMaskGasSecurity
+    suitstorage: DoubleEmergencyOxygenTankFilled
+    outerClothing: ClothingOuterArmorRiot
+    eyes: ClothingEyesHudCCK9
+    id: CentComDivisionCollarPDA
+    ears: ClothingHeadsetAltCentComDivHead

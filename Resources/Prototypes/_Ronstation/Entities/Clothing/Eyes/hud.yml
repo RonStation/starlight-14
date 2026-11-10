@@ -1,0 +1,8 @@
+- type: entity
+  parent: [ClothingEyesHudCCDivHead]
+  id: ClothingEyesHudCCK9
+  components:
+    - type: ChameleonClothing
+      slot:
+        - eyes
+      default: ClothingEyesEyepatchHudBlueShield # this is k9 wearable, which is the main reason this is a seperate proto.
