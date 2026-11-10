@@ -58,3 +58,13 @@
   jobName: job-name-ccdivspecopshead
   tags:
   - JobIconCentComm
+
+- type: jobIcon
+  parent: JobIcon
+  id: JobIconCCK9
+  icon:
+    sprite: *ronstation-icon-rsi
+    state: CCK9
+  jobName: job-name-cck9
+  tags:
+  - JobIconCentComm

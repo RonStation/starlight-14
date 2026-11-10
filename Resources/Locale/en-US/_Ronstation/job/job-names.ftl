@@ -19,3 +19,6 @@ job-name-ccdivcargomember = CentComm Administration Division Official
 job-name-ccdivdomesticmember = CentComm Domestic Division Official
 job-name-ccdivspecopsmember = CentComm Special Operations Division Official
 job-name-ccdivintelmember = CentComm Intelligence Division Official
+
+#CC Misc.
+job-name-cck9 = CentComm K9 Unit
