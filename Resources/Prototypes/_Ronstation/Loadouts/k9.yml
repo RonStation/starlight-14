@@ -1,0 +1,7 @@
+- type: roleLoadout
+  id: JobCentralCommandK9
+  canCustomizeName: true
+  nameDataset: NamesCorgi
+  groups:
+  - K9Variant
+  - K9OuterClothing

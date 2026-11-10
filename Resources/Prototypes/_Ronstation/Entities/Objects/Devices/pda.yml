@@ -13,7 +13,7 @@
   suffix: Centcom, K9/Borgi, Divisions
   components:
   - type: Pda
-    id: CentcomIDCardDivision
+    id: CCK9IDCard
   - type: RemovePreinstalledPrograms # Needs to be specified; copied the modified program list from the CC PDA and referenced this component from the collar base.
     programs:
     - CrewManifestCartridge

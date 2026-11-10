@@ -13,7 +13,7 @@
   displayWeight: 2
   icon: "JobIconK9"
   supervisors: job-supervisors-security
-  jobEntity: MobK9
+  jobEntity: MobCCK9
   access:
   - Security
   - Brig

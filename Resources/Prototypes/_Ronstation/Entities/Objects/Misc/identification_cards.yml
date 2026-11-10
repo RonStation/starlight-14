@@ -25,7 +25,7 @@
     sprite: Objects/Misc/id_cards.rsi
     heldPrefix: green
   - type: PresetIdCard
-    job: CentralCommandOperator
+    job: CentralCommandOfficial
   - type: ChameleonClothing
     slot: [idcard]
     default: CentcomIDCard
@@ -519,5 +519,33 @@
     heldPrefix: gold
   - type: PresetIdCard
     job: CentralCommandOperator
+  - type: NanoChatCard # CD
+    listNumber: false
+
+
+- type: entity
+  parent: [ IDCardStandard, BaseCentcommContraband ]
+  id: CCK9IDCard
+  name: centcomm k9 id card
+  description: An ID card for a beloved CentComm K9 unit.
+  components:
+  - type: Sprite
+    sprite: _Starlight/Objects/Misc/id_cards.rsi
+    layers:
+    - state: centcom
+    - sprite: *id-rsi
+      state: stripe_top
+      color: "#999999"
+    - sprite: *id-rsi
+      state: stripe_bottom
+      color: "#6b6b6b"
+    - sprite: *ronstation-icon-rsi
+      offset: *icon-offset
+      state: CCK9
+  - type: Item
+    sprite: Objects/Misc/id_cards.rsi
+    heldPrefix: gold
+  - type: PresetIdCard
+    job: CentralCommandK9
   - type: NanoChatCard # CD
     listNumber: false

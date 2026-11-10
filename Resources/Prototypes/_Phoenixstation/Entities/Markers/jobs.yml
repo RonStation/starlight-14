@@ -2,7 +2,7 @@
   id: SpawnPointCCofficial
   parent: SpawnPointJobBase
   name: CentComm Official
-  suffix: DO NOT MAP (yet)
+  suffix: Only Map CC # Ronstation: Solidifying the intent of CCOs; if ATS spawns do work, CC ones theoretically should too
   components:
     - type: SpawnPoint
       job_id: CentralCommandOfficial
@@ -10,5 +10,5 @@
       sprite: _Starlight/Markers/jobs.rsi
       layers:
         - state: green
-        - state: ntrep
-        - state: jobicon
+        - sprite: _Starlight/Mobs/Pets/k9.rsi
+          state: k9-brown
