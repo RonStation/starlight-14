@@ -1,0 +1,41 @@
+# A modified version of Starlight's M-81 Fireline cloak, because it looks badass.
+- type: entity
+  parent:  [ClothingNeckBase, BaseCentcommContraband]
+  id: ClothingNeckCloakCCSDFireline
+  name: CC fireline cloak
+  description: A custom cloak made by and for the Security division's Head, combining powerful tech and traditional Avali nanoweaving techniques. Smells like Pumpkin spice.
+  suffix: Admeme, DO NOT MAP
+  components:
+  - type: Sprite
+    sprite: _Ronstation/Clothing/Neck/Cloaks/ccsechead_poncho.rsi
+  - type: Clothing
+    sprite: _Ronstation/Clothing/Neck/Cloaks/ccsechead_poncho.rsi
+  - type: PointLight
+    radius: 2
+    energy: 2.2
+    color: "#DE3A3A"
+  - type: StaticPrice
+    price: 2000
+  - type: PowerCellSlot
+    cellSlotId: cell_slot
+  - type: ItemSlots
+    slots:
+      cell_slot:
+        name: power-cell-slot-component-slot-name-default
+        startingItem: PowerCellAntiqueProto
+        whitelist:
+          tags:
+            - PowerCell
+            - PowerCellSmall
+  - type: ContainerContainer
+    containers:
+      cell_slot: !type:ContainerSlot
+  - type: EnergyDomeGenerator
+    damageEnergyDraw: 8
+    domePrototype: EnergyDomeSmallPink # Because this was a miss on my part originally, this is what the HoS' hardsuit actually uses
+  - type: PowerCellDraw
+    enabled: false
+    drawRate: 2
+    useCharge: 0
+  - type: UseDelay
+    delay: 12.0

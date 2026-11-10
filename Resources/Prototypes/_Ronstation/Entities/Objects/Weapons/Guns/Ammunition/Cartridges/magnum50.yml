@@ -1,0 +1,169 @@
+- type: entity
+  abstract: true
+  parent: [ BaseCartridge, BaseSecuritySalvageContraband ] # TODO Starlight partial once space-wizards/RobustToolbox/pull/7084 gets fixed
+  id: BaseCartridgeMagnum50
+  name: cartridge (.50 magnum)
+  components:
+  - type: Tag
+    tags:
+      - CartridgeMagnum50
+  - type: CartridgeAmmo
+    proto: BulletMagnum50TraceSP
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Ammunition/Casings/ammo_casing.rsi
+    layers:
+    - state: base
+      map: ["enum.AmmoVisualLayers.Base"]
+  - type: Appearance
+  - type: SpentAmmoVisuals
+
+- type: entity
+  parent: BaseCartridgeMagnum50
+  id: CartridgeMagnum50SP
+  name: cartridge (.50 magnum SP)
+  description: Heavy magnum cartridge mostly used by revolvers. Standard kinetic ammunition is common and useful in most situations.
+  components:
+  - type: CartridgeAmmo
+    proto: BulletMagnum50TraceSP
+  - type: Sprite
+    layers:
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+      - state: tip
+        map: [ "enum.AmmoVisualLayers.Tip" ]
+        color: "#3F47DB"
+
+- type: entity
+  parent: BaseCartridgeMagnum50
+  id: CartridgeMagnum50Practice
+  name: cartridge (.50 magnum practice)
+  description: Heavy magnum cartridge mostly used by revolvers. Practice ammunition fires a chalk projectile that stings a little, but otherwise causes no lasting damage.
+  components:
+  - type: CartridgeAmmo
+    proto: BulletMagnum50TracePractice
+  - type: Sprite
+    layers:
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+      - state: tip
+        map: [ "enum.AmmoVisualLayers.Tip" ]
+        color: "#D86E2C"
+
+- type: entity
+  parent: BaseCartridgeMagnum50
+  id: CartridgeMagnum50Incendiary
+  name: cartridge (.50 magnum incendiary)
+  description: Heavy magnum cartridge mostly used by revolvers. Incendiary ammunition contains a self-igniting compound that sets targets ablaze.
+  components:
+  - type: CartridgeAmmo
+    proto: BulletMagnum50TraceIncendiary
+  - type: Sprite
+    layers:
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+      - state: tip
+        map: [ "enum.AmmoVisualLayers.Tip" ]
+        color: "#BFC8CA"
+
+- type: entity
+  parent: BaseCartridgeMagnum50
+  id: CartridgeMagnum50AP
+  name: cartridge (.50 magnum armor-piercing)
+  description: Heavy magnum cartridge mostly used by revolvers. Armor-piercing ammunition is renowned for its ability to cut straight through body armor.
+  components:
+  - type: CartridgeAmmo
+    proto: BulletMagnum50TraceAP
+  - type: Sprite
+    layers:
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+      - state: tip
+        map: [ "enum.AmmoVisualLayers.Tip" ]
+        color: "#0a0a0a"
+
+- type: entity
+  parent: BaseCartridgeMagnum50
+  id: CartridgeMagnum50Uranium
+  name: cartridge (.50 magnum uranium)
+  description: Heavy magnum cartridge mostly used by revolvers. Uranium ammunition replaces the lead core of the bullet with fissile material, irradiating targets from the inside.
+  components:
+  - type: CartridgeAmmo
+    proto: BulletMagnum50TraceUranium
+  - type: Sprite
+    layers:
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+      - state: tip
+        map: [ "enum.AmmoVisualLayers.Tip" ]
+        color: "#65fe08"
+
+- type: entity
+  id: CartridgeMagnum50Rubber
+  name: cartridge (.50 magnum rubber)
+  parent: BaseCartridgeMagnum50
+  components:
+  - type: CartridgeAmmo
+    proto: RubberBulletTrace
+  - type: Sprite
+    layers:
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+      - state: tip
+        map: [ "enum.AmmoVisualLayers.Tip" ]
+        color: "#43c4f7"
+
+- type: entity
+  id: CartridgeMagnum50Improvised
+  name: improvised cartridge (.50 magnum)
+  description: A handmade revolver bullet, stuffed to the brim with phosphorus for extra 'oomph'. Still not as good as a normal magnum bullet.
+  parent: [BaseCartridgePistol, BaseMinorContraband]
+  components:
+  - type: CartridgeAmmo
+    proto: BulletMagnumTraceImprovised
+  - type: Sprite
+    sprite: _Starlight/Objects/Weapons/Guns/Ammunition/Casings/improvised_casing.rsi
+    layers:
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+      - state: tip
+        map: [ "enum.AmmoVisualLayers.Tip" ]
+        color: "#717171"
+  - type: Tag
+    tags:
+      - Cartridge
+      - CartridgeMagnum50Improvised
+  - type: Construction
+    graph: ImprovisedMagnumBulletGraph
+    node: shell
+
+- type: entity
+  id: CartridgeMagnum50HP
+  name: cartridge (.50 magnum HP)
+  parent: BaseCartridgeMagnum50
+  description: Heavy magnum cartridge mostly used by revolvers. Chalk ammunition is generally non-harmful, used for practice.
+  components:
+  - type: CartridgeAmmo
+    proto: BulletMagnumTraceHP
+  - type: Sprite
+    layers:
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+      - state: tip
+        map: [ "enum.AmmoVisualLayers.Tip" ]
+        color: "#000000"
+
+- type: entity
+  id: CartridgeMagnum50FMJ
+  name: cartridge (.50 magnum FMJ)
+  parent: BaseCartridgeMagnum50
+  description: Heavy magnum cartridge mostly used by revolvers. Incendiary ammunition contains a self-igniting compound that sets the target ablaze.
+  components:
+  - type: CartridgeAmmo
+    proto: BulletMagnumTraceFMJ
+  - type: Sprite
+    layers:
+      - state: base
+        map: [ "enum.AmmoVisualLayers.Base" ]
+      - state: tip
+        map: [ "enum.AmmoVisualLayers.Tip" ]
+        color: "#B68F0E"

@@ -1,0 +1,33 @@
+# This was written by Atakku over the span of three commits; latest version was Ronstation Commit 3e48a3f.
+# Some changes have been made to 'modernize' it in a sense, mostly just additions.
+# General CC character, rather than head of a CC department
+- type: entity
+  id: ClothingBackpackSatchelHoldingCentcomFormalFilled
+  parent: ClothingBackpackSatchelHoldingBaseCCFill
+  suffix: Filled, Centcom Formal, Admeme
+  components:
+  - type: Tag
+    tags:
+    - ScurretWearable
+    - CorgiWearable
+  - type: StorageFill
+    contents:
+      - id: RubberStampCentcom
+      - id: BoxStampsCCDepartments # So this outfit is universally applicible to any division
+      - id: BoxStampsCCAdministrative
+      - id: ToolDebug
+      - id: WelderExperimental
+      - id: RCDExperimental
+      - id: RPDExperimental
+      - id: RPLDExperimental
+      - id: Multitool
+      - id: DoorRemoteCustom
+      - id: BoxFolderCentComClipboardThreePapers
+      - id: BoxSurvivalNonBreatherExtended
+      - id: DoubleEmergencyNitrogenTankFilled
+      - id: DoubleEmergencyOxygenTankFilled
+      - id: SpeedLoaderMagnumSP
+      - id: SpeedLoaderMagnumSP
+      - id: ClothingEyesHudCentComm
+      - id: CentCommCommunicationTablet
+      - id: MedkitCombatFilled

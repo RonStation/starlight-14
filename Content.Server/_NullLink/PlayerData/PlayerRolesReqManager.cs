@@ -1,5 +1,7 @@
 ﻿using System.Linq;
+using Content.Server.Administration.Managers;
 using Content.Shared._NullLink;
+using Content.Shared.Administration;
 using Robust.Server.Player;
 using Robust.Shared.Player;
 
@@ -9,34 +11,63 @@ public sealed partial class PlayerRolesReqManager : SharedPlayerRolesReqManager
 {
     [Dependency] private INullLinkPlayerManager _playerManager = default!;
     [Dependency] private IPlayerManager _player = default!;
+    [Dependency] private IAdminManager _adminManager = default!;
 
     public override bool IsAllRolesAvailable(EntityUid uid)
-        => _player.TryGetSessionByEntity(uid, out var session)
-            && AllRoles is not null
-            && _playerManager.TryGetPlayerData(session.UserId, out var playerData)
-            && AllRoles.Roles.Any(playerData.Roles.Contains);
+    {
+        //=> _player.TryGetSessionByEntity(uid, out var session)
+        //    && AllRoles is not null
+        //    && _playerManager.TryGetPlayerData(session.UserId, out var playerData)
+        //    && AllRoles.Roles.Any(playerData.Roles.Contains);
+        var flags = _adminManager.GetAdminData(uid,true);
+        var isStaff = flags != null && flags.HasFlag(AdminFlags.RNSLStaff);
+        return(isStaff);
+    }
 
     public override bool IsAllRolesAvailable(ICommonSession session)
-        =>  AllRoles is not null
-            && _playerManager.TryGetPlayerData(session.UserId, out var playerData)
-            && AllRoles.Roles.Any(playerData.Roles.Contains);
-
+    {
+        //=>  AllRoles is not null
+        //    && _playerManager.TryGetPlayerData(session.UserId, out var playerData)
+        //    && AllRoles.Roles.Any(playerData.Roles.Contains);
+        var flags = _adminManager.GetAdminData(session,true);
+        var isStaff = flags != null && flags.HasFlag(AdminFlags.RNSLStaff);
+        return(isStaff);
+    }
     public override bool IsAnyRole(ICommonSession session, ulong[] roles)
-        => AllRoles is not null
-            && _playerManager.TryGetPlayerData(session.UserId, out var playerData)
-            && roles.Any(playerData.Roles.Contains);
-    public override bool IsMentor(EntityUid uid)
-        => _player.TryGetSessionByEntity(uid, out var session)
-            && _mentorReq is not null
-            && _playerManager.TryGetPlayerData(session.UserId, out var playerData)
-            && _mentorReq.Roles.Any(playerData.Roles.Contains);
+    {
+        //=> AllRoles is not null
+        //    && _playerManager.TryGetPlayerData(session.UserId, out var playerData)
+        //    && roles.Any(playerData.Roles.Contains);
+        var flags = _adminManager.GetAdminData(session,true);
+        var isStaff = flags != null && flags.HasFlag(AdminFlags.RNSLStaff);
+        return(isStaff);
+    }
+    public override bool IsMentor(EntityUid uid) {
+        //_player.TryGetSessionByEntity(uid, out var session)
+        //    && _mentorReq is not null
+        //    && _playerManager.TryGetPlayerData(session.UserId, out var playerData)
+        //    && _mentorReq.Roles.Any(playerData.Roles.Contains);
+        var flags = _adminManager.GetAdminData(uid,true);
+        var isMentor = flags != null && flags.HasFlag(AdminFlags.RNSLMentor);
+        return(isMentor);
+    }
     public override bool IsMentor(ICommonSession session)
-        =>  _mentorReq is not null
-            && _playerManager.TryGetPlayerData(session.UserId, out var playerData)
-            && _mentorReq.Roles.Any(playerData.Roles.Contains);
+    {
+        //=>  _mentorReq is not null
+        //    && _playerManager.TryGetPlayerData(session.UserId, out var playerData)
+        //    && _mentorReq.Roles.Any(playerData.Roles.Contains);
+        var flags = _adminManager.GetAdminData(session,true);
+        var isMentor = flags != null && flags.HasFlag(AdminFlags.RNSLMentor);
+        return(isMentor);
+    }
     public override bool IsPeacefulBypass(EntityUid uid)
-        => _player.TryGetSessionByEntity(uid, out var session)
-            && _peacefulBypass is not null
-            && _playerManager.TryGetPlayerData(session.UserId, out var playerData)
-            && _peacefulBypass.Roles.Any(playerData.Roles.Contains);
-}
+    {
+        //=> _player.TryGetSessionByEntity(uid, out var session)
+        //    && _peacefulBypass is not null
+        //    && _playerManager.TryGetPlayerData(session.UserId, out var playerData)
+        //    && _peacefulBypass.Roles.Any(playerData.Roles.Contains);
+        var flags = _adminManager.GetAdminData(uid,true);
+        var isStaff = flags != null && flags.HasFlag(AdminFlags.RNSLStaff);
+        return(isStaff);
+    }
+    }

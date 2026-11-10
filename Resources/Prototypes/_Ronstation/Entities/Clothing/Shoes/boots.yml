@@ -1,0 +1,19 @@
+#recolored goob sprite, but based off of stuff I've seen on frontier forks for the actual gameplay elements.
+- type: entity
+  parent: [BaseCentcommContraband, ClothingShoesBootsMagBase, ClothingShoesBootsJack]
+  id: ClothingShoesBootsMagJack
+  name: advanced jackboots
+  description: Hybrid Jack-Magboots prototype that trades half of its injury assistance for a toggleable strong magnetic pull.
+  components:
+  - type: ClothingSpeedModifier
+    walkModifier: 0.85
+    sprintModifier: 0.85
+  - type: ClothingSlowOnDamageModifier
+    modifier: 0.75
+  - type: Sprite
+    sprite: _Goobstation/Clothing/Shoes/Boots/advanced_jackboots.rsi
+  - type: Clothing
+    sprite: _Goobstation/Clothing/Shoes/Boots/advanced_jackboots.rsi
+  - type: FootstepModifier
+    footstepSoundCollection:
+      collection: StepHeavyBoots

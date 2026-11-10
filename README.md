@@ -69,3 +69,5 @@ The use of assistant tools such as an IDE's autocomplete, coderabbitai, debugger
 
 >All other non-code STARLIGHT Assets, including icons and sound files, are licensed under the [Creative Commons 3.0 BY-SA](https://creativecommons.org/licenses/by-sa/3.0/) license unless otherwise noted in the folder or file.
 </details>
+
+Note: Currently in playtest

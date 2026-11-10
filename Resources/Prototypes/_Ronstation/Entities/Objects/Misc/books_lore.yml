@@ -1,0 +1,19 @@
+- type: entity
+  parent: BookBase
+  id: BookShadekinLore
+  name: "Shadekin Case Study"
+  description: A case study on Shadekins from the Starlight sector, plus some breakthroughs in this very sector. Seems pretty dense.
+  components:
+    - type: Sprite
+      layers:
+        - state: paper
+        - state: cover_base
+          color: "#1a2a3a"
+        - state: decor_wingette
+          color: "#2a3f55"
+        - state: icon_glow
+          color: "#AF00DAFF"
+        - state: icon_corner
+          color: "#AF00DAFF"
+    - type: Paper
+      content: book-shadekin-lore1

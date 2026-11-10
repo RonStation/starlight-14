@@ -1,0 +1,12 @@
+- type: entity
+  parent: [ ClothingHeadsetChameleon, BaseCentcommContraband ]
+  id: ClothingHeadsetChameleonWatchdog
+  name: watchdog headset
+  suffix: Admeme, Chameleon, DO NOT MAP # Ronstation: Fixing prototypes.
+  description: A heavily modified modular intercom that fits over the head. Comes with many intrinsic frequencies.
+  components:
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - EncryptionKeyNanoTrasenUnremovable
+      - EncryptionKeyStationMasterUnremovable

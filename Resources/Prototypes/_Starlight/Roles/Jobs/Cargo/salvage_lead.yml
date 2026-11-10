@@ -5,6 +5,7 @@
   description: job-description-salvagelead
   rules: job-rules-itg-aligned
   playTimeTracker: JobSalvageLead
+  whitelisted: true # Ronstation: Salvgone. Making it whitelisted because it is a good idea, but causes issues in lowpop.
   supervisors: job-supervisors-guild
   requirements:
     - !type:DepartmentTimeRequirement
@@ -19,6 +20,10 @@
   access:
   - Salvage
   - SalvageLead
+  - Cargo #Ronstation: Keeping Salvage slightly attached to the station.
+  - Mining #Ronstation: Mining needed since Salvage is unmapped from all upstream maps, and this is the only area they'd reasonably bring/unload shit to/in.
+  - Command #Ronstation
+  - Debrief #Ronstation: In line with giving salvlead command comms, it makes sense they'd be a regular plus-one to debrief when in play.
   - External
   - Maintenance
   - Shuttle

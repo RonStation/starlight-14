@@ -1,0 +1,31 @@
+- type: entity
+  parent: ClothingHeadsetCargo
+  id: ClothingHeadsetSalvageMed # This does have to be defined since otherwise medic would get the command headset with command comms. This also allows only granting medical comms to the SalvMed. If the leader decides they really need a medical key, they can ask the CMO/Captain/Command.
+  name: salvage medic's headset
+  description: Headset used by the salvage medic.
+  components:
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - EncryptionKeySalvage
+      - EncryptionKeyMedical # So That the Salv Medic can work and co-ordinate with the station's Medical team.
+      - EncryptionKeyCommon
+  - type: Sprite
+    sprite: _Ronstation/Clothing/Ears/Headsets/salvmed.rsi
+  - type: Clothing
+    sprite: _Ronstation/Clothing/Ears/Headsets/salvmed.rsi
+- type: entity
+  parent: ClothingHeadsetCargo
+  id: ClothingHeadsetSalvageITG # Seperately defined due to the same reason for the proto above this.
+  name: salvage specialist's headset
+  description: Headset used by basic salvage specialists.
+  components:
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - EncryptionKeySalvage
+      - EncryptionKeyCommon
+  - type: Sprite
+    sprite: Clothing/Ears/Headsets/mining.rsi
+  - type: Clothing
+    sprite: Clothing/Ears/Headsets/mining.rsi

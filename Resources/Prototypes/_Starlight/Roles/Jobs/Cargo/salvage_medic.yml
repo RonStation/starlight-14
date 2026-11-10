@@ -5,6 +5,7 @@
   description: job-description-salvagemedic
   rules: job-rules-itg-aligned
   playTimeTracker: JobSalvageMedic
+  whitelisted: true # Ronstation: Salvgone. Making it whitelisted because it is a good idea, but causes issues in lowpop.
   requirements:
     - !type:RoleTimeRequirement
       role: JobSalvageSpecialist
@@ -20,6 +21,12 @@
   - Salvage
   - Maintenance
   - External
+  - Cargo #Ronstation: Keeping Salvage slightly attached to the station.
+  - Mining #Ronstation: Mining needed since Salvage is unmapped from all upstream maps, and this is the only area they'd reasonably bring/unload shit to/in.
+  extendedAccess: # Ronstation start: Granting skeleton access for anyone whitelisted being able to help the station during lowpop
+  - Chemistry
+  - Paramedic
+  - Surgery # Ronstation end
   special:
   - !type:AddImplantSpecial
     implants: [ ITGMindShieldImplant ]
@@ -31,7 +38,7 @@
 - type: startingGear
   id: SalvageMedicGear
   equipment:
-    ears: ClothingHeadsetSalvageLead
+    ears: ClothingHeadsetSalvageMed
 
 - type: chameleonOutfit
   id: SalvageMedicChameleonOutfit

@@ -1,0 +1,31 @@
+- type: entity
+  parent: [BaseItem]
+  id: BaseAmmoProviderMono # Ronstation: idk if this is needed but I don't want to deal with it
+  abstract: true
+  components:
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: Item
+    size: Normal
+  - type: Sprite
+    sprite: Objects/Storage/boxes.rsi
+
+- type: entity
+  parent: [BaseAmmoProviderMono]
+  id: AmmoProvider23x75mmShotgunShell
+  abstract: true
+  components:
+    - type: Sprite
+      sprite: _Mono/Objects/Weapons/Guns/Ammunition/Boxes/4_gauge.rsi
+    - type: BallisticAmmoProvider
+      mayTransfer: true
+      whitelist:
+        tags:
+        - ShellShotgun23x75mmBuckshot
+      capacity: 32 # Mono 16->32
+    - type: MagazineVisuals
+      magState: mag
+      steps: 5
+      zeroVisible: false
+    - type: Appearance

@@ -1,0 +1,118 @@
+- type: entity
+  abstract: true
+  parent: BaseItem
+  id: BaseMagazineBoxMagnum50
+  components:
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+        - CartridgeMagnum50
+    proto: CartridgeMagnum50SP
+    capacity: 12
+  - type: Item
+    size: Small
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: Sprite
+    sprite: _Ronstation/Objects/Weapons/Guns/Ammunition/Boxes/magnum50.rsi
+  - type: MagazineVisuals
+    magState: mag
+    steps: 4
+    zeroVisible: false
+  - type: Appearance
+
+# Boxes
+- type: entity
+  parent: BaseMagazineBoxMagnum50
+  id: MagazineBoxMagnum50SP
+  name: ammunition box (.50 magnum SP)
+  components:
+  - type: BallisticAmmoProvider
+    proto: CartridgeMagnum50SP
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+    - state: sp
+
+- type: entity
+  parent: BaseMagazineBoxMagnum50
+  id: MagazineBoxMagnum50HP
+  name: ammunition box (.50 magnum HP)
+  components:
+  - type: BallisticAmmoProvider
+    proto: CartridgeMagnum50HP
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+
+- type: entity
+  parent: BaseMagazineBoxMagnum50
+  id: MagazineBoxMagnum50Practice
+  name: ammunition box (.50 magnum practice)
+  description: A cardboard box of .50 magnum rounds. Intended to hold harmless practice ammunition.
+  components:
+  - type: BallisticAmmoProvider
+    proto: CartridgeMagnum50Practice
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+    - state: practice
+
+- type: entity
+  id: MagazineBoxMagnum50Incendiary
+  parent: BaseMagazineBoxMagnum50
+  name: ammunition box (.50 magnum incendiary)
+  description: A cardboard box of .50 magnum rounds. Intended to hold self-igniting incendiary ammunition.
+  components:
+  - type: BallisticAmmoProvider
+    proto: CartridgeMagnum50Incendiary
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+    - state: incendiary
+
+- type: entity
+  id: MagazineBoxMagnum50Uranium
+  parent: BaseMagazineBoxMagnum50
+  name: ammunition box (.50 magnum uranium)
+  description: A cardboard box of .50 magnum rounds. Intended to hold exotic uranium-core ammunition.
+  components:
+  - type: BallisticAmmoProvider
+    proto: CartridgeMagnum50Uranium
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+    - state: uranium
+
+- type: entity
+  id: MagazineBoxMagnum50AP
+  parent: BaseMagazineBoxMagnum50
+  name: ammunition box (.50 magnum AP)
+  description: A cardboard box of .50 magnum rounds. Intended to hold specialized armor-piercing ammunition.
+  components:
+  - type: BallisticAmmoProvider
+    proto: CartridgeMagnum50AP
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+    - state: ap
