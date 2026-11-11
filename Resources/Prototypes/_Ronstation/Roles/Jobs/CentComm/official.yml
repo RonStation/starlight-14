@@ -8,7 +8,7 @@
     outerClothing: ClothingOuterArmorCentcommCarapace
     eyes: ClothingEyesGlassesCentComm
     gloves: ClothingHandsGlovesCentComm
-    id: CentCommDivisionPDA
+    id: CentComDivisionPDA
     ears: ClothingHeadsetAltCentComDivHead
     belt: BoxFolderCentComClipboardThreePapers
     pocket1: WeaponDisabler
@@ -47,7 +47,7 @@
     outerClothing: ClothingOuterArmorCentcommCarapace
     gloves: ClothingHandsGlovesCentComm
     eyes: ClothingEyesHudCCDivHead
-    id: CentCommDivisionPDA
+    id: CentComDivisionPDA
     ears: ClothingHeadsetAltCentComDivHead
     belt: CentcommVibrobladeSheathFilled
     pocket1: WeaponEnergyMagnumGunGreenshield
@@ -63,7 +63,7 @@
     back: ClothingBackpackSatchelHoldingCentcomFormalFilled
     outerClothing: ClothingOuterHardsuitERTEngineer
     eyes: ClothingEyesGlassesCentComm
-    id: CentCommDivisionPDA
+    id: CentComDivisionCollarPDA
     ears: ClothingHeadsetAltCentComDivHead
   inhand:
   - MindShieldImplanter

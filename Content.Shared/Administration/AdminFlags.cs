@@ -124,20 +124,40 @@
         /// </summary>
         NameColor = 1 << 21,
 
+        #region Starlight
         /// <summary>
-        ///     Flag that grants everything normally locked behind a staff discord role.
+        ///     Things that reach every player at once: tippy, admin global sounds.
+        ///     Split off <see cref="Fun"/> so event admins don't get them by default.
         /// </summary>
-        RNSLStaff = 1 << 22,
+        Broadcast = 1 << 22,
 
         /// <summary>
-        ///     Flag that grants everything normally locked behind the mentor discord role, primarily mhelp.
+        ///     Smite verbs.
         /// </summary>
-        RNSLMentor = 1 << 23,
+        Smite = 1 << 23,
+
+        /// <summary>
+        ///     Spawning explosions with the explosion command and panel.
+        /// </summary>
+        Explosion = 1 << 24,
 
         /// <summary>
         ///     Dangerous permissions like loading prototypes.
         /// </summary>
         Danger = 1u << 30,
+        #endregion
+
+        #region Ronstation
+        /// <summary>
+        ///     Intended to grant everything normally locked behind a staff discord role.
+        /// </summary>
+        RNSLStaff = 1 << 25,
+
+        /// <summary>
+        ///     Intended to grant everything normally locked behind the mentor discord role, primarily mhelp.
+        /// </summary>
+        RNSLMentor = 1 << 26,
+        #endregion
 
         /// <summary>
         ///     Dangerous host permissions like scsi.

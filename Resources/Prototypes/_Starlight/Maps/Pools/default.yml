@@ -1,10 +1,11 @@
-#- type: gameMapPool Begin Ronstation - making our own map pool!
+#- type: gameMapPool Begin Ronstation - making our own map pool! (updated for upstream merge 3)
 #  id: DefaultStarlightMapPool
 #  maps:
 #  - StarlightBagel
 #  - StarlightCog
 #  - StarlightCork
 #  - StarlightFland
+#  - StarlightFlotilla
 #  - StarlightHotel
 #  - StarlightLagan
 #  - StarlightLeth
@@ -26,4 +27,5 @@
 #  - StarlightPlasma
 #  - StarlightPacked
 #  - StarlightSpaceMall
-#  - StarlightSerpentcrest End Ronstation - making our own map pool!
+#  - StarlightSerpentcrest
+#  - StarlightDownpour End Ronstation - making our own map pool!

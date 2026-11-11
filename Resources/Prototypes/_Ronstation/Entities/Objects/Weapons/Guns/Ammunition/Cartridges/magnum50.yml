@@ -1,6 +1,7 @@
+# Modified from WizDen magnum.yml
 - type: entity
   abstract: true
-  parent: [ BaseCartridge, BaseSecuritySalvageContraband ] # TODO Starlight partial once space-wizards/RobustToolbox/pull/7084 gets fixed
+  parent: [ BaseContrabandTier3, BaseCartridge, BaseSecurityContraband, BaseSalvageContraband ] # TODO Starlight partial once space-wizards/RobustToolbox/pull/7084 gets fixed
   id: BaseCartridgeMagnum50
   name: cartridge (.50 magnum)
   components:
@@ -17,6 +18,7 @@
   - type: Appearance
   - type: SpentAmmoVisuals
 
+# Modified from SL magnum.yml
 - type: entity
   parent: BaseCartridgeMagnum50
   id: CartridgeMagnum50SP

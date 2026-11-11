@@ -1,6 +1,6 @@
 - type: entity
   name: makarov
-  parent: [BaseWeaponPistol, BaseSovietContraband]
+  parent: [ BaseContrabandTier3, BaseWeaponPistol, BaseSovietContraband ] # Blimpuf
   id: WeaponPistolMakarov
   description: A cheap and cumbersome pistol, with a dot on the rear sight indicating the direction in which it tends to misfire, as this model does not shoot straight. Uses .35 auto ammo.
   components:
@@ -48,32 +48,8 @@
       price: 150
 
 - type: entity
-  id: WeaponPistolMk58Nonlethal
-  parent: [WeaponPistolMk58, BaseSecurityContraband]
-  suffix: Non-lethal
-  components:
-    - type: ItemSlots
-      slots:
-        gun_magazine:
-          name: item-slot-component-slot-name-magazine
-          startingItem: MagazinePistolRubber
-          insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
-          ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
-          priority: 2
-          whitelist:
-            tags:
-              - MagazinePistol
-        gun_chamber:
-          name: item-slot-component-slot-name-chamber
-          startingItem: CartridgePistolRubber
-          priority: 1
-          whitelist:
-            tags:
-              - CartridgePistol
-
-- type: entity
   name: N1984
-  parent: [WeaponPistolN1984, BaseSecurityContraband]
+  parent: [ BaseContrabandTier3, WeaponPistolN1984, BaseSecurityContraband ] # Blimpuf
   id: WeaponPistolN1984Nonlethal
   suffix: Non-lethal
   components:
@@ -120,7 +96,7 @@
 
 - type: entity
   name: golden mk 58
-  parent: [WeaponPistolMk58, BaseSecurityContraband]
+  parent: [ BaseContrabandTier3, WeaponPistolMk58, BaseSecurityContraband ] # Blimpuf
   id: WeaponPistolGoldenMk58
   description: An expensive and rare golden variant of the Mk58, only given out to the elite. Doesn't actually have any functional differences, though. Feeds from .35 pistol magazines.
   components:
@@ -164,7 +140,7 @@
 
 - type: entity
   name: enforcer
-  parent: [BaseWeaponPistol, BaseSecurityContraband]
+  parent: [ BaseContrabandTier3, BaseWeaponPistol, BaseSecurityContraband ] # Blimpuf
   id: WeaponPistolEnforcer
   description: A versatile pistol of modern design.
   components:
@@ -194,8 +170,9 @@
 
 - type: entity
   name: due process
-  parent: [BaseWeaponPistol, BaseSecurityContraband]
-  id: WeaponPistolDP
+  parent: BaseWeaponPistol
+  id: BaseWeaponPistolDP
+  abstract: true
   description: A pistol that packs a punch for brig defense, just as NanoTrasen intended.
   components:
     - type: Sprite
@@ -238,8 +215,12 @@
       engraveVerb: "engraving-verb-engrave"
 
 - type: entity
+  parent: [ BaseContrabandTier3, BaseWeaponPistolDP, BaseSecurityContraband ]
+  id: WeaponPistolDP
+
+- type: entity
   name: sp-8t
-  parent: [WeaponPistolDP, BaseBlueShieldContraband, BaseGrandTheftContraband]
+  parent: [ BaseContrabandTier3, BaseWeaponPistolDP, BaseBlueShieldContraband ]
   id: WeaponPistolBlueguard
   components:
     - type: Gun
@@ -250,25 +231,6 @@
     - type: ChamberMagazineAmmoProvider
     - type: StealTarget
       stealGroup: BSOWeapon
-
-- type: entity
-  name: sp-8ar
-  parent: [WeaponPistolDP, BaseSecurityContraband]
-  id: WeaponPistolSP8AR
-  components:
-  - type: Gun
-    shotsPerBurst: 3
-    selectedMode: Burst
-    availableModes:
-      - SemiAuto
-      - Burst
-    soundGunshot:
-      path: /Audio/_Starlight/Weapons/Guns/Gunshots/sp8ar.ogg
-  - type: Sprite
-    sprite: _Starlight/Objects/Weapons/Guns/Pistols/sp8ar.rsi
-  - type: ChamberMagazineAmmoProvider
-    availablePrefixes:
-    - ""
 
 - type: entity
   name: stechkin APS
@@ -294,7 +256,8 @@
         path: /Audio/_Starlight/Weapons/Guns/Gunshots/1suppres.ogg
       movingMinAngle: 7
     - type: Contraband
-      severity: Soviet
+      tier: Tier3 # Blimpuf
+      contrabandType: Soviet # Blimpuf
     - type: ItemSlots
       slots:
         gun_magazine:
@@ -423,7 +386,7 @@
 
 - type: entity
   name: cold case
-  parent: [BaseWeaponSniper, BaseSecurityContraband]
+  parent: [ BaseContrabandTier3, BaseWeaponSniper, BaseSecurityContraband ]
   id: WeaponPistolColdCase
   description: An antiquated design of a pistol, truly a stylish choice.
   components:
@@ -520,7 +483,7 @@
   - type: Gun
     minAngle: 2
     maxAngle: 4
-    fireRate: 1.8
+    fireRate: 1.5
     selectedMode: SemiAuto
     availableModes:
     - SemiAuto

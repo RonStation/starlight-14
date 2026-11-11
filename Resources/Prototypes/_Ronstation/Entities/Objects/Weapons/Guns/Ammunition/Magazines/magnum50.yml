@@ -1,7 +1,9 @@
+# Modified from WizDen magnum.yml
 - type: entity
   id: BaseMagazineMagnum50
   name: pistol magazine (.50 magnum)
-  parent: [ BaseSecuritySalvageContraband, BaseMagazinePistol ]
+  parent: [ BaseContrabandTier3, BaseSecurityContraband, BaseSalvageContraband, BaseMagazinePistol ] # Blimpuf
+  # Copying over to Ronstation contribution files that weren't automatically updated in-line with this, the files were mostly copied.
   abstract: true
   components:
   - type: Tag
@@ -14,10 +16,12 @@
         - CartridgeMagnum50
     capacity: 7
 
+# Modified from SL magnum.yml
 - type: entity
   id: BaseMagazineMagnum50SubMachineGun
   name: SMG magazine (.50 magnum)
-  parent: [BaseItem, BaseSecuritySalvageContraband]
+  parent: [ BaseContrabandTier3, BaseItem, BaseSecurityContraband, BaseSalvageContraband ] # Blimpuf
+  # Copying over to Ronstation contribution files that weren't automatically updated in-line with this, the files were mostly copied.
   abstract: true
   components:
   - type: Tag
