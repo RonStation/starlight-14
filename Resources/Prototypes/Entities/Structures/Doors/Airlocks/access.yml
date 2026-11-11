@@ -1233,7 +1233,6 @@
       "/Maps/_Starlight/Shuttles/EscapePods/escape_pod_library.yml": 2
       "/Maps/_Starlight/Shuttles/EscapePods/escape_pod_lounge.yml": 2
       "/Maps/_Starlight/Shuttles/EscapePods/escape_pod_pet.yml": 2
-      "/Maps/_Starlight/Shuttles/EscapePods/escape_pod_verysmall.yml": 1
     # Starlight end
     addComponents:
     - type: IFF
@@ -1241,7 +1240,7 @@
       - HideLabel
   - type: ContainerFill
     containers:
-      board: [ DoorElectronicsExternal ]
+      board: [ DoorElectronicsMaintenance ] # Starlight edit: DoorElectronicsExternal to DoorElectronicsMaintenance
 
 #HighSecDoors
 - type: entity

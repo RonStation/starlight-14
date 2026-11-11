@@ -1,7 +1,7 @@
 # Contraband
 - type: microwaveMealRecipe
   id: RecipeDreamingCake
-  name: Dreaming cake Recipe
+  name: Broken-Dreams Cake Recipe
   result: FoodResomiCake
   time: 25
   reagents:
@@ -113,6 +113,17 @@
   group: Cake
   solids:
     FoodMothBatter: 1
+
+- type: microwaveMealRecipe
+  id: RecipeSpacemanCake
+  name: spaceman's cake recipe
+  result: FoodCakeSpaceman
+  time: 5
+  group: Cake
+  deviceType: Oven
+  solids:
+    FoodCakePlain: 1
+    FoodSpacemansTrumpet: 4
 
 # pizza
 - type: microwaveMealRecipe

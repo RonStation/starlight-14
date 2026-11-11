@@ -30,6 +30,10 @@
         {
             "name": "CCDivSpecOps",
             "copyright": "Taken and modified from /tg/station113 from https://github.com/tgstation/tgstation/blob/ce6beb8a4d61235d9a597a7126c407160ed674ea/icons/mob/huds/hud.dmi, recolored by Semper"
+        },
+        {
+            "name": "CCK9",
+            "copyright": "Made by Swonkus (GitHub), recolored by Semper"
         }
     ]
 }

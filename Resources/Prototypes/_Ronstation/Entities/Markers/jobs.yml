@@ -1,0 +1,14 @@
+- type: entity
+  id: SpawnPointCCK9
+  parent: SpawnPointJobBase
+  name: CentComm K9 Unit
+  suffix: Only Map CC # Ronstation: Solidifying the intent of CCOs; if ATS spawns do work, CC ones theoretically should too
+  components:
+    - type: SpawnPoint
+      job_id: CentralCommandK9
+    - type: Sprite
+      sprite: _Starlight/Markers/jobs.rsi
+      layers:
+        - state: green
+        - state: ntrep
+        - state: jobicon

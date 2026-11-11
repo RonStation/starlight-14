@@ -1,0 +1,5 @@
+- type: entity
+  parent: MobK9
+  id: MobCCK9 # just a custom name/description, no component changes; see upstream(SL)'s message for their balance reasoning in their k9.yml
+  name: centcomm K9
+  description: A dog trained and beloved by the CentComm Security division for asset protection.

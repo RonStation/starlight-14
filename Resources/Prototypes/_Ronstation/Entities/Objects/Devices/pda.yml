@@ -1,7 +1,26 @@
 - type: entity
   parent: CentcomPDA
-  id: CentCommDivisionPDA
-  suffix: Centcomm, Divisions
+  id: CentComDivisionPDA
+  suffix: Centcom, Divisions
   components:
   - type: Pda
     id: CentcomIDCardDivision
+- type: entity
+  parent: CentcomCollarPDA
+  id: CentComDivisionCollarPDA
+  name: centcomm collar
+  description: Light green sign of man's best friend.
+  suffix: Centcom, K9/Borgi, Divisions
+  components:
+  - type: Pda
+    id: CCK9IDCard
+  - type: RemovePreinstalledPrograms # Needs to be specified; copied the modified program list from the CC PDA and referenced this component from the collar base.
+    programs:
+    - CrewManifestCartridge
+    - NanoTaskCartridge
+    - NewsReaderCartridge
+    - MedTekCartridge
+    - WantedListCartridge
+    - LogProbeCartridge
+    - AstroNavCartridge
+    - NanoChatCartridge

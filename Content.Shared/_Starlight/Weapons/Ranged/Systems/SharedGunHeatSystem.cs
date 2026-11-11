@@ -5,7 +5,6 @@ using Content.Shared.Popups;
 using Content.Shared.Weapons.Ranged.Systems;
 using Content.Shared.Wieldable;
 using Robust.Shared.Audio.Systems;
-using Robust.Shared.Random;
 using Robust.Shared.Timing;
 
 namespace Content.Shared._Starlight.Weapons.Ranged.Systems;
@@ -51,7 +50,8 @@ public abstract partial class SharedGunHeatSystem : EntitySystem
 
         if (!ent.Comp.Jammed)
         {
-            if (_gun.GetShotRandom(ent, JamSalt).Prob(GetJamChance(ent.Comp, ent.Comp.Temperature)))
+            var random = _gun.GetShotRandom(ent, JamSalt);
+            if (random.NextDouble() < GetJamChance(ent.Comp, ent.Comp.Temperature))
             {
                 ent.Comp.Jammed = true;
                 Audio.PlayPredicted(ent.Comp.JamSound, ent, args.User);
@@ -60,10 +60,13 @@ public abstract partial class SharedGunHeatSystem : EntitySystem
             }
         }
 
+        SyncShotTemperature(ent);
         Dirty(ent);
     }
 
     protected virtual void AddShotHeat(Entity<GunHeatComponent> ent, int shots) { }
+
+    protected virtual void SyncShotTemperature(Entity<GunHeatComponent> ent) { }
 
     [SubscribeLocalEvent]
     private void OnAttemptShoot(Entity<GunHeatComponent> ent, ref AttemptShootEvent args)

@@ -56,7 +56,8 @@
   - DeathSquad
   - CentralCommandOperator # Starlight Addition
   - CentralCommandGreenShield # Starlight Addition
-  editorHidden: true
+  - CentralCommandK9 # Ronstation Addition
+  editorHidden: false # Ronstation change: Trying to make manifest, latejoin/new life, and loadouts menus less confusing.
   weight: 120
 
 - type: department
@@ -72,15 +73,17 @@
   - HeadOfSecurity
   - ResearchDirector
   - Quartermaster
-  - CentralCommandOfficial
-  - CBURN
-  - ERTLeader
-  - ERTChaplain
-  - ERTJanitor
-  - ERTMedical
-  - ERTSecurity
-  - ERTEngineer
-  - DeathSquad
+# Ronstation begin; Removing CC roles from station command list for clarity
+#  - CentralCommandOfficial
+#  - CBURN
+#  - ERTLeader
+#  - ERTChaplain
+#  - ERTJanitor
+#  - ERTMedical
+#  - ERTSecurity
+#  - ERTEngineer
+#  - DeathSquad
+# Ronstation end
   - Magistrate
   - NanoTrasenRepresentative
   primary: false
@@ -125,6 +128,7 @@
   - Detective
   - Warden
   - DutyOfficer # Starlight
+  - GunnerySergeant # Starlight
   - K9 # Starlight
 
 - type: department
