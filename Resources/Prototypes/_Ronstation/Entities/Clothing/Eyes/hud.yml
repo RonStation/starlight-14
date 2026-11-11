@@ -1,8 +1,15 @@
 - type: entity
   parent: [ClothingEyesHudCCDivHead]
   id: ClothingEyesHudCCK9
+  suffix: Admin, Chameleon, DO NOT MAP
+  name: centcomm k9 hud
+  description: An expensive, top-of-the-line HUD special-ordered just for K9 units trained on protecting Central Command assets. Looks like its been gnawed on a few times..
   components:
+    - type: Sprite
+      sprite: _Starlight/Clothing/Eyes/Hud/blueshieldpatch.rsi # TODO: Actual unique spriting, but this has k9 sprites, which is most important for now.
+    - type: Clothing
+      sprite: _Starlight/Clothing/Eyes/Hud/blueshieldpatch.rsi
     - type: ChameleonClothing
       slot:
         - eyes
-      default: ClothingEyesEyepatchHudBlueShield # this is k9 wearable, which is the main reason this is a seperate proto.
+      default: ClothingEyesHudCCK9
