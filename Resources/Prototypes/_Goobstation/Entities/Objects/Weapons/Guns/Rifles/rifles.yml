@@ -1,7 +1,8 @@
 - type: entity
-  name: Annie # Ronstation: Porting the annie to SL
-  parent: [BaseSecurityContraband, BaseWeaponRifle] # Ronstation: Porting the annie to SL
-  id: WeaponRifleAnnie
+  name: annie # Ronstation: Porting the annie to SL
+  parent: [BaseContrabandTier3, BaseWeaponRifle] # Ronstation: Porting the annie to SL + trying to make it work w/ new contra tags
+  id: BaseWeaponRifleAnnie # Ronstation: Trying to make it work w/ new contra tags
+  abstract: true # Ronstation: Trying to make it work w/ new contra tags
   description: A beast designed to shoulder the weight of impossible missions. Uses .30 rifle ammo. # Ronstation: porting annie to SL
   components:
   - type: Sprite

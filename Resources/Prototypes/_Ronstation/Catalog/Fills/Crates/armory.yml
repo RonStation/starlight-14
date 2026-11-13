@@ -1,0 +1,16 @@
+- type: entity
+  id: CrateArmoryAnnie
+  parent: [ CrateWeaponSecure, BaseRestrictedContraband ]
+  name: annie rifles crate
+  description: Contains two Annie rifles, with four spare magazines. Requires Armory access to open.
+  components:
+  - type: Contraband
+    allowedDepartments: [ Security ]
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:AllSelector
+        children:
+        - id: WeaponRifleAnnie
+          amount: 2
+        - id: MagazineLightRifleSP
+          amount: 4
