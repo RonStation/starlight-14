@@ -75,8 +75,6 @@
     - SemiAuto
   - type: ChamberMagazineAmmoProvider
     autoEject: true
-    soundAutoEject:
-      path: /Audio/Weapons/Guns/EmptyAlarm/smg_empty_alarm.ogg # TODO: Custom autoeject alarm sound (maybe), for now this is just using the original default so it doesn't confuse people with that version meant for NT guns
   - type: ItemSlots
     slots:
       gun_magazine:
