@@ -42,6 +42,7 @@
 #A generic entry used for fills in outfits or other purposes. An attempt to further reduce redundant code.
 - type: entity
   id: ClothingBackpackSatchelHoldingBaseCCFill
+  abstract: true
   parent: ClothingBackpackSatchelHoldingCC
   components:
   - type: Tag
